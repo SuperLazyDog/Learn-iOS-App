@@ -37,6 +37,9 @@
                                 <state key="normal" title="结束测试">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="endTestBut:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8F8-NL-bAf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yt-Oe-Ldz">
                                 <rect key="frame" x="45" y="207.5" width="104.5" height="35"/>
@@ -46,12 +49,12 @@
                                 <state key="normal" title="开始测试">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startTestBut:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KS1-ec-nBd"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="请开始测试" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNC-Cd-QOW">
                                 <rect key="frame" x="67" y="322.5" width="241" height="301"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="YNC-Cd-QOW" secondAttribute="height" multiplier="4:5" id="nLe-16-Uaa"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -70,6 +73,7 @@
                             <constraint firstItem="YNC-Cd-QOW" firstAttribute="top" secondItem="1yt-Oe-Ldz" secondAttribute="bottom" constant="80" id="4Yb-Og-FPb"/>
                             <constraint firstItem="9HY-bM-cD0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6pZ-sE-9Fn"/>
                             <constraint firstItem="YNC-Cd-QOW" firstAttribute="top" secondItem="9HY-bM-cD0" secondAttribute="bottom" constant="4.5" id="9gV-LI-QYF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YNC-Cd-QOW" secondAttribute="bottom" constant="43.5" id="AUC-oe-5gh"/>
                             <constraint firstItem="snq-TA-AVF" firstAttribute="leading" secondItem="1yt-Oe-Ldz" secondAttribute="trailing" constant="76" id="Ahl-Xx-gh5"/>
                             <constraint firstItem="gQ3-PH-Nhw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="87" id="Bl3-ps-qkB"/>
                             <constraint firstItem="snq-TA-AVF" firstAttribute="width" secondItem="1yt-Oe-Ldz" secondAttribute="width" id="DCa-si-Ioo"/>

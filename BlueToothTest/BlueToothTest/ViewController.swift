@@ -9,11 +9,12 @@
 import UIKit
 import CoreBluetooth
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CBCentralManagerDelegate {
     //----------------------------------------------------------------------
     //                             プロパティ
     //----------------------------------------------------------------------
-    
+    var centralManager: CBCentralManager!
+    var peripheral: CBPeripheral!
     //----------------------------------------------------------------------
     //                           UIコントロール
     //----------------------------------------------------------------------
@@ -47,7 +48,16 @@ class ViewController: UIViewController {
     //----------------------------------------------------------------------
     //                         カスタマイズ関数
     //----------------------------------------------------------------------
-
+    
+    //----------------------------------------------------------------------
+    //                              button func
+    //----------------------------------------------------------------------
+    //touch up inside
+    @IBAction func startTestBut(_ sender: UIButton, forEvent event: UIEvent) {
+        let myCentral = CBCentralManager()
+    }
+    @IBAction func endTestBut(_ sender: UIButton, forEvent event: UIEvent) {
+    }
 
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		499219131EB736AC00610ED4 /* CentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219121EB736AC00610ED4 /* CentralManagerDelegate.swift */; };
 		49CEE0C51EB587520083B0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEE0C41EB587520083B0D0 /* AppDelegate.swift */; };
 		49CEE0C71EB587520083B0D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEE0C61EB587520083B0D0 /* ViewController.swift */; };
 		49CEE0CA1EB587520083B0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CEE0C81EB587520083B0D0 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		499219121EB736AC00610ED4 /* CentralManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CentralManagerDelegate.swift; path = Class/CentralManagerDelegate.swift; sourceTree = "<group>"; };
 		49CEE0C11EB587520083B0D0 /* BlueToothTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueToothTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CEE0C41EB587520083B0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49CEE0C61EB587520083B0D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		499219111EB7368200610ED4 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				499219121EB736AC00610ED4 /* CentralManagerDelegate.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
 		49CEE0B81EB587520083B0D0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		49CEE0C31EB587520083B0D0 /* BlueToothTest */ = {
 			isa = PBXGroup;
 			children = (
+				499219111EB7368200610ED4 /* Class */,
 				49CEE0D61EB58F1A0083B0D0 /* Protocal */,
 				49CEE0C41EB587520083B0D0 /* AppDelegate.swift */,
 				49CEE0C61EB587520083B0D0 /* ViewController.swift */,
@@ -162,6 +173,7 @@
 			files = (
 				49CEE0C71EB587520083B0D0 /* ViewController.swift in Sources */,
 				49CEE0D91EB58F760083B0D0 /* ExLayer.swift in Sources */,
+				499219131EB736AC00610ED4 /* CentralManagerDelegate.swift in Sources */,
 				49CEE0C51EB587520083B0D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +340,7 @@
 				49CEE0D51EB587520083B0D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
