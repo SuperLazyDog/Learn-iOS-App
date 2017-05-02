@@ -24,28 +24,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="伟达蓝牙测试" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ3-PH-Nhw">
-                                <rect key="frame" x="103" y="50" width="169" height="67.5"/>
+                                <rect key="frame" x="103" y="50" width="169" height="68"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="gQ3-PH-Nhw" secondAttribute="height" multiplier="5:2" id="IAa-Pl-TPv"/>
+                                    <constraint firstAttribute="width" secondItem="gQ3-PH-Nhw" secondAttribute="height" multiplier="169:68" id="ibt-KD-uQ4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snq-TA-AVF">
-                                <rect key="frame" x="225.5" y="207.5" width="104.5" height="35"/>
-                                <state key="normal" title="结束测试">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="endTestBut:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8F8-NL-bAf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yt-Oe-Ldz">
-                                <rect key="frame" x="45" y="207.5" width="104.5" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="1yt-Oe-Ldz" secondAttribute="height" multiplier="3:1" id="L7w-7R-awj"/>
-                                </constraints>
+                                <rect key="frame" x="15" y="208" width="104.5" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.6203900202" blue="0.41559852320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="开始测试">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -54,43 +43,73 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="请开始测试" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNC-Cd-QOW">
-                                <rect key="frame" x="67" y="322.5" width="241" height="301"/>
+                                <rect key="frame" x="67" y="323" width="241" height="301"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HY-bM-cD0">
                                 <rect key="frame" x="67" y="268" width="241" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9HY-bM-cD0" secondAttribute="height" multiplier="241:50" id="NQm-HK-aaB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUe-TE-myj">
+                                <rect key="frame" x="135" y="208" width="105" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.82186162939999996" blue="0.24733102479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="fRZ-8g-219"/>
+                                </constraints>
+                                <state key="normal" title="子机测试">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTestPeripheralBut:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tx-m0-BBZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snq-TA-AVF">
+                                <rect key="frame" x="255" y="208" width="105" height="35"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="结束测试">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="endTestBut:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8F8-NL-bAf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="snq-TA-AVF" firstAttribute="height" secondItem="1yt-Oe-Ldz" secondAttribute="height" id="1J8-Hj-i0M"/>
-                            <constraint firstItem="1yt-Oe-Ldz" firstAttribute="top" secondItem="gQ3-PH-Nhw" secondAttribute="bottom" constant="90" id="1yn-MI-4Ff"/>
-                            <constraint firstItem="snq-TA-AVF" firstAttribute="width" secondItem="1yt-Oe-Ldz" secondAttribute="height" multiplier="3:1" id="3r3-OD-aOS"/>
-                            <constraint firstItem="YNC-Cd-QOW" firstAttribute="top" secondItem="1yt-Oe-Ldz" secondAttribute="bottom" constant="80" id="4Yb-Og-FPb"/>
-                            <constraint firstItem="9HY-bM-cD0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6pZ-sE-9Fn"/>
-                            <constraint firstItem="YNC-Cd-QOW" firstAttribute="top" secondItem="9HY-bM-cD0" secondAttribute="bottom" constant="4.5" id="9gV-LI-QYF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YNC-Cd-QOW" secondAttribute="bottom" constant="43.5" id="AUC-oe-5gh"/>
-                            <constraint firstItem="snq-TA-AVF" firstAttribute="leading" secondItem="1yt-Oe-Ldz" secondAttribute="trailing" constant="76" id="Ahl-Xx-gh5"/>
-                            <constraint firstItem="gQ3-PH-Nhw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="87" id="Bl3-ps-qkB"/>
-                            <constraint firstItem="snq-TA-AVF" firstAttribute="width" secondItem="1yt-Oe-Ldz" secondAttribute="width" id="DCa-si-Ioo"/>
-                            <constraint firstItem="gQ3-PH-Nhw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M5z-nl-m9b"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="snq-TA-AVF" secondAttribute="trailing" constant="29" id="SpS-rW-L8G"/>
-                            <constraint firstItem="gQ3-PH-Nhw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="Sx8-LS-pMU"/>
-                            <constraint firstItem="snq-TA-AVF" firstAttribute="top" secondItem="gQ3-PH-Nhw" secondAttribute="bottom" constant="90" id="XEC-VX-GjS"/>
-                            <constraint firstItem="1yt-Oe-Ldz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="Z5T-Ym-ARl"/>
-                            <constraint firstItem="9HY-bM-cD0" firstAttribute="width" secondItem="YNC-Cd-QOW" secondAttribute="width" id="cgh-5T-4lJ"/>
-                            <constraint firstItem="YNC-Cd-QOW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="ijJ-o1-sO9"/>
-                            <constraint firstItem="YNC-Cd-QOW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ne7-p2-oKT"/>
-                            <constraint firstItem="9HY-bM-cD0" firstAttribute="top" secondItem="1yt-Oe-Ldz" secondAttribute="bottom" constant="25.5" id="tb6-n5-Bag"/>
+                            <constraint firstItem="snq-TA-AVF" firstAttribute="width" secondItem="tUe-TE-myj" secondAttribute="width" id="08S-JT-zOD"/>
+                            <constraint firstItem="tUe-TE-myj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0qY-GM-GZW"/>
+                            <constraint firstItem="gQ3-PH-Nhw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="3Nj-0y-ZuE"/>
+                            <constraint firstItem="YNC-Cd-QOW" firstAttribute="top" secondItem="9HY-bM-cD0" secondAttribute="bottom" constant="5" id="6Cb-be-Oxl"/>
+                            <constraint firstItem="snq-TA-AVF" firstAttribute="top" secondItem="tUe-TE-myj" secondAttribute="top" id="AiM-TM-RKy"/>
+                            <constraint firstItem="gQ3-PH-Nhw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="87" id="EGn-Jl-dsE"/>
+                            <constraint firstItem="1yt-Oe-Ldz" firstAttribute="width" secondItem="tUe-TE-myj" secondAttribute="width" id="JVw-c4-WSf"/>
+                            <constraint firstItem="YNC-Cd-QOW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LOA-mL-l8R"/>
+                            <constraint firstItem="1yt-Oe-Ldz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="Nuk-Ze-hid"/>
+                            <constraint firstItem="9HY-bM-cD0" firstAttribute="top" secondItem="tUe-TE-myj" secondAttribute="bottom" constant="25" id="SqT-cN-bp3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YNC-Cd-QOW" secondAttribute="bottom" constant="43" id="UFV-70-BsX"/>
+                            <constraint firstItem="9HY-bM-cD0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="aGB-Iz-qDu"/>
+                            <constraint firstItem="1yt-Oe-Ldz" firstAttribute="top" secondItem="tUe-TE-myj" secondAttribute="top" id="bfJ-fu-b9g"/>
+                            <constraint firstItem="YNC-Cd-QOW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="cL0-uJ-wPV"/>
+                            <constraint firstItem="9HY-bM-cD0" firstAttribute="top" secondItem="tUe-TE-myj" secondAttribute="bottom" constant="25" id="hqp-5K-wsq"/>
+                            <constraint firstItem="tUe-TE-myj" firstAttribute="leading" secondItem="1yt-Oe-Ldz" secondAttribute="trailing" constant="15" id="jEP-j7-3PQ"/>
+                            <constraint firstItem="gQ3-PH-Nhw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="khi-Kn-hJq"/>
+                            <constraint firstItem="snq-TA-AVF" firstAttribute="leading" secondItem="tUe-TE-myj" secondAttribute="trailing" constant="15" id="oqa-8v-Z8K"/>
+                            <constraint firstItem="tUe-TE-myj" firstAttribute="top" secondItem="gQ3-PH-Nhw" secondAttribute="bottom" constant="90" id="rLJ-vE-Wkt"/>
+                            <constraint firstItem="1yt-Oe-Ldz" firstAttribute="height" secondItem="tUe-TE-myj" secondAttribute="height" id="u6H-2w-qfJ"/>
+                            <constraint firstItem="9HY-bM-cD0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yD7-k6-qlc"/>
+                            <constraint firstItem="snq-TA-AVF" firstAttribute="height" secondItem="tUe-TE-myj" secondAttribute="height" id="ypo-gJ-aQX"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="endTestButton" destination="snq-TA-AVF" id="xBg-MD-Zd1"/>
                         <outlet property="startTestButton" destination="1yt-Oe-Ldz" id="obu-3f-0kK"/>
+                        <outlet property="startTestPeripheralButton" destination="tUe-TE-myj" id="M1F-SM-jYg"/>
                         <outlet property="testResultTextView" destination="YNC-Cd-QOW" id="zgZ-7X-p3q"/>
                         <outlet property="testResultTitleLabel" destination="9HY-bM-cD0" id="Nhz-FZ-0kP"/>
                         <outlet property="testTitleLabel" destination="gQ3-PH-Nhw" id="NTJ-St-6KI"/>

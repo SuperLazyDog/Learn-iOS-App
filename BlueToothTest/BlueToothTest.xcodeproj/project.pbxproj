@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		499219131EB736AC00610ED4 /* CentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219121EB736AC00610ED4 /* CentralManagerDelegate.swift */; };
+		499219151EB7383300610ED4 /* ExLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219141EB7383300610ED4 /* ExLayer.swift */; };
+		4992191A1EB7537E00610ED4 /* ExCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219161EB7537E00610ED4 /* ExCALayer.swift */; };
+		4992191B1EB7537E00610ED4 /* ExString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219171EB7537E00610ED4 /* ExString.swift */; };
+		4992191C1EB7537E00610ED4 /* LayerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219181EB7537E00610ED4 /* LayerSet.swift */; };
+		4992191D1EB7537E00610ED4 /* Stoppable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219191EB7537E00610ED4 /* Stoppable.swift */; };
 		49CEE0C51EB587520083B0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEE0C41EB587520083B0D0 /* AppDelegate.swift */; };
 		49CEE0C71EB587520083B0D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEE0C61EB587520083B0D0 /* ViewController.swift */; };
 		49CEE0CA1EB587520083B0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CEE0C81EB587520083B0D0 /* Main.storyboard */; };
 		49CEE0CC1EB587520083B0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CEE0CB1EB587520083B0D0 /* Assets.xcassets */; };
 		49CEE0CF1EB587520083B0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CEE0CD1EB587520083B0D0 /* LaunchScreen.storyboard */; };
-		49CEE0D91EB58F760083B0D0 /* ExLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEE0D81EB58F760083B0D0 /* ExLayer.swift */; };
 		49CEE0DC1EB5A1160083B0D0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CEE0DB1EB5A1160083B0D0 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		499219121EB736AC00610ED4 /* CentralManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CentralManagerDelegate.swift; path = Class/CentralManagerDelegate.swift; sourceTree = "<group>"; };
+		499219141EB7383300610ED4 /* ExLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExLayer.swift; path = Protocal/ExLayer.swift; sourceTree = "<group>"; };
+		499219161EB7537E00610ED4 /* ExCALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExCALayer.swift; path = Protocal/ExCALayer.swift; sourceTree = "<group>"; };
+		499219171EB7537E00610ED4 /* ExString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExString.swift; path = Protocal/ExString.swift; sourceTree = "<group>"; };
+		499219181EB7537E00610ED4 /* LayerSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerSet.swift; path = Protocal/LayerSet.swift; sourceTree = "<group>"; };
+		499219191EB7537E00610ED4 /* Stoppable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stoppable.swift; path = Protocal/Stoppable.swift; sourceTree = "<group>"; };
 		49CEE0C11EB587520083B0D0 /* BlueToothTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueToothTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CEE0C41EB587520083B0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49CEE0C61EB587520083B0D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +35,6 @@
 		49CEE0CB1EB587520083B0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49CEE0CE1EB587520083B0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49CEE0D01EB587520083B0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49CEE0D81EB58F760083B0D0 /* ExLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExLayer.swift; sourceTree = "<group>"; };
 		49CEE0DB1EB5A1160083B0D0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -85,7 +93,11 @@
 		49CEE0D61EB58F1A0083B0D0 /* Protocal */ = {
 			isa = PBXGroup;
 			children = (
-				49CEE0D81EB58F760083B0D0 /* ExLayer.swift */,
+				499219161EB7537E00610ED4 /* ExCALayer.swift */,
+				499219171EB7537E00610ED4 /* ExString.swift */,
+				499219181EB7537E00610ED4 /* LayerSet.swift */,
+				499219191EB7537E00610ED4 /* Stoppable.swift */,
+				499219141EB7383300610ED4 /* ExLayer.swift */,
 			);
 			name = Protocal;
 			sourceTree = "<group>";
@@ -172,7 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				49CEE0C71EB587520083B0D0 /* ViewController.swift in Sources */,
-				49CEE0D91EB58F760083B0D0 /* ExLayer.swift in Sources */,
+				4992191C1EB7537E00610ED4 /* LayerSet.swift in Sources */,
+				4992191B1EB7537E00610ED4 /* ExString.swift in Sources */,
+				499219151EB7383300610ED4 /* ExLayer.swift in Sources */,
+				4992191D1EB7537E00610ED4 /* Stoppable.swift in Sources */,
+				4992191A1EB7537E00610ED4 /* ExCALayer.swift in Sources */,
 				499219131EB736AC00610ED4 /* CentralManagerDelegate.swift in Sources */,
 				49CEE0C51EB587520083B0D0 /* AppDelegate.swift in Sources */,
 			);
