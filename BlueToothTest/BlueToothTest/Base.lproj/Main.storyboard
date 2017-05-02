@@ -35,12 +35,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yt-Oe-Ldz">
                                 <rect key="frame" x="15" y="208" width="104.5" height="35"/>
                                 <color key="backgroundColor" red="1" green="0.6203900202" blue="0.41559852320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="开始测试">
+                                <state key="normal" title="主机测试">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="startTestBut:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KS1-ec-nBd"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="请开始测试" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNC-Cd-QOW">
                                 <rect key="frame" x="67" y="323" width="241" height="301"/>
@@ -65,9 +62,6 @@
                                 <state key="normal" title="子机测试">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="startTestPeripheralBut:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tx-m0-BBZ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snq-TA-AVF">
                                 <rect key="frame" x="255" y="208" width="105" height="35"/>
@@ -107,9 +101,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="centralTestButton" destination="1yt-Oe-Ldz" id="Oeb-kS-hTf"/>
                         <outlet property="endTestButton" destination="snq-TA-AVF" id="xBg-MD-Zd1"/>
-                        <outlet property="startTestButton" destination="1yt-Oe-Ldz" id="obu-3f-0kK"/>
-                        <outlet property="startTestPeripheralButton" destination="tUe-TE-myj" id="M1F-SM-jYg"/>
+                        <outlet property="peripheralButton" destination="tUe-TE-myj" id="jSs-w5-tTx"/>
                         <outlet property="testResultTextView" destination="YNC-Cd-QOW" id="zgZ-7X-p3q"/>
                         <outlet property="testResultTitleLabel" destination="9HY-bM-cD0" id="Nhz-FZ-0kP"/>
                         <outlet property="testTitleLabel" destination="gQ3-PH-Nhw" id="NTJ-St-6KI"/>

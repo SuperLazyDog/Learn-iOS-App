@@ -9,19 +9,16 @@
 import UIKit
 import CoreBluetooth
 
-class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPeripheralManagerDelegate, CBPeripheralDelegate {
+class ViewController: UIViewController, LayerSet{
     //----------------------------------------------------------------------
     //                             プロパティ
     //----------------------------------------------------------------------
-    var centralManager: CBCentralManager! = nil
-    var peripheral: CBPeripheral! = nil
-    var peripheralManager: CBPeripheralManager! = nil
     //----------------------------------------------------------------------
     //                           UIコントロール
     //----------------------------------------------------------------------
     @IBOutlet weak var testTitleLabel: UILabel!//テストのタイトルラベル
-    @IBOutlet weak var startTestButton: UIButton!//テスト開始ボタン
-    @IBOutlet weak var startTestPeripheralButton: UIButton!//ペリフェラルテスト開始ボタン
+    @IBOutlet weak var centralTestButton: UIButton!//テスト開始ボタン
+    @IBOutlet weak var peripheralButton: UIButton!//ペリフェラルテスト開始ボタン 
     @IBOutlet weak var endTestButton: UIButton!//テスト終了ボタン
     @IBOutlet weak var testResultTitleLabel: UILabel!//テスト結果タイトルラベル
     @IBOutlet weak var testResultTextView: UITextView!//テスト結果詳細テキストビュー
@@ -35,21 +32,19 @@ class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPe
         super.viewDidLoad()
         //--------------------------UI初期処理-------------------------------
         testTitleLabel.layer.setBoder(color: UIColor.black, thickness: normalThickness)
-        startTestButton.layer.setBoder(color: UIColor.black, thickness: normalThickness)
-        startTestPeripheralButton.layer.setBoder(color: UIColor.black, thickness: normalThickness)
+        centralTestButton.layer.setBoder(color: UIColor.black, thickness: normalThickness)
+        peripheralButton.layer.setBoder(color: UIColor.black, thickness: normalThickness)
         endTestButton.layer.setBoder(color: UIColor.black, thickness: normalThickness)
         testResultTitleLabel.layer.setBoder(color: UIColor.black, thickness: normalThickness)
         testResultTextView.layer.setBoder(color: UIColor.black, thickness: normalThickness)
         //ボーダーを丸く設定する
-        setRadioCorner(startTestButton, startTestButton.layer.frame.width/6)
-        setRadioCorner(startTestPeripheralButton, startTestButton.layer.frame.width/6)
-        setRadioCorner(endTestButton, startTestButton.layer.frame.width/6)
+        setRadioCorner(centralTestButton, centralTestButton.layer.frame.width/6)
+        setRadioCorner(peripheralButton, centralTestButton.layer.frame.width/6)
+        setRadioCorner(endTestButton, centralTestButton.layer.frame.width/6)
         //-----------------------------BLE----------------------------------
         let string = testResultTextView.text!
         testResultTextView.text = string + "\n"
         //セントラル、ペリフェラルのマネジャーを作る
-        centralManager = CBCentralManager(delegate: self, queue: nil, options: nil)
-        peripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: nil)
     }
     //----------------------------
     //didReceiveMemoryWarning
@@ -70,7 +65,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPe
     //---------------------------
     //        セントラル
     //---------------------------
-    @IBAction func startTestBut(_ sender: UIButton, forEvent event: UIEvent) {
+    /*@IBAction func startTestBut(_ sender: UIButton, forEvent event: UIEvent) {
         //scan
         if centralManager.state == .poweredOn {
             myServiceUUID = CBUUID(string: "F4A5F4BA-C26A-49EC-9250-2A0C2C4F12AE")
@@ -300,6 +295,6 @@ class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPe
         if let characteristics = service.characteristics {
             print("\(characteristics.count)個のキャラクタリスティックを発見。\(characteristics)")
         }
-    }
+    }*/
 }
 
