@@ -3,6 +3,9 @@
     {
       "idiom" : "universal",
       "filename" : "first.pdf"
+    },
+    {
+      "idiom" : "iphone"
     }
   ],
   "info" : {
