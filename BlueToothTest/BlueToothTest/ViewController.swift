@@ -9,7 +9,7 @@
 import UIKit
 import CoreBluetooth
 
-class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPeripheralManagerDelegate {
+class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPeripheralManagerDelegate, CBPeripheralDelegate {
     //----------------------------------------------------------------------
     //                             プロパティ
     //----------------------------------------------------------------------
@@ -67,9 +67,13 @@ class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPe
     //                              button func
     //----------------------------------------------------------------------
     //touch up inside
+    //---------------------------
+    //        セントラル
+    //---------------------------
     @IBAction func startTestBut(_ sender: UIButton, forEvent event: UIEvent) {
         //scan
         if centralManager.state == .poweredOn {
+            myServiceUUID = CBUUID(string: "F4A5F4BA-C26A-49EC-9250-2A0C2C4F12AE")
             centralManager.scanForPeripherals(withServices: nil, options: nil)
             print("start scan")
         }else {
@@ -81,15 +85,25 @@ class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPe
             print("found some service")
             centralManager.stopScan()
             centralManager.connect(peripheral, options: nil)
+            peripheral.discoverServices(nil)
         }
         
     }
+    
+    //---------------------------
+    //       ペリフェラル
+    //---------------------------
+    //create service
+    var myUUID: CBUUID! = nil
+    var myCharacteristc:CBMutableCharacteristic! = nil
+    var myServiceUUID: CBUUID! = nil
+    var myService: CBMutableService! = nil
     @IBAction func startTestPeripheralBut(_ sender: UIButton, forEvent event: UIEvent) {
         //create service
-        let myUUID = CBUUID(string: "8F235970-B3A1-4409-9AEF-129BB336F4A3")
-        let myCharacteristc = CBMutableCharacteristic(type: myUUID, properties: CBCharacteristicProperties.read, value: nil, permissions: CBAttributePermissions.readable)
-        let myServiceUUID = CBUUID(string: "00E39FAF-8770-4C8B-9AF2-9FD097B48505")
-        let myService = CBMutableService(type: myServiceUUID, primary: true)
+        myUUID = CBUUID(string: "8F235970-B3A1-4409-9AEF-129BB336F4A3")
+        myCharacteristc = CBMutableCharacteristic(type: myUUID, properties: CBCharacteristicProperties.read, value: Data(base64Encoded: "as"), permissions: CBAttributePermissions.readable)
+        myServiceUUID = CBUUID(string: "00E39FAF-8770-4C8B-9AF2-9FD097B48505")
+        myService = CBMutableService(type: myServiceUUID, primary: true)
         myService.characteristics = [myCharacteristc]
         //add service
         if peripheralManager.state == .poweredOn {
@@ -153,11 +167,12 @@ class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPe
     }
     //didDiscover
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        let state = "discoverd peripheral: \(peripheral)\n"
+        let state = "discoverd peripheral: \(peripheral.services)\n"
         let text = testResultTextView.text!
         print(state)
         testResultTextView.text = text + state
         self.peripheral = peripheral
+        self.peripheral.delegate = self
     }
     //didConnect
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
@@ -226,6 +241,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPe
         }
         let sucMsg = "add service successfully\n"
         print(sucMsg)
+        print(service)
         testResultTextView.text = originMsg + sucMsg
         
     }
@@ -243,7 +259,47 @@ class ViewController: UIViewController, CBCentralManagerDelegate, LayerSet, CBPe
         print(sucMsg)
         
     }
+    //didReceiveRead, didReceiveWrite
+    func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveRead request: CBATTRequest) {
+        if request.characteristic.uuid.isEqual(myCharacteristc.uuid) {
+            request.value = myCharacteristc.value
+            
+            peripheral.respond(to: request, withResult: .success)
+        }
+    }
+    func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveWrite requests: [CBATTRequest]) {
+        for request in requests {
+            if request.characteristic.uuid.isEqual(myCharacteristc.uuid) {
+                myCharacteristc.value = request.characteristic.value
+                peripheral.respond(to: request, withResult: .success)
+            }else {
+                peripheral.respond(to: request, withResult: .writeNotPermitted)
+                return
+            }
+        }
+    }
+    //didSubscribeTo, didUnsubscribeFrom
+    func peripheralManager(_ peripheral: CBPeripheralManager, central: CBCentral, didSubscribeTo characteristic: CBCharacteristic) {
+        print("Subscribe request by: \(central)")
+    }
+    func peripheralManager(_ peripheral: CBPeripheralManager, central: CBCentral, didUnsubscribeFrom characteristic: CBCharacteristic) {
+        print("Unsubscribe request by: \(central)")
+    }
     
-
+    
+    //peripheral delegate
+    func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
+        guard let services = peripheral.services else{
+            print("error")
+            return
+        }
+        print("\(services.count)個のサービスを発見。\(services)")
+    }
+    
+    func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
+        if let characteristics = service.characteristics {
+            print("\(characteristics.count)個のキャラクタリスティックを発見。\(characteristics)")
+        }
+    }
 }
 
