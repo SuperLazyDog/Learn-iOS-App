@@ -57,7 +57,16 @@ class CentralManagerPro: NSObject, CBCentralManagerDelegate {
             return false
         }
     }
-    //
+    //接続をキャンセル
+    @discardableResult
+    func cancelConnect() -> Bool {
+        if peripheral != nil {
+            centralManager.cancelPeripheralConnection(peripheral)
+            return true
+        }
+        return false
+    }
+    //ペリフェラルを取得
     func getPeripheral() -> CBPeripheral {
         return peripheral
     }
@@ -103,9 +112,18 @@ class CentralManagerPro: NSObject, CBCentralManagerDelegate {
         let state = "central: connected!\n"
         print(state)
     }
+    //didDisconnect
+    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+        guard let error = error else {
+            let state = "central: disconnected"
+            print(state)
+            return
+        }
+        print("central: disconnected error \(error)")
+    }
     //didFailToConnect
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
         let state = "central: failed to connected\n"
-        print(state)
+        print(state + error.debugDescription)
     }
 }
