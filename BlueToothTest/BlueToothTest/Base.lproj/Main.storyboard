@@ -38,6 +38,9 @@
                                 <state key="normal" title="主机测试">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="centralTestBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XeL-bP-eEh"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="请开始测试" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNC-Cd-QOW">
                                 <rect key="frame" x="67" y="323" width="241" height="301"/>
@@ -62,6 +65,9 @@
                                 <state key="normal" title="子机测试">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="peripheralBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SD2-v5-UCl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snq-TA-AVF">
                                 <rect key="frame" x="255" y="208" width="105" height="35"/>

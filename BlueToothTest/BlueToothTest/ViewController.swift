@@ -13,6 +13,9 @@ class ViewController: UIViewController, LayerSet{
     //----------------------------------------------------------------------
     //                             プロパティ
     //----------------------------------------------------------------------
+    let centralMode = CentralManagerPro()
+    var peripheral = PeripheralPro()
+    let peripheralMode = PeripheralManagerPro()
     //----------------------------------------------------------------------
     //                           UIコントロール
     //----------------------------------------------------------------------
@@ -62,6 +65,27 @@ class ViewController: UIViewController, LayerSet{
     //                              button func
     //----------------------------------------------------------------------
     //touch up inside
+    //-------------------------------------------------------------
+    //                     Central Test But
+    //-------------------------------------------------------------
+    @IBAction func centralTestBut(_ sender: UIButton) {
+        centralMode.startScan()
+    }
+    //-------------------------------------------------------------
+    //                     Peripheral Test But
+    //-------------------------------------------------------------
+    var myUUID: CBUUID! = nil
+    var myCharacteristc:CBMutableCharacteristic! = nil
+    var myServiceUUID: CBUUID! = nil
+    var myService: CBMutableService! = nil
+    @IBAction func peripheralBut(_ sender: UIButton) {
+        let characteristic = peripheralMode.createMutableCharacteristic(uuidAs: "52C31018-2EC8-41FE-9A85-8ED091B6AEA4")
+        let service = peripheralMode.createPriService(uuidAs: "BA60ABED-AAED-4DCA-A04E-BBF21DEFB6DD")
+        peripheralMode.addCharacteristics(chars: [characteristic], into: service)
+        peripheralMode.addService(service: service)
+        peripheralMode.startAdvertising(UUID: "BA60ABED-AAED-4DCA-A04E-BBF21DEFB6DD")
+    }
+    
     //---------------------------
     //        セントラル
     //---------------------------
@@ -171,7 +195,7 @@ class ViewController: UIViewController, LayerSet{
     }
     //didConnect
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
-        let state = "connected!\n"
+        let state = "central: connected!\n"
         let text = testResultTextView.text!
         print(state)
         testResultTextView.text = text + state

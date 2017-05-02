@@ -13,6 +13,9 @@
 		4992191B1EB7537E00610ED4 /* ExString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219171EB7537E00610ED4 /* ExString.swift */; };
 		4992191C1EB7537E00610ED4 /* LayerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219181EB7537E00610ED4 /* LayerSet.swift */; };
 		4992191D1EB7537E00610ED4 /* Stoppable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219191EB7537E00610ED4 /* Stoppable.swift */; };
+		499219221EB8673D00610ED4 /* CentralManagerPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219211EB8673D00610ED4 /* CentralManagerPro.swift */; };
+		499219241EB867C800610ED4 /* PeripheralPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219231EB867C800610ED4 /* PeripheralPro.swift */; };
+		499219261EB89E5100610ED4 /* PeripheralManagerPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219251EB89E5100610ED4 /* PeripheralManagerPro.swift */; };
 		49CEE0C51EB587520083B0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEE0C41EB587520083B0D0 /* AppDelegate.swift */; };
 		49CEE0C71EB587520083B0D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEE0C61EB587520083B0D0 /* ViewController.swift */; };
 		49CEE0CA1EB587520083B0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CEE0C81EB587520083B0D0 /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 		499219171EB7537E00610ED4 /* ExString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExString.swift; path = Protocal/ExString.swift; sourceTree = "<group>"; };
 		499219181EB7537E00610ED4 /* LayerSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerSet.swift; path = Protocal/LayerSet.swift; sourceTree = "<group>"; };
 		499219191EB7537E00610ED4 /* Stoppable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stoppable.swift; path = Protocal/Stoppable.swift; sourceTree = "<group>"; };
+		499219211EB8673D00610ED4 /* CentralManagerPro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralManagerPro.swift; sourceTree = "<group>"; };
+		499219231EB867C800610ED4 /* PeripheralPro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralPro.swift; sourceTree = "<group>"; };
+		499219251EB89E5100610ED4 /* PeripheralManagerPro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralManagerPro.swift; sourceTree = "<group>"; };
 		49CEE0C11EB587520083B0D0 /* BlueToothTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueToothTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CEE0C41EB587520083B0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49CEE0C61EB587520083B0D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,9 +59,35 @@
 		499219111EB7368200610ED4 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				499219121EB736AC00610ED4 /* CentralManagerDelegate.swift */,
+				4992191E1EB8662B00610ED4 /* BlueTooth */,
 			);
 			name = Class;
+			sourceTree = "<group>";
+		};
+		4992191E1EB8662B00610ED4 /* BlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				499219201EB8663700610ED4 /* Peripheral */,
+				4992191F1EB8663200610ED4 /* Central */,
+			);
+			name = BlueTooth;
+			sourceTree = "<group>";
+		};
+		4992191F1EB8663200610ED4 /* Central */ = {
+			isa = PBXGroup;
+			children = (
+				499219211EB8673D00610ED4 /* CentralManagerPro.swift */,
+				499219231EB867C800610ED4 /* PeripheralPro.swift */,
+			);
+			name = Central;
+			sourceTree = "<group>";
+		};
+		499219201EB8663700610ED4 /* Peripheral */ = {
+			isa = PBXGroup;
+			children = (
+				499219251EB89E5100610ED4 /* PeripheralManagerPro.swift */,
+			);
+			name = Peripheral;
 			sourceTree = "<group>";
 		};
 		49CEE0B81EB587520083B0D0 = {
@@ -79,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				499219111EB7368200610ED4 /* Class */,
+				499219121EB736AC00610ED4 /* CentralManagerDelegate.swift */,
 				49CEE0D61EB58F1A0083B0D0 /* Protocal */,
 				49CEE0C41EB587520083B0D0 /* AppDelegate.swift */,
 				49CEE0C61EB587520083B0D0 /* ViewController.swift */,
@@ -186,9 +219,12 @@
 				49CEE0C71EB587520083B0D0 /* ViewController.swift in Sources */,
 				4992191C1EB7537E00610ED4 /* LayerSet.swift in Sources */,
 				4992191B1EB7537E00610ED4 /* ExString.swift in Sources */,
+				499219241EB867C800610ED4 /* PeripheralPro.swift in Sources */,
 				499219151EB7383300610ED4 /* ExLayer.swift in Sources */,
 				4992191D1EB7537E00610ED4 /* Stoppable.swift in Sources */,
+				499219221EB8673D00610ED4 /* CentralManagerPro.swift in Sources */,
 				4992191A1EB7537E00610ED4 /* ExCALayer.swift in Sources */,
+				499219261EB89E5100610ED4 /* PeripheralManagerPro.swift in Sources */,
 				499219131EB736AC00610ED4 /* CentralManagerDelegate.swift in Sources */,
 				49CEE0C51EB587520083B0D0 /* AppDelegate.swift in Sources */,
 			);
