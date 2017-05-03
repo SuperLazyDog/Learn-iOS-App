@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dmQ-Gl-ImG">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play Screen-->
+        <scene sceneID="Cly-Ha-ZlI">
+            <objects>
+                <viewController id="dmQ-Gl-ImG" customClass="PlayScreen" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ywx-oX-3uU"/>
+                        <viewControllerLayoutGuide type="bottom" id="oly-BS-5I5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="48W-4M-saJ">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="SQD-QI-Lkb">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MC-gY-CGC">
+                                <rect key="frame" x="515" y="241" width="120" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="取消生成">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="secondBut:" destination="dmQ-Gl-ImG" eventType="touchUpInside" id="gRy-Tm-gYG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mdL-L0-JNc">
+                                <rect key="frame" x="183" y="20" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="g4v-rJ-nM2"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfK-dI-Wn0">
+                                <rect key="frame" x="31" y="241" width="120" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gfK-dI-Wn0" secondAttribute="height" multiplier="3:1" id="FuZ-zb-SXx"/>
+                                    <constraint firstAttribute="width" constant="120" id="RON-aV-Obr"/>
+                                </constraints>
+                                <state key="normal" title="生成二维码">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="firstBut:" destination="dmQ-Gl-ImG" eventType="touchUpInside" id="g0S-8F-ICn"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="ueD-xW-jhG">
+                                <rect key="frame" x="500" y="59" width="150" height="150"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="cej-Iw-afv">
+                                <rect key="frame" x="16" y="59" width="150" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cej-Iw-afv" firstAttribute="bottom" secondItem="ueD-xW-jhG" secondAttribute="bottom" id="2gw-5m-Khj"/>
+                            <constraint firstItem="gfK-dI-Wn0" firstAttribute="top" secondItem="cej-Iw-afv" secondAttribute="bottom" constant="32" id="7hn-TK-3Da"/>
+                            <constraint firstItem="mdL-L0-JNc" firstAttribute="top" secondItem="ywx-oX-3uU" secondAttribute="bottom" id="CFD-yA-Lhw"/>
+                            <constraint firstItem="oly-BS-5I5" firstAttribute="top" secondItem="SQD-QI-Lkb" secondAttribute="bottom" id="CSu-Up-Ej4"/>
+                            <constraint firstItem="cej-Iw-afv" firstAttribute="top" secondItem="ywx-oX-3uU" secondAttribute="bottom" constant="39" id="Ig9-Bw-MX0"/>
+                            <constraint firstItem="SQD-QI-Lkb" firstAttribute="leading" secondItem="48W-4M-saJ" secondAttribute="leading" id="JYd-al-Vi0"/>
+                            <constraint firstItem="mdL-L0-JNc" firstAttribute="centerX" secondItem="SQD-QI-Lkb" secondAttribute="centerX" constant="-0.5" id="Mc1-bD-5rq"/>
+                            <constraint firstItem="ueD-xW-jhG" firstAttribute="leading" secondItem="mdL-L0-JNc" secondAttribute="trailing" constant="17" id="VTO-he-Hwp"/>
+                            <constraint firstItem="gfK-dI-Wn0" firstAttribute="centerY" secondItem="48W-4M-saJ" secondAttribute="centerY" constant="73.5" id="Xi6-Cy-LFX"/>
+                            <constraint firstItem="gfK-dI-Wn0" firstAttribute="centerX" secondItem="48W-4M-saJ" secondAttribute="centerX" constant="-242.5" id="YOO-DN-vD4"/>
+                            <constraint firstItem="gfK-dI-Wn0" firstAttribute="width" secondItem="6MC-gY-CGC" secondAttribute="width" id="ZlM-BL-KSL"/>
+                            <constraint firstItem="6MC-gY-CGC" firstAttribute="centerX" secondItem="48W-4M-saJ" secondAttribute="centerX" constant="241.5" id="cuv-uU-J50"/>
+                            <constraint firstItem="ueD-xW-jhG" firstAttribute="centerX" secondItem="6MC-gY-CGC" secondAttribute="centerX" id="eKA-z6-ayA"/>
+                            <constraint firstItem="cej-Iw-afv" firstAttribute="top" secondItem="ueD-xW-jhG" secondAttribute="top" id="gE5-kA-TVK"/>
+                            <constraint firstItem="cej-Iw-afv" firstAttribute="centerX" secondItem="gfK-dI-Wn0" secondAttribute="centerX" id="hx5-lu-4BL"/>
+                            <constraint firstItem="mdL-L0-JNc" firstAttribute="leading" secondItem="cej-Iw-afv" secondAttribute="trailing" constant="17" id="iQQ-D4-z4N"/>
+                            <constraint firstItem="gfK-dI-Wn0" firstAttribute="height" secondItem="6MC-gY-CGC" secondAttribute="height" id="imZ-a8-t4J"/>
+                            <constraint firstItem="6MC-gY-CGC" firstAttribute="centerY" secondItem="48W-4M-saJ" secondAttribute="centerY" constant="73.5" id="nLc-jV-9ik"/>
+                            <constraint firstAttribute="trailing" secondItem="SQD-QI-Lkb" secondAttribute="trailing" id="nRT-om-t3K"/>
+                            <constraint firstItem="SQD-QI-Lkb" firstAttribute="top" secondItem="48W-4M-saJ" secondAttribute="top" id="qSY-tR-KL9"/>
+                            <constraint firstItem="6MC-gY-CGC" firstAttribute="top" secondItem="mdL-L0-JNc" secondAttribute="bottom" constant="-79" id="yzT-k3-awZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstButton" destination="gfK-dI-Wn0" id="gPi-G2-HGQ"/>
+                        <outlet property="imageView" destination="mdL-L0-JNc" id="7xW-18-Kh5"/>
+                        <outlet property="leftImage" destination="cej-Iw-afv" id="TGa-SE-2XI"/>
+                        <outlet property="rightImage" destination="ueD-xW-jhG" id="f6J-gW-qg5"/>
+                        <outlet property="secondButton" destination="6MC-gY-CGC" id="jJF-C0-YiW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65h-eL-pIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1806.7466266866568" y="421.60000000000002"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="640" height="640"/>
+        <image name="Image-1" width="284" height="328"/>
+        <image name="Image-2" width="469" height="469"/>
+    </resources>
+</document>
