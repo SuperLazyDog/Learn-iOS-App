@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		499219281EBA1BF600610ED4 /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219271EBA1BF600610ED4 /* PlayScreen.swift */; };
 		49AED08B1EB39AE300E1BF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */; };
 		49AED08D1EB39AE300E1BF44 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AED08C1EB39AE300E1BF44 /* FirstViewController.swift */; };
 		49AED08F1EB39AE300E1BF44 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AED08E1EB39AE300E1BF44 /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		499219271EBA1BF600610ED4 /* PlayScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayScreen.swift; sourceTree = "<group>"; };
 		49AED0871EB39AE300E1BF44 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49AED08C1EB39AE300E1BF44 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */,
 				49AED08C1EB39AE300E1BF44 /* FirstViewController.swift */,
+				499219271EBA1BF600610ED4 /* PlayScreen.swift */,
 				49AED08E1EB39AE300E1BF44 /* SecondViewController.swift */,
 				49AED0901EB39AE300E1BF44 /* Main.storyboard */,
 				49AED0931EB39AE300E1BF44 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49AED08F1EB39AE300E1BF44 /* SecondViewController.swift in Sources */,
+				499219281EBA1BF600610ED4 /* PlayScreen.swift in Sources */,
 				49AED08B1EB39AE300E1BF44 /* AppDelegate.swift in Sources */,
 				49AED08D1EB39AE300E1BF44 /* FirstViewController.swift in Sources */,
 			);
