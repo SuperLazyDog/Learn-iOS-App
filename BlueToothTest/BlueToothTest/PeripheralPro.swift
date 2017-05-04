@@ -17,6 +17,8 @@ class PeripheralPro: NSObject, CBPeripheralDelegate {
     //              セントラルモードのため
     //------------------------------------------------
     var peripheral: CBPeripheral! = nil
+    var service: CBService! = nil
+    var characteristic: CBCharacteristic! = nil
     //------------------------------------------------------------------------
     //                            イニシャライザ
     //------------------------------------------------------------------------
@@ -30,6 +32,9 @@ class PeripheralPro: NSObject, CBPeripheralDelegate {
     func setPeripheral(peripheral: CBPeripheral) {
         self.peripheral = peripheral
         peripheral.delegate = self
+    }
+    func getService() -> CBService? {
+        return service
     }
     //-------------------------------------------------------
     //                 peripheral API
@@ -85,7 +90,9 @@ class PeripheralPro: NSObject, CBPeripheralDelegate {
             print("error")
             return
         }
-        print("\(services.count)個のサービスを発見。\(services)")
+        service = services[0]
+        self.discoverCharacteristics(characteristicUUIDs: [CBUUID(string: "52C31018-2EC8-41FE-9A85-8ED091B6AEA4")], for: self.getService()!)
+        print("Central Found \(services.count) service! \(services)\n\n")
     }
     //didDiscoverCharacteristicsFor
     func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
@@ -95,7 +102,8 @@ class PeripheralPro: NSObject, CBPeripheralDelegate {
         }
         
         let characteristics = service.characteristics
-        print("Found \(characteristics?.count ?? 0) characteristics! : \(characteristics)")
+        characteristic = characteristics![0]
+        print("Central Found \(characteristics?.count ?? 0) characteristics! : \(characteristics)")
     }
     //didUpdateValueFor
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {

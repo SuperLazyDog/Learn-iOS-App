@@ -68,8 +68,16 @@ class ViewController: UIViewController, LayerSet{
     //-------------------------------------------------------------
     //                     Central Test But
     //-------------------------------------------------------------
+    var isFirst = true
     @IBAction func centralTestBut(_ sender: UIButton) {
-        centralMode.startScan()
+        if isFirst {
+            centralMode.startScan()
+            isFirst = false
+        }else {
+            centralMode.connectPeripheral()
+            peripheral.setPeripheral(peripheral: centralMode.getPeripheral())
+        }
+        
     }
     //-------------------------------------------------------------
     //                     Peripheral Test But

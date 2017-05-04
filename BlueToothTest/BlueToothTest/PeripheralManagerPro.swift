@@ -72,7 +72,7 @@ class PeripheralManagerPro: NSObject, CBPeripheralManagerDelegate {
     }
     func startAdvertising(UUID: String) {
         //let serviceUUID = CBUUID(string: UUID)
-        peripheralManager.startAdvertising([CBAdvertisementDataLocalNameKey : UUID])
+        peripheralManager.startAdvertising([CBAdvertisementDataServiceUUIDsKey : [CBUUID(string: "690FFDA6-F0A6-43C4-AEE4-3C98C6F72BCC")]])
     }
     //stopAdvertising
     func stopAdvertising() {
@@ -103,10 +103,10 @@ class PeripheralManagerPro: NSObject, CBPeripheralManagerDelegate {
             let state = "peripheral state: unauthorized\n"
             print(state)
         case .poweredOff:
-            let state = "peripheral state: poweredOff\n"
+            let state = "peripheral state: power off\n"
             print(state)
         case .poweredOn:
-            let state = "peripheral state: poweredOn\n"
+            let state = "peripheral state: power on\n"
             print(state)
         case .resetting:
             let state = "peripheral state: resetting\n"
@@ -130,7 +130,7 @@ class PeripheralManagerPro: NSObject, CBPeripheralManagerDelegate {
             print("***Advertising ERROR: \(error)")
             return
         }
-        print("Advertising success")
+        print("Advertising successfully")
     }
     //didReceiveRead
     func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveRead request: CBATTRequest) {

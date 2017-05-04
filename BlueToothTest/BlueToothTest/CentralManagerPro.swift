@@ -18,6 +18,7 @@ class CentralManagerPro: NSObject, CBCentralManagerDelegate {
     //------------------------------------------------
     private var centralManager: CBCentralManager! = nil
     private var peripheral: CBPeripheral! = nil
+    private var peripheralPro = PeripheralPro()
     //------------------------------------------------------------------------
     //                            イニシャライザ
     //------------------------------------------------------------------------
@@ -35,7 +36,7 @@ class CentralManagerPro: NSObject, CBCentralManagerDelegate {
     @discardableResult
     func startScan() -> Bool {
         if centralManager.state == .poweredOn {
-            centralManager.scanForPeripherals(withServices: nil, options: nil)
+            centralManager.scanForPeripherals(withServices: [CBUUID(string: "690FFDA6-F0A6-43C4-AEE4-3C98C6F72BCC")], options: nil)
             print("start Scan")
             return true
         }else {
@@ -90,10 +91,10 @@ class CentralManagerPro: NSObject, CBCentralManagerDelegate {
             let state = "central state: unauthorized\n"
             print(state)
         case .poweredOff:
-            let state = "central state: poweredOff\n"
+            let state = "central state: power off\n"
             print(state)
         case .poweredOn:
-            let state = "central state: poweredOn\n"
+            let state = "central state: power on\n"
             print(state)
         case .resetting:
             let state = "central state: resetting\n"
@@ -109,8 +110,11 @@ class CentralManagerPro: NSObject, CBCentralManagerDelegate {
     }
     //didConnect
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
-        let state = "central: connected!\n"
+        let state = "Central: connected to Peripheral!\n"
         print(state)
+        //peripheral.delegate = peripheralPro
+        peripheralPro.setPeripheral(peripheral: peripheral)
+        peripheralPro.discoverService(serviceUUIDs: [CBUUID(string: "BA60ABED-AAED-4DCA-A04E-BBF21DEFB6DD")])
     }
     //didDisconnect
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
@@ -120,6 +124,7 @@ class CentralManagerPro: NSObject, CBCentralManagerDelegate {
             return
         }
         print("central: disconnected error \(error)")
+        print(error.localizedDescription)
     }
     //didFailToConnect
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
