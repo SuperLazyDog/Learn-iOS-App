@@ -41,6 +41,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4914826E1EC1C93D00F1C9A2 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				491482711EC1C98100F1C9A2 /* UIBasic */,
+				491482701EC1C95100F1C9A2 /* QRCode */,
+				4914826F1EC1C94600F1C9A2 /* default */,
+			);
+			name = Screen;
+			sourceTree = "<group>";
+		};
+		4914826F1EC1C94600F1C9A2 /* default */ = {
+			isa = PBXGroup;
+			children = (
+				49AED08C1EB39AE300E1BF44 /* FirstViewController.swift */,
+				49AED08E1EB39AE300E1BF44 /* SecondViewController.swift */,
+			);
+			name = default;
+			sourceTree = "<group>";
+		};
+		491482701EC1C95100F1C9A2 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				499219271EBA1BF600610ED4 /* PlayScreen.swift */,
+			);
+			name = QRCode;
+			sourceTree = "<group>";
+		};
+		491482711EC1C98100F1C9A2 /* UIBasic */ = {
+			isa = PBXGroup;
+			children = (
+				4914826C1EC0D9E800F1C9A2 /* ButtonTestScreen.swift */,
+			);
+			name = UIBasic;
+			sourceTree = "<group>";
+		};
 		49AED07E1EB39AE300E1BF44 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +95,12 @@
 		49AED0891EB39AE300E1BF44 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				4914826E1EC1C93D00F1C9A2 /* Screen */,
 				49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */,
-				49AED08C1EB39AE300E1BF44 /* FirstViewController.swift */,
-				499219271EBA1BF600610ED4 /* PlayScreen.swift */,
-				49AED08E1EB39AE300E1BF44 /* SecondViewController.swift */,
 				49AED0901EB39AE300E1BF44 /* Main.storyboard */,
 				49AED0931EB39AE300E1BF44 /* Assets.xcassets */,
 				49AED0951EB39AE300E1BF44 /* LaunchScreen.storyboard */,
 				49AED0981EB39AE300E1BF44 /* Info.plist */,
-				4914826C1EC0D9E800F1C9A2 /* ButtonTestScreen.swift */,
 			);
 			path = MyApp;
 			sourceTree = "<group>";
