@@ -19,9 +19,15 @@ class ButtonTestScreen: UIViewController, LayerSet {
     //-------------------------------------------------------------------
     //                 　　　　　　　UI
     //-------------------------------------------------------------------
+    //stepper
     @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var clearValueButton: UIButton!
     @IBOutlet weak var valueStepper: UIStepper!
+    @IBOutlet weak var changeValueLabel: UILabel!
+    
+    //switch
+    @IBOutlet weak var isBlackLabel: UILabel!
+    @IBOutlet weak var isBlackSwitch: UISwitch!
     //------------------------------------------------------------------------
     //                                 関数
     //------------------------------------------------------------------------
@@ -46,6 +52,14 @@ class ButtonTestScreen: UIViewController, LayerSet {
     }
     @IBAction func valueStp(_ sender: UIStepper, forEvent event: UIEvent) {
         valueLabel.text = valueStr + String(Int(sender.value))
+    }
+    
+    @IBAction func isBlackSwc(_ sender: UISwitch, forEvent event: UIEvent) {
+        if sender.isOn {
+            valueLabel.backgroundColor = UIColor.black
+        }else {
+            valueLabel.backgroundColor = UIColor(red: 243/255, green: 208/255, blue: 78/255, alpha: 1)
+        }
     }
     
     //-------------------------------------------------------------------
@@ -74,10 +88,15 @@ class ButtonTestScreen: UIViewController, LayerSet {
         //------------------------------------------------------------------------
         //                       　   初期UI処理
         //------------------------------------------------------------------------
+        //stepper
         setBorder(valueLabel, cgBlack, normalWidthInIphone)
         setRadioCorner(clearValueButton, clearValueButton.layer.frame.width/6)
         setBorder(clearValueButton, cgBlack, normalWidthInIphone)
         valueLabel.text = valueStr + String(Int(valueStepper.value))
+        setBorder(changeValueLabel, cgBlack, normalWidthInIphone)
+        //switch
+        setBorder(isBlackLabel, cgBlack, normalWidthInIphone)
+        isBlackSwitch.isOn = false
     }
     //------------------------------------------------------
     //               didReceiveMemoryWarning
