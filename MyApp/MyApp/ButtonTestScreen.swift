@@ -15,6 +15,7 @@ class ButtonTestScreen: UIViewController, LayerSet {
     //-------------------------------------------------------------------
     //                 　　　　　ローカルプロパティ
     //-------------------------------------------------------------------
+    let valueStr: String = "Value: "
     //-------------------------------------------------------------------
     //                 　　　　　　　UI
     //-------------------------------------------------------------------
@@ -27,9 +28,26 @@ class ButtonTestScreen: UIViewController, LayerSet {
     //-------------------------------------------------------------------
     //                 　　　　　カスタマイズ関数
     //-------------------------------------------------------------------
+    //------------------------------------------------------
+    //                    ローカル関数
+    //------------------------------------------------------
+    //------------------------------------------------------
+    //                   ボタン機能関数
+    //------------------------------------------------------
     func ok(_ sender: UIButton) {
         print("OK")
     }
+    //-------------------------------------------------------------------
+    //              　　　　　　     ボタン関数
+    //-------------------------------------------------------------------
+    @IBAction func clearValueBut(_ sender: UIButton, forEvent event: UIEvent) {
+        valueStepper.value = 0.0
+        valueLabel.text = valueStr + "0"
+    }
+    @IBAction func valueStp(_ sender: UIStepper, forEvent event: UIEvent) {
+        valueLabel.text = valueStr + String(Int(sender.value))
+    }
+    
     //-------------------------------------------------------------------
     //              　　　　　　 ViewController関数
     //-------------------------------------------------------------------
@@ -56,9 +74,10 @@ class ButtonTestScreen: UIViewController, LayerSet {
         //------------------------------------------------------------------------
         //                       　   初期UI処理
         //------------------------------------------------------------------------
-        /*setBorder(valueLabel, cgBlack, normalWidthInIphone)
+        setBorder(valueLabel, cgBlack, normalWidthInIphone)
         setRadioCorner(clearValueButton, clearValueButton.layer.frame.width/6)
-        setBorder(clearValueButton, cgBlack, normalWidthInIphone)*/
+        setBorder(clearValueButton, cgBlack, normalWidthInIphone)
+        valueLabel.text = valueStr + String(Int(valueStepper.value))
     }
     //------------------------------------------------------
     //               didReceiveMemoryWarning

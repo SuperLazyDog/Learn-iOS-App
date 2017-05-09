@@ -217,8 +217,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="qog-3g-sNh">
+                                <rect key="frame" x="0.0" y="20" width="667" height="355"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkA-qa-4tf">
                                 <rect key="frame" x="133.5" y="52" width="200" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.82186162939999996" blue="0.24733102479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="1gc-Iu-oS6"/>
                                     <constraint firstAttribute="height" constant="100" id="3kw-pr-H3P"/>
@@ -229,23 +233,37 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1x-p3-BAx">
                                 <rect key="frame" x="183.5" y="200" width="100.5" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="n1x-p3-BAx" secondAttribute="height" multiplier="2:1" id="99U-3R-Ahk"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearValueBut:forEvent:" destination="Elh-Sy-EEq" eventType="touchUpInside" id="yea-Ry-8AI"/>
+                                </connections>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Prf-gP-U1r">
                                 <rect key="frame" x="433.5" y="88" width="94" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.6203900202" blue="0.41559852320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="valueStp:forEvent:" destination="Elh-Sy-EEq" eventType="valueChanged" id="vaL-qY-IvJ"/>
+                                </connections>
                             </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="n1x-p3-BAx" firstAttribute="top" secondItem="nkA-qa-4tf" secondAttribute="bottom" constant="48" id="HeN-KG-a81"/>
                             <constraint firstItem="n1x-p3-BAx" firstAttribute="centerX" secondItem="nkA-qa-4tf" secondAttribute="centerX" id="MeZ-Eo-S78"/>
+                            <constraint firstItem="qog-3g-sNh" firstAttribute="top" secondItem="QLa-Xf-D9V" secondAttribute="bottom" id="NhZ-Vx-Ntr"/>
                             <constraint firstItem="ibp-Ew-g3Y" firstAttribute="top" secondItem="n1x-p3-BAx" secondAttribute="bottom" constant="125" id="Wy0-e5-YdZ"/>
                             <constraint firstItem="nkA-qa-4tf" firstAttribute="centerY" secondItem="tP5-ee-A2i" secondAttribute="centerY" constant="-85.5" id="a1a-8l-wz6"/>
+                            <constraint firstAttribute="trailing" secondItem="qog-3g-sNh" secondAttribute="trailing" id="gBf-zM-SIJ"/>
                             <constraint firstItem="Prf-gP-U1r" firstAttribute="leading" secondItem="nkA-qa-4tf" secondAttribute="trailing" constant="100" id="hZc-Ta-Oau"/>
+                            <constraint firstItem="qog-3g-sNh" firstAttribute="leading" secondItem="tP5-ee-A2i" secondAttribute="leading" id="ilb-Dr-nHY"/>
                             <constraint firstItem="Prf-gP-U1r" firstAttribute="centerY" secondItem="nkA-qa-4tf" secondAttribute="centerY" id="tht-fu-yRy"/>
+                            <constraint firstItem="ibp-Ew-g3Y" firstAttribute="top" secondItem="qog-3g-sNh" secondAttribute="bottom" id="wPL-jn-yDN"/>
                             <constraint firstItem="nkA-qa-4tf" firstAttribute="centerX" secondItem="tP5-ee-A2i" secondAttribute="centerX" constant="-100" id="yrW-DV-eoR"/>
                         </constraints>
                     </view>
@@ -257,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPP-TG-A3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2746" y="266"/>
+            <point key="canvasLocation" x="2745.8770614692658" y="264.80000000000001"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
