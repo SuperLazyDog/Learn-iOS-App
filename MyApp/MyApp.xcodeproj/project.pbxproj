@@ -8,6 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		4914826D1EC0D9E800F1C9A2 /* ButtonTestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914826C1EC0D9E800F1C9A2 /* ButtonTestScreen.swift */; };
+		4914829D1EC1D00F00F1C9A2 /* CreateStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914827F1EC1D00F00F1C9A2 /* CreateStorage.swift */; };
+		4914829E1EC1D00F00F1C9A2 /* GetUIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482801EC1D00F00F1C9A2 /* GetUIndex.swift */; };
+		4914829F1EC1D00F00F1C9A2 /* RandomChoose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482811EC1D00F00F1C9A2 /* RandomChoose.swift */; };
+		491482A01EC1D00F00F1C9A2 /* StringAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482821EC1D00F00F1C9A2 /* StringAdapter.swift */; };
+		491482A11EC1D00F00F1C9A2 /* CentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482851EC1D00F00F1C9A2 /* CentralManagerDelegate.swift */; };
+		491482A21EC1D00F00F1C9A2 /* CentralManagerPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482861EC1D00F00F1C9A2 /* CentralManagerPro.swift */; };
+		491482A31EC1D00F00F1C9A2 /* PeripheralPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482871EC1D00F00F1C9A2 /* PeripheralPro.swift */; };
+		491482A41EC1D00F00F1C9A2 /* PeripheralManagerPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482891EC1D00F00F1C9A2 /* PeripheralManagerPro.swift */; };
+		491482A51EC1D00F00F1C9A2 /* Atoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914828B1EC1D00F00F1C9A2 /* Atoms.swift */; };
+		491482A61EC1D00F00F1C9A2 /* AutoBattle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914828C1EC1D00F00F1C9A2 /* AutoBattle.swift */; };
+		491482A71EC1D00F00F1C9A2 /* CardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914828D1EC1D00F00F1C9A2 /* CardIdentifiable.swift */; };
+		491482A81EC1D00F00F1C9A2 /* Competitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914828E1EC1D00F00F1C9A2 /* Competitive.swift */; };
+		491482A91EC1D00F00F1C9A2 /* ExCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914828F1EC1D00F00F1C9A2 /* ExCALayer.swift */; };
+		491482AA1EC1D00F00F1C9A2 /* ExString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482901EC1D00F00F1C9A2 /* ExString.swift */; };
+		491482AB1EC1D00F00F1C9A2 /* LayerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482911EC1D00F00F1C9A2 /* LayerSet.swift */; };
+		491482AC1EC1D00F00F1C9A2 /* Stoppable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482921EC1D00F00F1C9A2 /* Stoppable.swift */; };
+		491482AD1EC1D00F00F1C9A2 /* UserIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482931EC1D00F00F1C9A2 /* UserIdentifiable.swift */; };
+		491482AF1EC1D00F00F1C9A2 /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482961EC1D00F00F1C9A2 /* Atom.swift */; };
+		491482B01EC1D00F00F1C9A2 /* AtomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482971EC1D00F00F1C9A2 /* AtomColor.swift */; };
+		491482B11EC1D00F00F1C9A2 /* BattleCharInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482981EC1D00F00F1C9A2 /* BattleCharInformation.swift */; };
+		491482B21EC1D00F00F1C9A2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482991EC1D00F00F1C9A2 /* Card.swift */; };
+		491482B31EC1D00F00F1C9A2 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914829A1EC1D00F00F1C9A2 /* Difficulty.swift */; };
+		491482B41EC1D00F00F1C9A2 /* StringType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914829B1EC1D00F00F1C9A2 /* StringType.swift */; };
 		499219281EBA1BF600610ED4 /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219271EBA1BF600610ED4 /* PlayScreen.swift */; };
 		49AED08B1EB39AE300E1BF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */; };
 		49AED08D1EB39AE300E1BF44 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AED08C1EB39AE300E1BF44 /* FirstViewController.swift */; };
@@ -19,6 +42,29 @@
 
 /* Begin PBXFileReference section */
 		4914826C1EC0D9E800F1C9A2 /* ButtonTestScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTestScreen.swift; sourceTree = "<group>"; };
+		4914827F1EC1D00F00F1C9A2 /* CreateStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStorage.swift; sourceTree = "<group>"; };
+		491482801EC1D00F00F1C9A2 /* GetUIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUIndex.swift; sourceTree = "<group>"; };
+		491482811EC1D00F00F1C9A2 /* RandomChoose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomChoose.swift; sourceTree = "<group>"; };
+		491482821EC1D00F00F1C9A2 /* StringAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringAdapter.swift; sourceTree = "<group>"; };
+		491482851EC1D00F00F1C9A2 /* CentralManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralManagerDelegate.swift; sourceTree = "<group>"; };
+		491482861EC1D00F00F1C9A2 /* CentralManagerPro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralManagerPro.swift; sourceTree = "<group>"; };
+		491482871EC1D00F00F1C9A2 /* PeripheralPro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralPro.swift; sourceTree = "<group>"; };
+		491482891EC1D00F00F1C9A2 /* PeripheralManagerPro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralManagerPro.swift; sourceTree = "<group>"; };
+		4914828B1EC1D00F00F1C9A2 /* Atoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atoms.swift; sourceTree = "<group>"; };
+		4914828C1EC1D00F00F1C9A2 /* AutoBattle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoBattle.swift; sourceTree = "<group>"; };
+		4914828D1EC1D00F00F1C9A2 /* CardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardIdentifiable.swift; sourceTree = "<group>"; };
+		4914828E1EC1D00F00F1C9A2 /* Competitive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Competitive.swift; sourceTree = "<group>"; };
+		4914828F1EC1D00F00F1C9A2 /* ExCALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExCALayer.swift; sourceTree = "<group>"; };
+		491482901EC1D00F00F1C9A2 /* ExString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExString.swift; sourceTree = "<group>"; };
+		491482911EC1D00F00F1C9A2 /* LayerSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerSet.swift; sourceTree = "<group>"; };
+		491482921EC1D00F00F1C9A2 /* Stoppable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stoppable.swift; sourceTree = "<group>"; };
+		491482931EC1D00F00F1C9A2 /* UserIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdentifiable.swift; sourceTree = "<group>"; };
+		491482961EC1D00F00F1C9A2 /* Atom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atom.swift; sourceTree = "<group>"; };
+		491482971EC1D00F00F1C9A2 /* AtomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomColor.swift; sourceTree = "<group>"; };
+		491482981EC1D00F00F1C9A2 /* BattleCharInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleCharInformation.swift; sourceTree = "<group>"; };
+		491482991EC1D00F00F1C9A2 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		4914829A1EC1D00F00F1C9A2 /* Difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		4914829B1EC1D00F00F1C9A2 /* StringType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringType.swift; sourceTree = "<group>"; };
 		499219271EBA1BF600610ED4 /* PlayScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayScreen.swift; sourceTree = "<group>"; };
 		49AED0871EB39AE300E1BF44 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +122,84 @@
 			name = UIBasic;
 			sourceTree = "<group>";
 		};
+		4914827C1EC1D00F00F1C9A2 /* My-Swift-Library */ = {
+			isa = PBXGroup;
+			children = (
+				4914827E1EC1D00F00F1C9A2 /* Class */,
+				491482831EC1D00F00F1C9A2 /* CoreBlueTooth */,
+				4914828A1EC1D00F00F1C9A2 /* protocol */,
+				491482951EC1D00F00F1C9A2 /* typdef */,
+			);
+			path = "My-Swift-Library";
+			sourceTree = "<group>";
+		};
+		4914827E1EC1D00F00F1C9A2 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				4914827F1EC1D00F00F1C9A2 /* CreateStorage.swift */,
+				491482801EC1D00F00F1C9A2 /* GetUIndex.swift */,
+				491482811EC1D00F00F1C9A2 /* RandomChoose.swift */,
+				491482821EC1D00F00F1C9A2 /* StringAdapter.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		491482831EC1D00F00F1C9A2 /* CoreBlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				491482841EC1D00F00F1C9A2 /* CentralMode */,
+				491482881EC1D00F00F1C9A2 /* PripheralMode */,
+			);
+			path = CoreBlueTooth;
+			sourceTree = "<group>";
+		};
+		491482841EC1D00F00F1C9A2 /* CentralMode */ = {
+			isa = PBXGroup;
+			children = (
+				491482851EC1D00F00F1C9A2 /* CentralManagerDelegate.swift */,
+				491482861EC1D00F00F1C9A2 /* CentralManagerPro.swift */,
+				491482871EC1D00F00F1C9A2 /* PeripheralPro.swift */,
+			);
+			path = CentralMode;
+			sourceTree = "<group>";
+		};
+		491482881EC1D00F00F1C9A2 /* PripheralMode */ = {
+			isa = PBXGroup;
+			children = (
+				491482891EC1D00F00F1C9A2 /* PeripheralManagerPro.swift */,
+			);
+			path = PripheralMode;
+			sourceTree = "<group>";
+		};
+		4914828A1EC1D00F00F1C9A2 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4914828B1EC1D00F00F1C9A2 /* Atoms.swift */,
+				4914828C1EC1D00F00F1C9A2 /* AutoBattle.swift */,
+				4914828D1EC1D00F00F1C9A2 /* CardIdentifiable.swift */,
+				4914828E1EC1D00F00F1C9A2 /* Competitive.swift */,
+				4914828F1EC1D00F00F1C9A2 /* ExCALayer.swift */,
+				491482901EC1D00F00F1C9A2 /* ExString.swift */,
+				491482911EC1D00F00F1C9A2 /* LayerSet.swift */,
+				491482921EC1D00F00F1C9A2 /* Stoppable.swift */,
+				491482931EC1D00F00F1C9A2 /* UserIdentifiable.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		491482951EC1D00F00F1C9A2 /* typdef */ = {
+			isa = PBXGroup;
+			children = (
+				491482961EC1D00F00F1C9A2 /* Atom.swift */,
+				491482971EC1D00F00F1C9A2 /* AtomColor.swift */,
+				491482981EC1D00F00F1C9A2 /* BattleCharInformation.swift */,
+				491482991EC1D00F00F1C9A2 /* Card.swift */,
+				4914829A1EC1D00F00F1C9A2 /* Difficulty.swift */,
+				4914829B1EC1D00F00F1C9A2 /* StringType.swift */,
+			);
+			path = typdef;
+			sourceTree = "<group>";
+		};
 		49AED07E1EB39AE300E1BF44 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +219,7 @@
 		49AED0891EB39AE300E1BF44 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				4914827C1EC1D00F00F1C9A2 /* My-Swift-Library */,
 				4914826E1EC1C93D00F1C9A2 /* Screen */,
 				49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */,
 				49AED0901EB39AE300E1BF44 /* Main.storyboard */,
@@ -180,9 +305,32 @@
 			files = (
 				49AED08F1EB39AE300E1BF44 /* SecondViewController.swift in Sources */,
 				499219281EBA1BF600610ED4 /* PlayScreen.swift in Sources */,
+				491482B31EC1D00F00F1C9A2 /* Difficulty.swift in Sources */,
 				4914826D1EC0D9E800F1C9A2 /* ButtonTestScreen.swift in Sources */,
+				491482A31EC1D00F00F1C9A2 /* PeripheralPro.swift in Sources */,
+				491482A21EC1D00F00F1C9A2 /* CentralManagerPro.swift in Sources */,
 				49AED08B1EB39AE300E1BF44 /* AppDelegate.swift in Sources */,
+				491482A91EC1D00F00F1C9A2 /* ExCALayer.swift in Sources */,
+				491482A11EC1D00F00F1C9A2 /* CentralManagerDelegate.swift in Sources */,
+				491482B11EC1D00F00F1C9A2 /* BattleCharInformation.swift in Sources */,
+				491482B21EC1D00F00F1C9A2 /* Card.swift in Sources */,
 				49AED08D1EB39AE300E1BF44 /* FirstViewController.swift in Sources */,
+				491482A51EC1D00F00F1C9A2 /* Atoms.swift in Sources */,
+				491482A61EC1D00F00F1C9A2 /* AutoBattle.swift in Sources */,
+				491482B41EC1D00F00F1C9A2 /* StringType.swift in Sources */,
+				491482A01EC1D00F00F1C9A2 /* StringAdapter.swift in Sources */,
+				491482AD1EC1D00F00F1C9A2 /* UserIdentifiable.swift in Sources */,
+				491482A71EC1D00F00F1C9A2 /* CardIdentifiable.swift in Sources */,
+				491482A81EC1D00F00F1C9A2 /* Competitive.swift in Sources */,
+				491482A41EC1D00F00F1C9A2 /* PeripheralManagerPro.swift in Sources */,
+				4914829E1EC1D00F00F1C9A2 /* GetUIndex.swift in Sources */,
+				4914829D1EC1D00F00F1C9A2 /* CreateStorage.swift in Sources */,
+				491482B01EC1D00F00F1C9A2 /* AtomColor.swift in Sources */,
+				491482AA1EC1D00F00F1C9A2 /* ExString.swift in Sources */,
+				491482AB1EC1D00F00F1C9A2 /* LayerSet.swift in Sources */,
+				4914829F1EC1D00F00F1C9A2 /* RandomChoose.swift in Sources */,
+				491482AF1EC1D00F00F1C9A2 /* Atom.swift in Sources */,
+				491482AC1EC1D00F00F1C9A2 /* Stoppable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

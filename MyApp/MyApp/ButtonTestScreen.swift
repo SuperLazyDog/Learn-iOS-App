@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ButtonTestScreen: UIViewController {
+class ButtonTestScreen: UIViewController, LayerSet {
     //------------------------------------------------------------------------
     //                               プロパティ
     //------------------------------------------------------------------------
@@ -53,6 +53,12 @@ class ButtonTestScreen: UIViewController {
         okButton.addTarget(self, action: #selector(ok(_:)), for: .touchUpInside)
         okButton.isHidden = false
         view.addSubview(okButton)*/
+        //------------------------------------------------------------------------
+        //                       　   初期UI処理
+        //------------------------------------------------------------------------
+        /*setBorder(valueLabel, cgBlack, normalWidthInIphone)
+        setRadioCorner(clearValueButton, clearValueButton.layer.frame.width/6)
+        setBorder(clearValueButton, cgBlack, normalWidthInIphone)*/
     }
     //------------------------------------------------------
     //               didReceiveMemoryWarning
