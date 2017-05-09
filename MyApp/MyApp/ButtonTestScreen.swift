@@ -28,6 +28,11 @@ class ButtonTestScreen: UIViewController, LayerSet {
     //switch
     @IBOutlet weak var isBlackLabel: UILabel!
     @IBOutlet weak var isBlackSwitch: UISwitch!
+    
+    //slider
+    @IBOutlet weak var originBackgroundImageView: UIImageView!
+    @IBOutlet weak var newBackgoundImageView: UIImageView!
+    
     //------------------------------------------------------------------------
     //                                 関数
     //------------------------------------------------------------------------
@@ -60,6 +65,10 @@ class ButtonTestScreen: UIViewController, LayerSet {
         }else {
             valueLabel.backgroundColor = UIColor(red: 243/255, green: 208/255, blue: 78/255, alpha: 1)
         }
+    }
+    @IBAction func setBackgroundImageSlider(_ sender: UISlider, forEvent event: UIEvent) {
+        newBackgoundImageView.alpha = CGFloat(sender.value)
+        originBackgroundImageView.alpha = CGFloat(1.0 - sender.value)
     }
     
     //-------------------------------------------------------------------
