@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ButtonTestScreen: UIViewController, LayerSet, UITextFieldDelegate, UIGestureRecognizerDelegate {
+class ButtonTestScreen: UIViewController, LayerSet, UITextFieldDelegate, UIGestureRecognizerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     //------------------------------------------------------------------------
     //                               プロパティ
     //------------------------------------------------------------------------
@@ -35,6 +35,10 @@ class ButtonTestScreen: UIViewController, LayerSet, UITextFieldDelegate, UIGestu
     //textField
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var testTextField: UITextField!
+    
+    //pickerView
+    @IBOutlet weak var testPickerView: UIPickerView!
+    @IBOutlet weak var pickedNumLabel: UILabel!
     //------------------------------------------------------------------------
     //                                 関数
     //------------------------------------------------------------------------
@@ -64,20 +68,39 @@ class ButtonTestScreen: UIViewController, LayerSet, UITextFieldDelegate, UIGestu
         //------------------------------------------------------------------------
         //                       　   初期UI処理
         //------------------------------------------------------------------------
-        //stepper
+        //-------------------------------------
+        //              stepper
+        //-------------------------------------
         setBorder(valueLabel, cgBlack, normalWidthInIphone)
         setRadioCorner(clearValueButton, clearValueButton.layer.frame.width/6)
         setBorder(clearValueButton, cgBlack, normalWidthInIphone)
         valueLabel.text = valueStr + String(Int(valueStepper.value))
         setBorder(changeValueLabel, cgBlack, normalWidthInIphone)
-        //switch
+        //-------------------------------------
+        //              switch
+        //-------------------------------------
         setBorder(isBlackLabel, cgBlack, normalWidthInIphone)
         isBlackSwitch.isOn = false
-        //textField
+        //-------------------------------------
+        //             textField
+        //-------------------------------------
         setBorder(testLabel, cgBlack, normalWidthInIphone)
         testTextField.delegate = self
         originTextViewRect = testTextField.frame
-        
+        //-------------------------------------
+        //            pickerView
+        //-------------------------------------
+        testPickerView.delegate = self
+        testPickerView.dataSource = self
+        setBorder(pickedNumLabel, cgBlack, normalWidthInIphone)
+        print(testPickerView.numberOfComponents)
+            //文字列表示
+        let row1 = testPickerView.selectedRow(inComponent: 0)
+        let title1 = self.pickerView(testPickerView, titleForRow: row1, forComponent: 0) ?? "0"
+        let row2 = testPickerView.selectedRow(inComponent: 1)
+        let title2 = self.pickerView(testPickerView, titleForRow: row2, forComponent: 1) ?? "0"
+        let outStr = title1 + title2
+        pickedNumLabel.text = outStr
     }
     //------------------------------------------------------
     //               didReceiveMemoryWarning
@@ -150,7 +173,63 @@ class ButtonTestScreen: UIViewController, LayerSet, UITextFieldDelegate, UIGestu
     @IBAction func test(_ sender: UITapGestureRecognizer) {
         print("taped")
     }
-    
+    //-------------------------------------------------------------------
+    //                 　　　  UIPickerView関数
+    //-------------------------------------------------------------------
+    //------------------------------------------------
+    //UIPickerViewDataSource
+    //------------------------------------------------
+    let compo = [[1,2,3,4,5], [6,7,8,9,10]]
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return compo.count
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return compo[component].count
+    }
+    //------------------------------------------------
+    //UIPickerViewDelegate
+    //------------------------------------------------
+    //widthForComponent
+    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+        print("compos.count = \(compo.count)    numberOfComponents = \(pickerView.numberOfComponents) outlet.num = \(testPickerView.numberOfComponents)\n")
+        /*if pickerView.numberOfComponents == 1 {
+            return (pickerView.frame.width)*(1.0/3.0)
+        }else if pickerView.numberOfComponents == 2 {
+            return pickerView.frame.width/4.0
+        }else if pickerView.numberOfComponents == 3 {
+            //30 20 10
+            if component == 0 {
+                return pickerView.frame.width*(3.0/10.0)
+            }else if component == 1 {
+                return pickerView.frame.width*(1.0/5.0)
+            }else {
+                return pickerView.frame.width*(1.0/10.0)
+            }
+        }else {
+            return pickerView.frame.width/CGFloat(pickerView.numberOfComponents+2)
+        }*/
+        if component == 0 {
+            return pickerView.frame.width/3.0
+        }else {
+            return pickerView.frame.width/6.0
+        }
+    }
+    //titleForRow
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return String(compo[component][row])
+    }
+    //didSelectRow
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let selectedItem = compo[component][row]
+        print("selecter: \(selectedItem)")
+        let row1 = pickerView.selectedRow(inComponent: 0)
+        let title1 = self.pickerView(pickerView, titleForRow: row1, forComponent: 0) ?? "0"
+        let row2 = pickerView.selectedRow(inComponent: 1)
+        let title2 = self.pickerView(pickerView, titleForRow: row2, forComponent: 1) ?? "0"
+        let outStr = title1 + title2
+        pickedNumLabel.text = outStr
+        
+    }
     /*
     // MARK: - Navigation
 
