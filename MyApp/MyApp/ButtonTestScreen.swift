@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ButtonTestScreen: UIViewController, LayerSet {
+class ButtonTestScreen: UIViewController, LayerSet, UITextFieldDelegate, UIGestureRecognizerDelegate {
     //------------------------------------------------------------------------
     //                               プロパティ
     //------------------------------------------------------------------------
@@ -24,7 +24,6 @@ class ButtonTestScreen: UIViewController, LayerSet {
     @IBOutlet weak var clearValueButton: UIButton!
     @IBOutlet weak var valueStepper: UIStepper!
     @IBOutlet weak var changeValueLabel: UILabel!
-    
     //switch
     @IBOutlet weak var isBlackLabel: UILabel!
     @IBOutlet weak var isBlackSwitch: UISwitch!
@@ -33,9 +32,60 @@ class ButtonTestScreen: UIViewController, LayerSet {
     @IBOutlet weak var originBackgroundImageView: UIImageView!
     @IBOutlet weak var newBackgoundImageView: UIImageView!
     
+    //textField
+    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var testTextField: UITextField!
     //------------------------------------------------------------------------
     //                                 関数
     //------------------------------------------------------------------------
+    //-------------------------------------------------------------------
+    //              　　　　　　 ViewController関数
+    //-------------------------------------------------------------------
+    //------------------------------------------------------
+    //                     viewDidLoad
+    //------------------------------------------------------
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        let okButton = UIButton(type: .custom)
+        okButton.frame = CGRect(x: 100, y: 100, width: 120, height: 120)
+        //------------------------------------------------------------------------
+        //                       　コードでボタンを追加
+        //------------------------------------------------------------------------
+        //let bkgImage = UIImage(named: "maru")
+        /*okButton.setBackgroundImage(#imageLiteral(resourceName: "Image-2"), for: .normal)
+         okButton.setImage(#imageLiteral(resourceName: "Image-1"), for: .highlighted)
+         okButton.setTitle("OK", for: .normal)
+         okButton.setTitleColor(UIColor.black, for: .normal)
+         okButton.addTarget(self, action: #selector(ok(_:)), for: .touchUpInside)
+         okButton.isHidden = false
+         view.addSubview(okButton)*/
+        //------------------------------------------------------------------------
+        //                       　   初期UI処理
+        //------------------------------------------------------------------------
+        //stepper
+        setBorder(valueLabel, cgBlack, normalWidthInIphone)
+        setRadioCorner(clearValueButton, clearValueButton.layer.frame.width/6)
+        setBorder(clearValueButton, cgBlack, normalWidthInIphone)
+        valueLabel.text = valueStr + String(Int(valueStepper.value))
+        setBorder(changeValueLabel, cgBlack, normalWidthInIphone)
+        //switch
+        setBorder(isBlackLabel, cgBlack, normalWidthInIphone)
+        isBlackSwitch.isOn = false
+        //textField
+        setBorder(testLabel, cgBlack, normalWidthInIphone)
+        testTextField.delegate = self
+        originTextViewRect = testTextField.frame
+        
+    }
+    //------------------------------------------------------
+    //               didReceiveMemoryWarning
+    //------------------------------------------------------
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     //-------------------------------------------------------------------
     //                 　　　　　カスタマイズ関数
     //-------------------------------------------------------------------
@@ -72,50 +122,35 @@ class ButtonTestScreen: UIViewController, LayerSet {
     }
     
     //-------------------------------------------------------------------
-    //              　　　　　　 ViewController関数
+    //                 　　　UITextFieldDelegate関数
     //-------------------------------------------------------------------
-    //------------------------------------------------------
-    //                     viewDidLoad
-    //------------------------------------------------------
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        let okButton = UIButton(type: .custom)
-        okButton.frame = CGRect(x: 100, y: 100, width: 120, height: 120)
-        //------------------------------------------------------------------------
-        //                       　コードでボタンを追加
-        //------------------------------------------------------------------------
-        //let bkgImage = UIImage(named: "maru")
-        /*okButton.setBackgroundImage(#imageLiteral(resourceName: "Image-2"), for: .normal)
-        okButton.setImage(#imageLiteral(resourceName: "Image-1"), for: .highlighted)
-        okButton.setTitle("OK", for: .normal)
-        okButton.setTitleColor(UIColor.black, for: .normal)
-        okButton.addTarget(self, action: #selector(ok(_:)), for: .touchUpInside)
-        okButton.isHidden = false
-        view.addSubview(okButton)*/
-        //------------------------------------------------------------------------
-        //                       　   初期UI処理
-        //------------------------------------------------------------------------
-        //stepper
-        setBorder(valueLabel, cgBlack, normalWidthInIphone)
-        setRadioCorner(clearValueButton, clearValueButton.layer.frame.width/6)
-        setBorder(clearValueButton, cgBlack, normalWidthInIphone)
-        valueLabel.text = valueStr + String(Int(valueStepper.value))
-        setBorder(changeValueLabel, cgBlack, normalWidthInIphone)
-        //switch
-        setBorder(isBlackLabel, cgBlack, normalWidthInIphone)
-        isBlackSwitch.isOn = false
+    var originTextViewRect: CGRect! = nil
+    //textFieldShouldBeginEditing
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        textField.layer.frame = CGRect(x: textField.layer.frame.minX, y: UIScreen.main.bounds.midY - textField.layer.frame.height, width: textField.layer.frame.width, height: textField.layer.frame.height)
+        return true
     }
-    //------------------------------------------------------
-    //               didReceiveMemoryWarning
-    //------------------------------------------------------
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+    }
+    var count = 0
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("characteristics have benn changed")
+        /*valueStepper.value += valueStepper.stepValue
+        changeValueLabel.text = String(count)
+        textField.returnKeyType = UIReturnKeyType(rawValue: count) ?? .default
+        count += 1*/
+        return true
     }
     
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
+    }
+    
+    @IBAction func test(_ sender: UITapGestureRecognizer) {
+        print("taped")
+    }
+    
     /*
     // MARK: - Navigation
 

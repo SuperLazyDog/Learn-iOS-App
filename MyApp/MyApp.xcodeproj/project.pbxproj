@@ -31,6 +31,7 @@
 		491482B21EC1D00F00F1C9A2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482991EC1D00F00F1C9A2 /* Card.swift */; };
 		491482B31EC1D00F00F1C9A2 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914829A1EC1D00F00F1C9A2 /* Difficulty.swift */; };
 		491482B41EC1D00F00F1C9A2 /* StringType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914829B1EC1D00F00F1C9A2 /* StringType.swift */; };
+		491482CC1EC32CA800F1C9A2 /* TapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482CB1EC32CA800F1C9A2 /* TapScreen.swift */; };
 		499219281EBA1BF600610ED4 /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499219271EBA1BF600610ED4 /* PlayScreen.swift */; };
 		49AED08B1EB39AE300E1BF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */; };
 		49AED08D1EB39AE300E1BF44 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AED08C1EB39AE300E1BF44 /* FirstViewController.swift */; };
@@ -65,6 +66,7 @@
 		491482991EC1D00F00F1C9A2 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		4914829A1EC1D00F00F1C9A2 /* Difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		4914829B1EC1D00F00F1C9A2 /* StringType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringType.swift; sourceTree = "<group>"; };
+		491482CB1EC32CA800F1C9A2 /* TapScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapScreen.swift; sourceTree = "<group>"; };
 		499219271EBA1BF600610ED4 /* PlayScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayScreen.swift; sourceTree = "<group>"; };
 		49AED0871EB39AE300E1BF44 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				4914826C1EC0D9E800F1C9A2 /* ButtonTestScreen.swift */,
+				491482CB1EC32CA800F1C9A2 /* TapScreen.swift */,
 			);
 			name = UIBasic;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				491482B11EC1D00F00F1C9A2 /* BattleCharInformation.swift in Sources */,
 				491482B21EC1D00F00F1C9A2 /* Card.swift in Sources */,
 				49AED08D1EB39AE300E1BF44 /* FirstViewController.swift in Sources */,
+				491482CC1EC32CA800F1C9A2 /* TapScreen.swift in Sources */,
 				491482A51EC1D00F00F1C9A2 /* Atoms.swift in Sources */,
 				491482A61EC1D00F00F1C9A2 /* AutoBattle.swift in Sources */,
 				491482B41EC1D00F00F1C9A2 /* StringType.swift in Sources */,
