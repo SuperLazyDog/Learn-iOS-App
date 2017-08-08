@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftPopMenu
+import SlideMenuControllerSwift
 
 class PopMenuTest1: UIViewController {
     //------------------------------------------------------
@@ -34,7 +35,7 @@ class PopMenuTest1: UIViewController {
     //------------------------------------------------------
     @IBAction func popUP(_ sender: UIButton, forEvent event: UIEvent) {
         
-        popMenu = SwiftPopMenu(
+        popMenu = SwiftPopMenu(frame:  CGRect(x: 0, y: 51, width: 150, height: 112), arrowMargin: 12)
         popMenu.popData = [(icon:"saoyisao",title:"扫一扫"),
                            (icon:"SignRule",title:"签到规则")]
         //点击菜单

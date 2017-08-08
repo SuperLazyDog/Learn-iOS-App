@@ -66,7 +66,7 @@ public class SwiftPopMenu: UIView {
      
      - parameter frame: <#frame description#>
      
-     - returns: <#return value description#>
+     - returns: return value description
      */
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -81,7 +81,7 @@ public class SwiftPopMenu: UIView {
     /// - Parameters:
     ///   - frame: <#frame description#>
     ///   - arrowMargin: 箭头距离右边距离
-    init(frame: CGRect,arrowMargin:CGFloat) {
+    public init(frame: CGRect,arrowMargin:CGFloat) {
         super.init(frame: frame)
         
         arrowViewMargin = arrowMargin

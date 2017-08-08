@@ -2,5 +2,8 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'PopMenuDemo' do
-pod 'SwiftPopMenu'
+    pod 'SwiftPopMenu'
+    pod 'PureLayout'
+    #pod 'SideMenu'
+    pod 'SlideMenuControllerSwift'
 end
