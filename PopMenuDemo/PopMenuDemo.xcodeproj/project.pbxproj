@@ -15,6 +15,7 @@
 		371897431F39781A00BDDFEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718973D1F39781A00BDDFEE /* AppDelegate.swift */; };
 		371897441F39781A00BDDFEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718973F1F39781A00BDDFEE /* ViewController.swift */; };
 		371897461F39788B00BDDFEE /* PopMenuTest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371897451F39788B00BDDFEE /* PopMenuTest1.swift */; };
+		371897481F39A36200BDDFEE /* PopMenuTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371897471F39A36200BDDFEE /* PopMenuTest2.swift */; };
 		D491657874BBAAE54C879C5C /* Pods_PopMenuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE6D7046657CA7746F7F020 /* Pods_PopMenuDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		3718973D1F39781A00BDDFEE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3718973F1F39781A00BDDFEE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		371897451F39788B00BDDFEE /* PopMenuTest1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopMenuTest1.swift; sourceTree = "<group>"; };
+		371897471F39A36200BDDFEE /* PopMenuTest2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopMenuTest2.swift; sourceTree = "<group>"; };
 		92F69F098EC62034F9A56F19 /* Pods-PopMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopMenuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopMenuDemo/Pods-PopMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F7AF9B2F0CC91AD978B19F66 /* Pods-PopMenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopMenuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopMenuDemo/Pods-PopMenuDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +159,7 @@
 			children = (
 				3718973F1F39781A00BDDFEE /* ViewController.swift */,
 				371897451F39788B00BDDFEE /* PopMenuTest1.swift */,
+				371897471F39A36200BDDFEE /* PopMenuTest2.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,13 +325,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PopMenuDemo/Pods-PopMenuDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
-				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftPopMenu/SwiftPopMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftPopMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +382,7 @@
 				371897431F39781A00BDDFEE /* AppDelegate.swift in Sources */,
 				371897441F39781A00BDDFEE /* ViewController.swift in Sources */,
 				371897461F39788B00BDDFEE /* PopMenuTest1.swift in Sources */,
+				371897481F39A36200BDDFEE /* PopMenuTest2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +637,7 @@
 				3718972B1F39778700BDDFEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3718972C1F39778700BDDFEE /* Build configuration list for PBXNativeTarget "PopMenuDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -641,6 +646,7 @@
 				3718972E1F39778700BDDFEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3718972F1F39778700BDDFEE /* Build configuration list for PBXNativeTarget "PopMenuDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -649,6 +655,7 @@
 				371897311F39778700BDDFEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

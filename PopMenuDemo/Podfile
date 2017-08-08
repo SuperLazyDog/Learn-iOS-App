@@ -4,6 +4,6 @@ use_frameworks!
 target 'PopMenuDemo' do
     pod 'SwiftPopMenu'
     pod 'PureLayout'
-    #pod 'SideMenu'
-    pod 'SlideMenuControllerSwift'
+    pod 'SideMenu'
+    #pod 'SlideMenuControllerSwift'
 end

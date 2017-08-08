@@ -1,5 +1,5 @@
 //
-//  PopMenuTest1.swift
+//  PopMenuTest2.swift
 //  PopMenuDemo
 //
 //  Created by Weida Xu on 2017/8/8.
@@ -8,14 +8,13 @@
 
 import UIKit
 import SwiftPopMenu
-//import SlideMenuControllerSwift
+import SideMenu
 
-class PopMenuTest1: UIViewController {
+class PopMenuTest2: UIViewController {
     //------------------------------------------------------
     //                       属性
     //------------------------------------------------------
-    @IBOutlet var testBut_1: UIView!
-    var popMenu:SwiftPopMenu! = nil
+    
     //------------------------------------------------------
     //                       内部函数
     //------------------------------------------------------
@@ -24,7 +23,7 @@ class PopMenuTest1: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,19 +32,20 @@ class PopMenuTest1: UIViewController {
     //------------------------------------------------------
     //                       按钮事件
     //------------------------------------------------------
-    @IBAction func popUP(_ sender: UIButton, forEvent event: UIEvent) {
-        
-       /* popMenu = SwiftPopMenu(frame:  CGRect(x: 0, y: 51, width: 150, height: 112), arrowMargin: 12)
-        popMenu.popData = [(icon:"saoyisao",title:"扫一扫"),
-                           (icon:"SignRule",title:"签到规则")]
-        //点击菜单
-        popMenu.didSelectMenuBlock = { [weak self](index:Int)->Void in
-            self?.popMenu.dismiss()
-            print("block select \(index)")
-            
-        }
-        popMenu.show()*/
-        
+    
+    @IBAction func setButton1(_ sender: UIButton, forEvent event: UIEvent) {
+        SideMenuManager.menuWidth = max(round(min((UIScreen.main.bounds.width), (UIScreen.main.bounds.height)) * 0.3), 240)
+        SideMenuManager.menuPresentMode = .menuSlideIn
+    }
+    
+    @IBAction func setButton2(_ sender: UIButton, forEvent event: UIEvent) {
+        SideMenuManager.menuWidth = min((UIScreen.main.bounds.width), (UIScreen.main.bounds.height)) * 0.5)
+        SideMenuManager.menuPresentMode = .viewSlideInOut
+    }
+    
+    @IBAction func setButton3(_ sender: UIButton, forEvent event: UIEvent) {
+        SideMenuManager.menuWidth = min((UIScreen.main.bounds.width), (UIScreen.main.bounds.height)) * 0.5)
+        SideMenuManager.menuPresentMode = .menuDissolveIn
     }
     /*
     // MARK: - Navigation
