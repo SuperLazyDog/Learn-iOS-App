@@ -39,12 +39,12 @@ class PopMenuTest2: UIViewController {
     }
     
     @IBAction func setButton2(_ sender: UIButton, forEvent event: UIEvent) {
-        SideMenuManager.menuWidth = min((UIScreen.main.bounds.width), (UIScreen.main.bounds.height)) * 0.5)
+        SideMenuManager.menuWidth = min((UIScreen.main.bounds.width), (UIScreen.main.bounds.height)) * 0.5
         SideMenuManager.menuPresentMode = .viewSlideInOut
     }
     
     @IBAction func setButton3(_ sender: UIButton, forEvent event: UIEvent) {
-        SideMenuManager.menuWidth = min((UIScreen.main.bounds.width), (UIScreen.main.bounds.height)) * 0.5)
+        SideMenuManager.menuWidth = min((UIScreen.main.bounds.width), (UIScreen.main.bounds.height)) * 0.5
         SideMenuManager.menuPresentMode = .menuDissolveIn
     }
     /*
