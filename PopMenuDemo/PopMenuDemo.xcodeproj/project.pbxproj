@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3712CA1A1F3AA2560049DC61 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712CA191F3AA2560049DC61 /* TableViewCell.swift */; };
-		3712CA211F3AABC70049DC61 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712CA201F3AABC70049DC61 /* TableViewController.swift */; };
+		3712CA251F3AAC480049DC61 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712CA231F3AAC480049DC61 /* TableViewCell.swift */; };
+		3712CA261F3AAC480049DC61 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712CA241F3AAC480049DC61 /* TableViewController.swift */; };
 		3718971A1F39778700BDDFEE /* PopMenuDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371897191F39778700BDDFEE /* PopMenuDemoTests.swift */; };
 		371897251F39778700BDDFEE /* PopMenuDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371897241F39778700BDDFEE /* PopMenuDemoUITests.swift */; };
 		371897401F39781A00BDDFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371897371F39781A00BDDFEE /* Assets.xcassets */; };
@@ -40,8 +40,8 @@
 
 /* Begin PBXFileReference section */
 		0DE6D7046657CA7746F7F020 /* Pods_PopMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopMenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3712CA191F3AA2560049DC61 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = PopMenuDemo/Source/Controller/TableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		3712CA201F3AABC70049DC61 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = PopMenuDemo/Source/Controller/TableViewController.swift; sourceTree = SOURCE_ROOT; };
+		3712CA231F3AAC480049DC61 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3712CA241F3AAC480049DC61 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		371897011F39778600BDDFEE /* PopMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		371897101F39778600BDDFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PopMenuDemo/Info.plist; sourceTree = "<group>"; };
 		371897151F39778700BDDFEE /* PopMenuDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopMenuDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3712CA221F3AAC480049DC61 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				3712CA231F3AAC480049DC61 /* TableViewCell.swift */,
+				3712CA241F3AAC480049DC61 /* TableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		371896F81F39778600BDDFEE = {
 			isa = PBXGroup;
 			children = (
@@ -161,8 +170,7 @@
 		3718973E1F39781A00BDDFEE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3712CA201F3AABC70049DC61 /* TableViewController.swift */,
-				3712CA191F3AA2560049DC61 /* TableViewCell.swift */,
+				3712CA221F3AAC480049DC61 /* TableView */,
 				3718973F1F39781A00BDDFEE /* ViewController.swift */,
 				371897451F39788B00BDDFEE /* PopMenuTest1.swift */,
 				371897471F39A36200BDDFEE /* PopMenuTest2.swift */,
@@ -385,8 +393,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3712CA1A1F3AA2560049DC61 /* TableViewCell.swift in Sources */,
-				3712CA211F3AABC70049DC61 /* TableViewController.swift in Sources */,
+				3712CA251F3AAC480049DC61 /* TableViewCell.swift in Sources */,
+				3712CA261F3AAC480049DC61 /* TableViewController.swift in Sources */,
 				371897431F39781A00BDDFEE /* AppDelegate.swift in Sources */,
 				371897441F39781A00BDDFEE /* ViewController.swift in Sources */,
 				371897461F39788B00BDDFEE /* PopMenuTest1.swift in Sources */,
