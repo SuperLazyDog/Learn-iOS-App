@@ -10,6 +10,7 @@ import UIKit
 import SwiftPopMenu
 import SideMenu
 
+//主画面
 class PopMenuTest2: UIViewController {
     //------------------------------------------------------
     //                       属性
