@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3712CA251F3AAC480049DC61 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712CA231F3AAC480049DC61 /* TableViewCell.swift */; };
 		3712CA261F3AAC480049DC61 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712CA241F3AAC480049DC61 /* TableViewController.swift */; };
+		3712CA2F1F3AC6B10049DC61 /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712CA2E1F3AC6B10049DC61 /* SampleTableViewController.swift */; };
 		3718971A1F39778700BDDFEE /* PopMenuDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371897191F39778700BDDFEE /* PopMenuDemoTests.swift */; };
 		371897251F39778700BDDFEE /* PopMenuDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371897241F39778700BDDFEE /* PopMenuDemoUITests.swift */; };
 		371897401F39781A00BDDFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371897371F39781A00BDDFEE /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		0DE6D7046657CA7746F7F020 /* Pods_PopMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopMenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3712CA231F3AAC480049DC61 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3712CA241F3AAC480049DC61 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3712CA2E1F3AC6B10049DC61 /* SampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
 		371897011F39778600BDDFEE /* PopMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		371897101F39778600BDDFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PopMenuDemo/Info.plist; sourceTree = "<group>"; };
 		371897151F39778700BDDFEE /* PopMenuDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopMenuDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 			children = (
 				3712CA231F3AAC480049DC61 /* TableViewCell.swift */,
 				3712CA241F3AAC480049DC61 /* TableViewController.swift */,
+				3712CA2E1F3AC6B10049DC61 /* SampleTableViewController.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				3712CA251F3AAC480049DC61 /* TableViewCell.swift in Sources */,
 				3712CA261F3AAC480049DC61 /* TableViewController.swift in Sources */,
 				371897431F39781A00BDDFEE /* AppDelegate.swift in Sources */,
+				3712CA2F1F3AC6B10049DC61 /* SampleTableViewController.swift in Sources */,
 				371897441F39781A00BDDFEE /* ViewController.swift in Sources */,
 				371897461F39788B00BDDFEE /* PopMenuTest1.swift in Sources */,
 				371897481F39A36200BDDFEE /* PopMenuTest2.swift in Sources */,
