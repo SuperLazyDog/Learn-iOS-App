@@ -37,6 +37,7 @@ class PlayScreen: UIViewController {
         //test?.setValue("我爱音音✌️😳✌️".data(using: .utf8), forKey: "inputMessage")
         /*let data = NSData(base64Encoded: "hellow", options: .ignoreUnknownCharacters)
         test?.setValue(data, forKey: "test")*/
+        test?.setValue("搜一搜我就可以瘦二十斤".data(using: .utf8), forKey: "inputMessage")
         let transform = CGAffineTransform(scaleX: 8, y: 8)
         let image = test?.outputImage?.applying(transform)
         let outputUIimage = UIImage(ciImage: image!)
