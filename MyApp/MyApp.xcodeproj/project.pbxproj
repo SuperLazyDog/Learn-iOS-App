@@ -35,6 +35,7 @@
 		49AD4B351F43B7D6001EA00E /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD4B2F1F43B7D6001EA00E /* PlayScreen.swift */; };
 		49AD4B361F43B7D6001EA00E /* ButtonTestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD4B311F43B7D6001EA00E /* ButtonTestScreen.swift */; };
 		49AD4B371F43B7D6001EA00E /* TapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD4B321F43B7D6001EA00E /* TapScreen.swift */; };
+		49AD4B3B1F43BAD1001EA00E /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD4B3A1F43BAD1001EA00E /* TableViewViewController.swift */; };
 		49AED08B1EB39AE300E1BF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */; };
 		49AED0921EB39AE300E1BF44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AED0901EB39AE300E1BF44 /* Main.storyboard */; };
 		49AED0941EB39AE300E1BF44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AED0931EB39AE300E1BF44 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		49AD4B2F1F43B7D6001EA00E /* PlayScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayScreen.swift; sourceTree = "<group>"; };
 		49AD4B311F43B7D6001EA00E /* ButtonTestScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTestScreen.swift; sourceTree = "<group>"; };
 		49AD4B321F43B7D6001EA00E /* TapScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapScreen.swift; sourceTree = "<group>"; };
+		49AD4B3A1F43BAD1001EA00E /* TableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
 		49AED0871EB39AE300E1BF44 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AED08A1EB39AE300E1BF44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49AED0911EB39AE300E1BF44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		49AD4B2A1F43B7D6001EA00E /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				49AD4B391F43B93F001EA00E /* Table_Navigation */,
 				49AD4B2B1F43B7D6001EA00E /* Default */,
 				49AD4B2E1F43B7D6001EA00E /* QRCode */,
 				49AD4B301F43B7D6001EA00E /* UIBasic */,
@@ -201,6 +204,14 @@
 				49AD4B321F43B7D6001EA00E /* TapScreen.swift */,
 			);
 			path = UIBasic;
+			sourceTree = "<group>";
+		};
+		49AD4B391F43B93F001EA00E /* Table_Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				49AD4B3A1F43BAD1001EA00E /* TableViewViewController.swift */,
+			);
+			path = Table_Navigation;
 			sourceTree = "<group>";
 		};
 		49AED07E1EB39AE300E1BF44 = {
@@ -310,6 +321,7 @@
 				491482A31EC1D00F00F1C9A2 /* PeripheralPro.swift in Sources */,
 				491482A21EC1D00F00F1C9A2 /* CentralManagerPro.swift in Sources */,
 				49AED08B1EB39AE300E1BF44 /* AppDelegate.swift in Sources */,
+				49AD4B3B1F43BAD1001EA00E /* TableViewViewController.swift in Sources */,
 				491482A91EC1D00F00F1C9A2 /* ExCALayer.swift in Sources */,
 				491482A11EC1D00F00F1C9A2 /* CentralManagerDelegate.swift in Sources */,
 				49AD4B341F43B7D6001EA00E /* SecondViewController.swift in Sources */,
