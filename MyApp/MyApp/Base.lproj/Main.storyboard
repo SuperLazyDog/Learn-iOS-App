@@ -114,39 +114,6 @@
             </objects>
             <point key="canvasLocation" x="749.5" y="359.5"/>
         </scene>
-        <!--Table View View Controller-->
-        <scene sceneID="6ve-BZ-4O3">
-            <objects>
-                <viewController id="QNY-Df-dnU" customClass="TableViewViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vUd-Fj-gRG"/>
-                        <viewControllerLayoutGuide type="bottom" id="EDU-Eh-5cM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8F7-gg-JKH">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NHg-2e-Usj">
-                                <rect key="frame" x="86" y="28" width="491" height="327"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="NHg-2e-Usj" secondAttribute="trailing" constant="70" id="KL8-Pn-bgp"/>
-                            <constraint firstItem="NHg-2e-Usj" firstAttribute="leading" secondItem="8F7-gg-JKH" secondAttribute="leadingMargin" constant="66" id="KYN-Vy-ywi"/>
-                            <constraint firstAttribute="bottom" secondItem="NHg-2e-Usj" secondAttribute="bottom" constant="20" symbolic="YES" id="mGw-ql-orj"/>
-                            <constraint firstItem="NHg-2e-Usj" firstAttribute="top" secondItem="vUd-Fj-gRG" secondAttribute="bottom" constant="8" symbolic="YES" id="uas-6O-Qia"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="myTableView" destination="NHg-2e-Usj" id="zUe-wm-bbT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="444-d5-vgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="566.26686656671666" y="3367.1999999999998"/>
-        </scene>
         <!--First14 View Controller-->
         <scene sceneID="SxU-Fh-i5y">
             <objects>
@@ -205,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="565.36731634182911" y="4256.8000000000002"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Second14 View Controller-->
         <scene sceneID="lOv-Rg-AHI">
             <objects>
-                <viewController id="FAf-OT-ULp" customClass="SecondViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FAf-OT-ULp" customClass="Second14ViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N7G-p0-74i"/>
                         <viewControllerLayoutGuide type="bottom" id="F1E-Os-Clq"/>
@@ -228,10 +195,21 @@
                                     <segue destination="ubf-K8-b2s" kind="unwind" unwindAction="closeWithSegue:" id="889-84-MJt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTf-XE-0KP">
+                                <rect key="frame" x="284" y="250" width="98" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="UgB-G4-5eZ" kind="show" id="UuB-Zk-wkM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dXJ-OH-NO1" firstAttribute="centerY" secondItem="NRR-oS-wVS" secondAttribute="centerY" id="2G6-kO-ZfP"/>
+                            <constraint firstItem="MTf-XE-0KP" firstAttribute="leading" secondItem="dXJ-OH-NO1" secondAttribute="leading" id="6w2-7q-5Rm"/>
+                            <constraint firstItem="MTf-XE-0KP" firstAttribute="top" secondItem="dXJ-OH-NO1" secondAttribute="bottom" constant="48" id="Qzf-N4-SUc"/>
+                            <constraint firstItem="MTf-XE-0KP" firstAttribute="trailing" secondItem="dXJ-OH-NO1" secondAttribute="trailing" id="vMJ-Su-D8U"/>
                             <constraint firstItem="dXJ-OH-NO1" firstAttribute="centerX" secondItem="NRR-oS-wVS" secondAttribute="centerX" id="xxd-rb-iag"/>
                         </constraints>
                     </view>
@@ -240,6 +218,41 @@
                 <exit id="ubf-K8-b2s" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1313" y="4257"/>
+        </scene>
+        <!--Third14 View Controller-->
+        <scene sceneID="chZ-Ps-W10">
+            <objects>
+                <viewController id="UgB-G4-5eZ" customClass="Third14ViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O1Y-AR-pJI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eei-Ji-HDO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kwu-F1-cPM">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ck1-tR-A3p">
+                                <rect key="frame" x="284" y="172" width="98" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="RUb-nz-p2Q"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goto2Button:forEvent:" destination="UgB-G4-5eZ" eventType="touchUpInside" id="ZBx-tV-1Th"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ck1-tR-A3p" firstAttribute="centerY" secondItem="Kwu-F1-cPM" secondAttribute="centerY" id="JtZ-dJ-YrC"/>
+                            <constraint firstItem="ck1-tR-A3p" firstAttribute="centerX" secondItem="Kwu-F1-cPM" secondAttribute="centerX" id="Oxz-7r-YZT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZu-4S-q9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313" y="5102"/>
         </scene>
         <!--Play Screen-->
         <scene sceneID="vJF-E8-CLV">

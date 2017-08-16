@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		371310001F43D60100D7AA5C /* Second14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37130FFF1F43D60100D7AA5C /* Second14ViewController.swift */; };
 		371310021F43D7F400D7AA5C /* First14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371310011F43D7F400D7AA5C /* First14ViewController.swift */; };
+		37D6CBFB1F43E35300F44FB5 /* Third14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D6CBFA1F43E35300F44FB5 /* Third14ViewController.swift */; };
 		4914829D1EC1D00F00F1C9A2 /* CreateStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914827F1EC1D00F00F1C9A2 /* CreateStorage.swift */; };
 		4914829E1EC1D00F00F1C9A2 /* GetUIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482801EC1D00F00F1C9A2 /* GetUIndex.swift */; };
 		4914829F1EC1D00F00F1C9A2 /* RandomChoose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482811EC1D00F00F1C9A2 /* RandomChoose.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		37130FFF1F43D60100D7AA5C /* Second14ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Second14ViewController.swift; sourceTree = "<group>"; };
 		371310011F43D7F400D7AA5C /* First14ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = First14ViewController.swift; sourceTree = "<group>"; };
+		37D6CBFA1F43E35300F44FB5 /* Third14ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Third14ViewController.swift; sourceTree = "<group>"; };
 		4914827F1EC1D00F00F1C9A2 /* CreateStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStorage.swift; sourceTree = "<group>"; };
 		491482801EC1D00F00F1C9A2 /* GetUIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUIndex.swift; sourceTree = "<group>"; };
 		491482811EC1D00F00F1C9A2 /* RandomChoose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomChoose.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				37130FFF1F43D60100D7AA5C /* Second14ViewController.swift */,
 				371310011F43D7F400D7AA5C /* First14ViewController.swift */,
+				37D6CBFA1F43E35300F44FB5 /* Third14ViewController.swift */,
 			);
 			name = Chap14;
 			path = Table_Navigation/Chap14;
@@ -344,6 +347,7 @@
 				491482B11EC1D00F00F1C9A2 /* BattleCharInformation.swift in Sources */,
 				491482B21EC1D00F00F1C9A2 /* Card.swift in Sources */,
 				491482A51EC1D00F00F1C9A2 /* Atoms.swift in Sources */,
+				37D6CBFB1F43E35300F44FB5 /* Third14ViewController.swift in Sources */,
 				491482A61EC1D00F00F1C9A2 /* AutoBattle.swift in Sources */,
 				491482B41EC1D00F00F1C9A2 /* StringType.swift in Sources */,
 				49AD4B371F43B7D6001EA00E /* TapScreen.swift in Sources */,

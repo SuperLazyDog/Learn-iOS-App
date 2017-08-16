@@ -1,5 +1,5 @@
 //
-//  First14ViewController.swift
+//  Third14ViewController.swift
 //  MyApp
 //
 //  Created by Weida Xu on 2017/8/16.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class First14ViewController: UIViewController {
+class Third14ViewController: UIViewController {
 
-    @IBOutlet weak var areaView: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.blue
+
         // Do any additional setup after loading the view.
     }
 
@@ -23,8 +21,9 @@ class First14ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func changeColor(_ sender: UIButton, forEvent event: UIEvent) {
-        areaView.backgroundColor = UIColor.red
+    @IBAction func goto2Button(_ sender: UIButton, forEvent event: UIEvent) {
+        let target = First14ViewController()
+        self.present(target, animated: true, completion: nil)
     }
 
     /*
@@ -36,9 +35,5 @@ class First14ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    @IBAction func close(segue:UIStoryboardSegue){
-        //
-    }
 
 }
