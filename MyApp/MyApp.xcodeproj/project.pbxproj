@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371310001F43D60100D7AA5C /* Second14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37130FFF1F43D60100D7AA5C /* Second14ViewController.swift */; };
+		371310021F43D7F400D7AA5C /* First14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371310011F43D7F400D7AA5C /* First14ViewController.swift */; };
 		4914829D1EC1D00F00F1C9A2 /* CreateStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914827F1EC1D00F00F1C9A2 /* CreateStorage.swift */; };
 		4914829E1EC1D00F00F1C9A2 /* GetUIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482801EC1D00F00F1C9A2 /* GetUIndex.swift */; };
 		4914829F1EC1D00F00F1C9A2 /* RandomChoose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491482811EC1D00F00F1C9A2 /* RandomChoose.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37130FFF1F43D60100D7AA5C /* Second14ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Second14ViewController.swift; sourceTree = "<group>"; };
+		371310011F43D7F400D7AA5C /* First14ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = First14ViewController.swift; sourceTree = "<group>"; };
 		4914827F1EC1D00F00F1C9A2 /* CreateStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStorage.swift; sourceTree = "<group>"; };
 		491482801EC1D00F00F1C9A2 /* GetUIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUIndex.swift; sourceTree = "<group>"; };
 		491482811EC1D00F00F1C9A2 /* RandomChoose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomChoose.swift; sourceTree = "<group>"; };
@@ -91,6 +95,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37130FFE1F43D5E300D7AA5C /* Chap14 */ = {
+			isa = PBXGroup;
+			children = (
+				37130FFF1F43D60100D7AA5C /* Second14ViewController.swift */,
+				371310011F43D7F400D7AA5C /* First14ViewController.swift */,
+			);
+			name = Chap14;
+			path = Table_Navigation/Chap14;
+			sourceTree = "<group>";
+		};
 		4914827C1EC1D00F00F1C9A2 /* My-Swift-Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +186,7 @@
 		49AD4B2A1F43B7D6001EA00E /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				37130FFE1F43D5E300D7AA5C /* Chap14 */,
 				49AD4B391F43B93F001EA00E /* Table_Navigation */,
 				49AD4B2B1F43B7D6001EA00E /* Default */,
 				49AD4B2E1F43B7D6001EA00E /* QRCode */,
@@ -319,6 +334,7 @@
 			files = (
 				491482B31EC1D00F00F1C9A2 /* Difficulty.swift in Sources */,
 				491482A31EC1D00F00F1C9A2 /* PeripheralPro.swift in Sources */,
+				371310021F43D7F400D7AA5C /* First14ViewController.swift in Sources */,
 				491482A21EC1D00F00F1C9A2 /* CentralManagerPro.swift in Sources */,
 				49AED08B1EB39AE300E1BF44 /* AppDelegate.swift in Sources */,
 				49AD4B3B1F43BAD1001EA00E /* TableViewViewController.swift in Sources */,
@@ -343,6 +359,7 @@
 				491482AA1EC1D00F00F1C9A2 /* ExString.swift in Sources */,
 				49AD4B331F43B7D6001EA00E /* FirstViewController.swift in Sources */,
 				491482AB1EC1D00F00F1C9A2 /* LayerSet.swift in Sources */,
+				371310001F43D60100D7AA5C /* Second14ViewController.swift in Sources */,
 				4914829F1EC1D00F00F1C9A2 /* RandomChoose.swift in Sources */,
 				49AD4B351F43B7D6001EA00E /* PlayScreen.swift in Sources */,
 				491482AF1EC1D00F00F1C9A2 /* Atom.swift in Sources */,
