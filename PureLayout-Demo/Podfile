@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target ‘PureLayout-Demo’ do
+    pod 'PureLayout'
+    pod 'SideMenu'
+end
