@@ -1,15 +1,18 @@
 PODS:
   - APIKit (3.1.1):
     - Result (~> 3.0)
+  - PureLayout (3.0.2)
   - Result (3.2.3)
 
 DEPENDENCIES:
   - APIKit (~> 3.1)
+  - PureLayout
 
 SPEC CHECKSUMS:
   APIKit: 7460983f490d3bde6aaaaa4164d18c9865a6f91d
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
 
-PODFILE CHECKSUM: 8c30fa3acc681677bb8868bb202b4f1e8ae6ba73
+PODFILE CHECKSUM: b9b1d03de48be493b8783ea56a559a29b2b4f16f
 
 COCOAPODS: 1.3.1
