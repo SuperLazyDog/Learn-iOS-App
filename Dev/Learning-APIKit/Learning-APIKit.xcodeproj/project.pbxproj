@@ -14,6 +14,7 @@
 		37EED2331F53A0E1003FF5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EED2311F53A0E1003FF5EE /* LaunchScreen.storyboard */; };
 		37EED23E1F53A0E1003FF5EE /* Learning_APIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EED23D1F53A0E1003FF5EE /* Learning_APIKitTests.swift */; };
 		37EED2491F53A0E1003FF5EE /* Learning_APIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EED2481F53A0E1003FF5EE /* Learning_APIKitUITests.swift */; };
+		995FDC163D3CFB951F014CCC /* Pods_Learning_APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859AC694D3839BCE89E17D06 /* Pods_Learning_APIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		37EED2441F53A0E1003FF5EE /* Learning-APIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Learning-APIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EED2481F53A0E1003FF5EE /* Learning_APIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_APIKitUITests.swift; sourceTree = "<group>"; };
 		37EED24A1F53A0E1003FF5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		859AC694D3839BCE89E17D06 /* Pods_Learning_APIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_APIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E6AE73931F389FFB53AF404 /* Pods-Learning-APIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning-APIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Learning-APIKit/Pods-Learning-APIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		F62110D6DDE63071BE3A06B3 /* Pods-Learning-APIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning-APIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Learning-APIKit/Pods-Learning-APIKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				995FDC163D3CFB951F014CCC /* Pods_Learning_APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				37EED23C1F53A0E1003FF5EE /* Learning-APIKitTests */,
 				37EED2471F53A0E1003FF5EE /* Learning-APIKitUITests */,
 				37EED2261F53A0E1003FF5EE /* Products */,
+				5B44FE82768E28AB98D53F71 /* Pods */,
+				8A7D78348AC09C99E040ECD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = "Learning-APIKitUITests";
 			sourceTree = "<group>";
 		};
+		5B44FE82768E28AB98D53F71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E6AE73931F389FFB53AF404 /* Pods-Learning-APIKit.debug.xcconfig */,
+				F62110D6DDE63071BE3A06B3 /* Pods-Learning-APIKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A7D78348AC09C99E040ECD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				859AC694D3839BCE89E17D06 /* Pods_Learning_APIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37EED24D1F53A0E1003FF5EE /* Build configuration list for PBXNativeTarget "Learning-APIKit" */;
 			buildPhases = (
+				42E6A373D0EA04A571061589 /* [CP] Check Pods Manifest.lock */,
 				37EED2211F53A0E1003FF5EE /* Sources */,
 				37EED2221F53A0E1003FF5EE /* Frameworks */,
 				37EED2231F53A0E1003FF5EE /* Resources */,
+				396926FEFA108D589945AC16 /* [CP] Embed Pods Frameworks */,
+				9D8A007B923401598921066B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		396926FEFA108D589945AC16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Learning-APIKit/Pods-Learning-APIKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Learning-APIKit/Pods-Learning-APIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42E6A373D0EA04A571061589 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Learning-APIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D8A007B923401598921066B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Learning-APIKit/Pods-Learning-APIKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37EED2211F53A0E1003FF5EE /* Sources */ = {
@@ -410,6 +493,7 @@
 		};
 		37EED24E1F53A0E1003FF5EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E6AE73931F389FFB53AF404 /* Pods-Learning-APIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Learning-APIKit/Info.plist";
@@ -422,6 +506,7 @@
 		};
 		37EED24F1F53A0E1003FF5EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F62110D6DDE63071BE3A06B3 /* Pods-Learning-APIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Learning-APIKit/Info.plist";
