@@ -14,6 +14,7 @@
 		37EED2331F53A0E1003FF5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EED2311F53A0E1003FF5EE /* LaunchScreen.storyboard */; };
 		37EED23E1F53A0E1003FF5EE /* Learning_APIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EED23D1F53A0E1003FF5EE /* Learning_APIKitTests.swift */; };
 		37EED2491F53A0E1003FF5EE /* Learning_APIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EED2481F53A0E1003FF5EE /* Learning_APIKitUITests.swift */; };
+		37EED2581F53A9CC003FF5EE /* APIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EED2571F53A9CC003FF5EE /* APIKit.swift */; };
 		995FDC163D3CFB951F014CCC /* Pods_Learning_APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859AC694D3839BCE89E17D06 /* Pods_Learning_APIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		37EED2441F53A0E1003FF5EE /* Learning-APIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Learning-APIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EED2481F53A0E1003FF5EE /* Learning_APIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_APIKitUITests.swift; sourceTree = "<group>"; };
 		37EED24A1F53A0E1003FF5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37EED2571F53A9CC003FF5EE /* APIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKit.swift; sourceTree = "<group>"; };
 		859AC694D3839BCE89E17D06 /* Pods_Learning_APIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_APIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E6AE73931F389FFB53AF404 /* Pods-Learning-APIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning-APIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Learning-APIKit/Pods-Learning-APIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		F62110D6DDE63071BE3A06B3 /* Pods-Learning-APIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning-APIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Learning-APIKit/Pods-Learning-APIKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		37EED2271F53A0E1003FF5EE /* Learning-APIKit */ = {
 			isa = PBXGroup;
 			children = (
+				37EED2561F53A9BA003FF5EE /* APIKit */,
 				37EED2281F53A0E1003FF5EE /* AppDelegate.swift */,
 				37EED22A1F53A0E1003FF5EE /* ViewController.swift */,
 				37EED22C1F53A0E1003FF5EE /* Main.storyboard */,
@@ -130,6 +133,14 @@
 				37EED24A1F53A0E1003FF5EE /* Info.plist */,
 			);
 			path = "Learning-APIKitUITests";
+			sourceTree = "<group>";
+		};
+		37EED2561F53A9BA003FF5EE /* APIKit */ = {
+			isa = PBXGroup;
+			children = (
+				37EED2571F53A9CC003FF5EE /* APIKit.swift */,
+			);
+			path = APIKit;
 			sourceTree = "<group>";
 		};
 		5B44FE82768E28AB98D53F71 /* Pods */ = {
@@ -290,12 +301,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Learning-APIKit/Pods-Learning-APIKit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Himotoki/Himotoki.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Himotoki.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
@@ -344,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EED2581F53A9CC003FF5EE /* APIKit.swift in Sources */,
 				37EED22B1F53A0E1003FF5EE /* ViewController.swift in Sources */,
 				37EED2291F53A0E1003FF5EE /* AppDelegate.swift in Sources */,
 			);
@@ -592,6 +606,7 @@
 				37EED24F1F53A0E1003FF5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37EED2501F53A0E1003FF5EE /* Build configuration list for PBXNativeTarget "Learning-APIKitTests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +615,7 @@
 				37EED2521F53A0E1003FF5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37EED2531F53A0E1003FF5EE /* Build configuration list for PBXNativeTarget "Learning-APIKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +624,7 @@
 				37EED2551F53A0E1003FF5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

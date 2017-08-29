@@ -4,5 +4,6 @@ use_frameworks!
 target 'Learning-APIKit' do
   pod 'APIKit', '~> 3.1'
   pod 'PureLayout'
+  pod 'Himotoki'
 
 end

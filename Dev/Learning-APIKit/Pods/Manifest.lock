@@ -1,18 +1,21 @@
 PODS:
   - APIKit (3.1.1):
     - Result (~> 3.0)
+  - Himotoki (3.0.1)
   - PureLayout (3.0.2)
   - Result (3.2.3)
 
 DEPENDENCIES:
   - APIKit (~> 3.1)
+  - Himotoki
   - PureLayout
 
 SPEC CHECKSUMS:
   APIKit: 7460983f490d3bde6aaaaa4164d18c9865a6f91d
+  Himotoki: 85fda41d4d0e14f7228317a3b474175cdfb8f515
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
 
-PODFILE CHECKSUM: b9b1d03de48be493b8783ea56a559a29b2b4f16f
+PODFILE CHECKSUM: c76ef4cf3f463698455fe782266e6f93e1416593
 
 COCOAPODS: 1.3.1
