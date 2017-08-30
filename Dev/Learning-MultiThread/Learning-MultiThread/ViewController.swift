@@ -9,9 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let activityIndicatorView = UIActivityIndicatorView()
+        activityIndicatorView.frame = CGRect(x: 100, y: 300, width: 200, height: 200)
+        activityIndicatorView.hidesWhenStopped = true
+        activityIndicatorView.color = UIColor.green
+        activityIndicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        self.view.addSubview(activityIndicatorView)
+        activityIndicatorView.center = self.view.center
+        activityIndicatorView.startAnimating()
+        
         // Do any additional setup after loading the view, typically from a nib.
         //----------------------------------------------------------------------
         //                              异步处理
@@ -98,7 +107,7 @@ class ViewController: UIViewController {
                 print(i)
             }
         }
-        group.wait(timeout: .distantFuture)
+        let _ = group.wait(timeout: .distantFuture)
         print("猜猜我在哪里")
     }
     
