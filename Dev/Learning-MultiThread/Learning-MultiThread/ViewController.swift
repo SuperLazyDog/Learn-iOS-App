@@ -25,7 +25,7 @@ class ViewController: UIViewController {
             }
         }
         print("猜猜我在哪里")
-        sleep(2)
+        //sleep(2)
         //----------------------------------------------------------------------
         //                              同步处理
         //----------------------------------------------------------------------
@@ -70,6 +70,26 @@ class ViewController: UIViewController {
         }
         serialQueue.sync {
             print("sleeped")
+        }
+        
+        
+        var formatter = DateFormatter()
+        let jaLocale = Locale(identifier: "ja_JP")
+        formatter.locale = jaLocale
+        
+        formatter.dateFormat = "yyyy年MM月dd日 HH時mm分"
+        
+        if let theDate = formatter.date(from: "2016年09月15日 20時45分") {
+            print(theDate.description(with: jaLocale)) // 2016年9月15日木曜日 20時45分00秒 日本標準時
+        } else {
+            print("日付に変換できません")
+        }
+        //2017-08-28T14:26:37.000+09:00
+        formatter.dateFormat = "yyyy-MM-DD"
+        if let theDate = formatter.date(from: "2017-08-28") {
+            print(theDate.description(with: jaLocale)) // 2016年9月15日木曜日 20時45分00秒 日本標準時
+        } else {
+            print("日付に変換できません")
         }
     }
     
