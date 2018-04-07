@@ -25,7 +25,13 @@ class GameScoreboardEditorViewController: UIViewController {
     @IBOutlet weak var awayTeamNameLabel: UILabel!
     
     @IBOutlet weak var scoreLabel: UILabel!
-    
+	
+	var viewModel: GameScoreboardEditorViewModel? {
+		didSet {
+			fillUI()
+		}
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,7 +42,7 @@ class GameScoreboardEditorViewController: UIViewController {
     // MARK: Button Action
     
     @IBAction func pauseButtonPress(_ sender: AnyObject) {
-
+		viewModel?.togglePause()
     }
     
     // MARK: Private
@@ -49,8 +55,32 @@ class GameScoreboardEditorViewController: UIViewController {
         self.timeLabel.textColor = UIColor.textColor
     }
     
-    fileprivate func fillUI() {
-
-    }
+	fileprivate func fillUI() {
+		if !isViewLoaded {
+			return
+		}
+		
+		guard let viewModel = viewModel else {
+			return
+		}
+		
+		// we are sure here that we have all the setup done
+		
+		self.homeTeamNameLabel.text = viewModel.homeTeam
+		self.awayTeamNameLabel.text = viewModel.awayTeam
+		
+		self.scoreLabel.text = viewModel.score
+		self.timeLabel.text = viewModel.time
+		
+		let title: String = viewModel.isPaused ? "Start" : "Pause"
+		self.pauseButton.setTitle(title, for: .normal)
+		homePlayer1View.viewModel = viewModel.homePlayers[0]
+		homePlayer2View.viewModel = viewModel.homePlayers[1]
+		homePlayer3View.viewModel = viewModel.homePlayers[2]
+		
+		awayPlayer1View.viewModel = viewModel.awayPlayers[0]
+		awayPlayer2View.viewModel = viewModel.awayPlayers[1]
+		awayPlayer3View.viewModel = viewModel.awayPlayers[2]
+	}
 
 }

@@ -24,7 +24,11 @@ class PlayerScoreboardMoveEditorView: UIView {
     @IBOutlet weak var foulButton: UIButton!
     
     fileprivate weak var playerNibView: UIView!
-    
+	var viewModel: PlayerScoreboardMoveEditorViewModel? {
+		didSet {
+			fillUI()
+		}
+	}
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -87,8 +91,18 @@ class PlayerScoreboardMoveEditorView: UIView {
         button.backgroundColor = UIColor.brightPlayerBackgroundColor
     }
     
-    fileprivate func fillUI() {
-
-    }
+	fileprivate func fillUI() {
+		guard let viewModel = viewModel else {
+			return
+		}
+		
+		self.name.text = viewModel.playerName
+		
+		self.onePointCountLabel.text = viewModel.onePointMoveCount
+		self.twoPointCountLabel.text = viewModel.twoPointMoveCount
+		self.assistCountLabel.text = viewModel.assistMoveCount
+		self.reboundCountLabel.text = viewModel.reboundMoveCount
+		self.foulCountLabel.text = viewModel.foulMoveCount
+	}
     
 }

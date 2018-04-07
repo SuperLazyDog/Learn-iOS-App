@@ -27,6 +27,10 @@
 		11BCCCEA1D97CABA008DB25F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BCCCE11D97CABA008DB25F /* Team.swift */; };
 		11BCCCEB1D97CABA008DB25F /* UIStoryboard+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BCCCE21D97CABA008DB25F /* UIStoryboard+Loader.swift */; };
 		11E21EAF1DA4106400380E3C /* NSTimer+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E21EAE1DA4106400380E3C /* NSTimer+Closure.swift */; };
+		499AB80B20752BE0008694D8 /* GameScoreboardEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499AB80A20752BE0008694D8 /* GameScoreboardEditorViewModel.swift */; };
+		499AB80D20753BF9008694D8 /* GameScoreboardEditorViewModelFromGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499AB80C20753BF9008694D8 /* GameScoreboardEditorViewModelFromGame.swift */; };
+		499AB81020754782008694D8 /* PlayerScoreboardMoveEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499AB80F20754782008694D8 /* PlayerScoreboardMoveEditorViewModel.swift */; };
+		499AB8122075490F008694D8 /* PlayerScoreboardMoveEditorViewModelFromPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499AB8112075490F008694D8 /* PlayerScoreboardMoveEditorViewModelFromPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		11BCCCE11D97CABA008DB25F /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		11BCCCE21D97CABA008DB25F /* UIStoryboard+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Loader.swift"; sourceTree = "<group>"; };
 		11E21EAE1DA4106400380E3C /* NSTimer+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimer+Closure.swift"; sourceTree = "<group>"; };
+		499AB80A20752BE0008694D8 /* GameScoreboardEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreboardEditorViewModel.swift; sourceTree = "<group>"; };
+		499AB80C20753BF9008694D8 /* GameScoreboardEditorViewModelFromGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreboardEditorViewModelFromGame.swift; sourceTree = "<group>"; };
+		499AB80F20754782008694D8 /* PlayerScoreboardMoveEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreboardMoveEditorViewModel.swift; sourceTree = "<group>"; };
+		499AB8112075490F008694D8 /* PlayerScoreboardMoveEditorViewModelFromPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreboardMoveEditorViewModelFromPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +216,10 @@
 		11F768761D99050600F159D2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				499AB80A20752BE0008694D8 /* GameScoreboardEditorViewModel.swift */,
+				499AB80C20753BF9008694D8 /* GameScoreboardEditorViewModelFromGame.swift */,
+				499AB80F20754782008694D8 /* PlayerScoreboardMoveEditorViewModel.swift */,
+				499AB8112075490F008694D8 /* PlayerScoreboardMoveEditorViewModelFromPlayer.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +292,7 @@
 				TargetAttributes = {
 					11BCCCA81D97CA2C008DB25F = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = LG37524TU4;
 						LastSwiftMigration = 0820;
 					};
 					11BCCCBC1D97CA2C008DB25F = {
@@ -352,15 +365,19 @@
 				118C387E1D9B0A180006396D /* UIColor+Theme.swift in Sources */,
 				118C38741D99B7760006396D /* PlayerScoreboardMoveEditorView.swift in Sources */,
 				11BCCCEB1D97CABA008DB25F /* UIStoryboard+Loader.swift in Sources */,
+				499AB80D20753BF9008694D8 /* GameScoreboardEditorViewModelFromGame.swift in Sources */,
 				11BCCCAF1D97CA2C008DB25F /* HomeViewController.swift in Sources */,
 				118C38781D99B9F10006396D /* UINib+Loader.swift in Sources */,
+				499AB81020754782008694D8 /* PlayerScoreboardMoveEditorViewModel.swift in Sources */,
 				11BCCCE81D97CABA008DB25F /* Player.swift in Sources */,
 				11E21EAF1DA4106400380E3C /* NSTimer+Closure.swift in Sources */,
 				11BCCCAD1D97CA2C008DB25F /* AppDelegate.swift in Sources */,
+				499AB8122075490F008694D8 /* PlayerScoreboardMoveEditorViewModelFromPlayer.swift in Sources */,
 				11BCCCEA1D97CABA008DB25F /* Team.swift in Sources */,
 				11BCCCE41D97CABA008DB25F /* Game.swift in Sources */,
 				118C387A1D99C1E70006396D /* UIViewController+Subview.swift in Sources */,
 				11615D0D1D97F5C600A007D2 /* GameScoreboardEditorViewController.swift in Sources */,
+				499AB80B20752BE0008694D8 /* GameScoreboardEditorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,9 +519,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LG37524TU4;
 				INFOPLIST_FILE = MVVMSwiftExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.toptal.MVVMSwiftExample;
+				PRODUCT_BUNDLE_IDENTIFIER = UUID12234;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -514,9 +532,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LG37524TU4;
 				INFOPLIST_FILE = MVVMSwiftExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.toptal.MVVMSwiftExample;
+				PRODUCT_BUNDLE_IDENTIFIER = UUID12234;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
