@@ -40,6 +40,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4996F7C72084F20E001F19DE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		4996F7C82084F23D001F19DE /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		4996F7C92084F24C001F19DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4996F7CA2084F255001F19DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4996F7CB2084F25D001F19DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		4996F7CC2084F2AE001F19DE /* main */ = {
+			isa = PBXGroup;
+			children = (
+				499AB7F82073AD7D008694D8 /* AppDelegate.swift */,
+				499AB7FC2073AD7D008694D8 /* Main.storyboard */,
+				499AB7FA2073AD7D008694D8 /* ViewController.swift */,
+				499AB8012073AD7D008694D8 /* LaunchScreen.storyboard */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		4996F7CD2084F2DE001F19DE /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				499AB7FF2073AD7D008694D8 /* Assets.xcassets */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
 		499AB7EC2073AD7D008694D8 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +115,13 @@
 		499AB7F72073AD7D008694D8 /* pro */ = {
 			isa = PBXGroup;
 			children = (
-				499AB7F82073AD7D008694D8 /* AppDelegate.swift */,
-				499AB7FA2073AD7D008694D8 /* ViewController.swift */,
-				499AB7FC2073AD7D008694D8 /* Main.storyboard */,
-				499AB7FF2073AD7D008694D8 /* Assets.xcassets */,
-				499AB8012073AD7D008694D8 /* LaunchScreen.storyboard */,
+				4996F7CD2084F2DE001F19DE /* assets */,
+				4996F7CC2084F2AE001F19DE /* main */,
+				4996F7CB2084F25D001F19DE /* ViewModels */,
+				4996F7CA2084F255001F19DE /* Views */,
+				4996F7C92084F24C001F19DE /* Models */,
+				4996F7C82084F23D001F19DE /* Vendor */,
+				4996F7C72084F20E001F19DE /* Library */,
 				499AB8042073AD7D008694D8 /* Info.plist */,
 			);
 			path = pro;

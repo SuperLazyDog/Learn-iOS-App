@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aLy-D9-E7t">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aLy-D9-E7t">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Game Scoreboard Editor View Controller-->
@@ -15,29 +19,29 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kf-gO-u0g" userLabel="Home Player View">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Kf-gO-u0g" userLabel="Home Player View">
                                 <rect key="frame" x="16" y="20" width="288" height="203"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFE-Qp-4Da" userLabel="Plyr1 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GFE-Qp-4Da" userLabel="Plyr1 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="7" width="288" height="60"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-Hs-i8K" userLabel="Plyr2 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-Hs-i8K" userLabel="Plyr2 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="75" width="288" height="60"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T85-ye-cyY" userLabel="Plyr3 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T85-ye-cyY" userLabel="Plyr3 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="143" width="288" height="60"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Zva-GQ-MuX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="6h8-Hs-i8K" firstAttribute="width" secondItem="T85-ye-cyY" secondAttribute="width" id="6KV-aP-ea4"/>
                                     <constraint firstItem="6h8-Hs-i8K" firstAttribute="height" secondItem="T85-ye-cyY" secondAttribute="height" id="6nS-7R-26H"/>
@@ -52,26 +56,26 @@
                                     <constraint firstAttribute="trailing" secondItem="T85-ye-cyY" secondAttribute="trailing" id="wU8-e4-fhL"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xw-JA-2lE" userLabel="Away Player View">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5xw-JA-2lE" userLabel="Away Player View">
                                 <rect key="frame" x="16" y="345" width="288" height="203"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-hq-zeH" userLabel="Plyr1 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-hq-zeH" userLabel="Plyr1 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="60"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="bJo-PG-39x"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5z-By-MZh" userLabel="Plyr2 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5z-By-MZh" userLabel="Plyr2 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="68" width="288" height="60"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qd-GI-ugf" userLabel="Plyr3 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6qd-GI-ugf" userLabel="Plyr3 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="136" width="288" height="60"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="6qd-GI-ugf" firstAttribute="height" secondItem="d9X-hq-zeH" secondAttribute="height" id="4W5-AK-g2s"/>
                                     <constraint firstItem="H5z-By-MZh" firstAttribute="top" secondItem="d9X-hq-zeH" secondAttribute="bottom" constant="8" id="8wC-VZ-69T"/>
@@ -86,29 +90,29 @@
                                     <constraint firstItem="H5z-By-MZh" firstAttribute="height" secondItem="d9X-hq-zeH" secondAttribute="height" id="vAH-SI-Igg"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YB5-EX-sQU" userLabel="Middle View">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YB5-EX-sQU" userLabel="Middle View">
                                 <rect key="frame" x="16" y="239" width="288" height="90"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gF2-2q-RlW" userLabel="Time View">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gF2-2q-RlW" userLabel="Time View">
                                         <rect key="frame" x="0.0" y="42" width="296" height="48"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:54" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-yl-v05" userLabel="Timer Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="09:54" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-yl-v05" userLabel="Timer Label">
                                                 <rect key="frame" x="125" y="14" width="47" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.38431372549999998" green="0.3411764706" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.38431372549999998" green="0.3411764706" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x14-NV-qNP" userLabel="Pause Button">
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x14-NV-qNP" userLabel="Pause Button">
                                                 <rect key="frame" x="246" y="10" width="42" height="30"/>
                                                 <state key="normal" title="Pause">
-                                                    <color key="titleColor" red="0.95294117647058818" green="0.50588235294117645" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.95294117647058818" green="0.50588235294117645" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="pauseButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yiW-fL-gay"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="x14-NV-qNP" secondAttribute="trailing" constant="8" id="2tk-fk-c6v"/>
                                             <constraint firstItem="x14-NV-qNP" firstAttribute="centerY" secondItem="8nn-yl-v05" secondAttribute="centerY" id="Ots-hD-89U"/>
@@ -116,29 +120,29 @@
                                             <constraint firstItem="8nn-yl-v05" firstAttribute="centerX" secondItem="gF2-2q-RlW" secondAttribute="centerX" id="y9w-A8-izT"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-ah-pHI" userLabel="Score View">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-ah-pHI" userLabel="Score View">
                                         <rect key="frame" x="0.0" y="0.0" width="296" height="43"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ringerz" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flj-AD-oFu" userLabel="Home Team Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ringerz" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flj-AD-oFu" userLabel="Home Team Label">
                                                 <rect key="frame" x="43" y="11" width="59" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.38431372549019605" green="0.3411764705882353" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.38431372549019605" green="0.3411764705882353" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ballerz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qat-Kz-eOH" userLabel="Away Team Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ballerz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qat-Kz-eOH" userLabel="Away Team Label">
                                                 <rect key="frame" x="195" y="11" width="52" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.38431372549019605" green="0.3411764705882353" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.38431372549019605" green="0.3411764705882353" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 - 7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbx-OF-SVu" userLabel="Score Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4 - 7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbx-OF-SVu" userLabel="Score Label">
                                                 <rect key="frame" x="110" y="0.0" width="77" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                                <color key="textColor" red="0.99607843139999996" green="0.98039215690000003" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.99607843139999996" green="0.98039215690000003" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="0bz-Ey-woQ"/>
                                             <constraint firstItem="Qat-Kz-eOH" firstAttribute="centerY" secondItem="Wbx-OF-SVu" secondAttribute="centerY" id="2UI-sZ-eaF"/>
@@ -160,7 +164,7 @@
                                         </variation>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="gF2-2q-RlW" firstAttribute="leading" secondItem="YB5-EX-sQU" secondAttribute="leading" id="2RX-aD-WVO"/>
                                     <constraint firstItem="TgL-ah-pHI" firstAttribute="leading" secondItem="YB5-EX-sQU" secondAttribute="leading" id="3lC-NA-0re"/>
@@ -173,7 +177,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.66274509803921566" green="0.93333333333333335" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.66274509803921566" green="0.93333333333333335" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YB5-EX-sQU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1Bz-h3-9XT"/>
                             <constraint firstItem="5xw-JA-2lE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3wj-xl-y9T"/>
@@ -212,7 +216,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="awayPlayer1View" destination="d9X-hq-zeH" id="Ep1-tF-aPf"/>
                         <outlet property="awayPlayer2View" destination="H5z-By-MZh" id="zNW-dw-BlE"/>
@@ -229,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="298"/>
+            <point key="canvasLocation" x="1271" y="158"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="74N-6P-qCq">
@@ -240,9 +243,9 @@
                         <viewControllerLayoutGuide type="bottom" id="Dqh-gK-EMI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qYA-K2-5yv">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73J-26-mcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
