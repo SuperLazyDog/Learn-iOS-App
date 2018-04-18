@@ -22,5 +22,7 @@ class StartScreenDrawing {
 	
 	private func drawTopAreaView(topAreaView: TopAreaView) -> Void {
 		topAreaView.backgroundColor = UIColor.red
+		print("topAreaView.frams: \(topAreaView.frame)")
+		print("topAreaView.bounds: \(topAreaView.bounds)")
 	}
 }
