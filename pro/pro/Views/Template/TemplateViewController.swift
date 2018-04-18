@@ -1,21 +1,19 @@
 //
-//  S11BasicViewController.swift
+//  TemplateViewController.swift
 //  pro
 //
-//  Created by 徐伟达 on 2018/4/18.
+//  Created by 徐伟达 on 2018/4/19.
 //  Copyright © 2018年 Weida. All rights reserved.
 //
 
 import UIKit
 
-class Section11BasicViewController: UIViewController {
-	
-	@IBOutlet weak var topAreaView: TopAreaView!
-	
+class TemplateViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-		let styleDrawing = StartScreenDrawing.init(target: self)
-		styleDrawing.drawViewController()
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

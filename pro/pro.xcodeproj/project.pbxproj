@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		499605A92087DD8D00377630 /* TopAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499605A82087DD8D00377630 /* TopAreaView.swift */; };
+		499605AE2087DE9500377630 /* StartScreenDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499605AD2087DE9500377630 /* StartScreenDrawing.swift */; };
+		499605B22087E2D100377630 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499605B12087E2D100377630 /* TemplateViewController.swift */; };
 		4996F7EF2086744E001F19DE /* Section11BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996F7EE2086744E001F19DE /* Section11BasicViewController.swift */; };
 		499AB7F92073AD7D008694D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499AB7F82073AD7D008694D8 /* AppDelegate.swift */; };
 		499AB7FB2073AD7D008694D8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499AB7FA2073AD7D008694D8 /* StartViewController.swift */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		2D8D51D3D55F75AD1CA9D74A /* Pods-pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.release.xcconfig"; sourceTree = "<group>"; };
+		499605A82087DD8D00377630 /* TopAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAreaView.swift; sourceTree = "<group>"; };
+		499605AD2087DE9500377630 /* StartScreenDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenDrawing.swift; sourceTree = "<group>"; };
+		499605B12087E2D100377630 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		4996F7EE2086744E001F19DE /* Section11BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Section11BasicViewController.swift; path = Views/Section11BasicViewController.swift; sourceTree = "<group>"; };
 		499AB7F52073AD7D008694D8 /* pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		499AB7F82073AD7D008694D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +63,38 @@
 			path = Routes;
 			sourceTree = "<group>";
 		};
+		499605AA2087DE0300377630 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				499605AC2087DE6700377630 /* Common */,
+				499605AB2087DE3700377630 /* StartScreen */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		499605AB2087DE3700377630 /* StartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				499605AD2087DE9500377630 /* StartScreenDrawing.swift */,
+			);
+			path = StartScreen;
+			sourceTree = "<group>";
+		};
+		499605AC2087DE6700377630 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		499605B02087E2B100377630 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				499605B12087E2D100377630 /* TemplateViewController.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
 		4996F7C72084F20E001F19DE /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,7 @@
 			children = (
 				4996F7E120867224001F19DE /* StartScreen */,
 				4996F7E220867384001F19DE /* S11ビューScreen */,
+				499605B02087E2B100377630 /* Template */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				499AB7FF2073AD7D008694D8 /* Assets.xcassets */,
+				499605AA2087DE0300377630 /* Drawing */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -141,6 +181,7 @@
 		4996F7E4208673A2001F19DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				499605A82087DD8D00377630 /* TopAreaView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,7 +366,10 @@
 			files = (
 				499AB7FB2073AD7D008694D8 /* StartViewController.swift in Sources */,
 				499AB7F92073AD7D008694D8 /* AppDelegate.swift in Sources */,
+				499605B22087E2D100377630 /* TemplateViewController.swift in Sources */,
 				4996F7EF2086744E001F19DE /* Section11BasicViewController.swift in Sources */,
+				499605A92087DD8D00377630 /* TopAreaView.swift in Sources */,
+				499605AE2087DE9500377630 /* StartScreenDrawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
