@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class MiddleTableViewDataSource: NSObject {
+	private var titles: [String]? = nil
+	private var defaultTitles: [String] = ["section 1"]
 	private var items: [Int: Array<String>]? = nil
 	private let defaultItems: [Int: Array<String>] = [0: ["sampleData 1", "sampleData 2", "sampleData 3"]]
 	private var reuseIdentifier: String? = nil
@@ -17,6 +19,12 @@ class MiddleTableViewDataSource: NSObject {
 	init(items: [Int: Array<String>]) {
 		super.init()
 		self.items = items
+	}
+	
+	init(items: [Int: Array<String>], titles: [String]) {
+		super.init()
+		self.items = items
+		self.titles = titles
 	}
 	
 	// items相关设置
@@ -28,6 +36,14 @@ class MiddleTableViewDataSource: NSObject {
 		return self.items ?? self.defaultItems
 	}
 	
+	// titles相关设置
+	func setTitles(titles: [String]) {
+		self.titles = titles
+	}
+	
+	func getTitles() -> [String] {
+		return self.titles ?? self.defaultTitles
+	}
 	// 设置reuesIdentifier
 	func setReuseIdentifier(name: String) {
 		self.reuseIdentifier = name
@@ -59,5 +75,26 @@ extension MiddleTableViewDataSource : UITableViewDataSource {
 			cell.textLabel?.text = items[indexPath.section]?[indexPath.row] ?? "error"
 			return cell
 		}
+	}
+	
+	func numberOfSections(in tableView: UITableView) -> Int {
+		// option, 返回section数
+		return titles?.count ?? defaultItems.count
+	}
+	
+	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		// option, 设置section的header标题
+		if tableView.numberOfSections <= 1 {
+			return nil
+		}
+		return self.getTitles()[section] + " header"
+	}
+	
+	func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+		// option, 设置section的footer标题
+		if tableView.numberOfSections <= 1 {
+			return nil
+		}
+		return self.getTitles()[section] + " footer"
 	}
 }

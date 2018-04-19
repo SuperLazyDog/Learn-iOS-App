@@ -40,6 +40,7 @@ class Section11BasicViewController: UIViewController {
 //		middleTableView.register(MiddleTableViewCell.self, forCellReuseIdentifier: "sample")
 		middleTableViewDataSource.setReuseIdentifier(name: "MiddleTableViewCell")
 		middleTableView.setDataSourceAndDelegate(dataSource: middleTableViewDataSource, delegate: middleTableViewDelegate)
+//		middleTableViewDataSource.setTitles(titles: ["one", "two"]) // 采用这行, 则显示cell的header, footer
     }
 
     override func didReceiveMemoryWarning() {

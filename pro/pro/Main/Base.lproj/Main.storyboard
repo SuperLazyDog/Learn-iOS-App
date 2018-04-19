@@ -114,8 +114,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DdV-xV-xpf" customClass="MiddleTableView" customModule="pro" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="351" width="375" height="116"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="i2F-gW-SaH"/>
+                                </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MiddleTableViewCell" id="1c4-w9-ESg" customClass="MiddleTableViewCell" customModule="pro" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MiddleTableViewCell" id="1c4-w9-ESg" customClass="MiddleTableViewCell" customModule="pro" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1c4-w9-ESg" id="K0N-1I-E0Y">
@@ -139,7 +142,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Xop-R7-HLI" firstAttribute="bottom" secondItem="DdV-xV-xpf" secondAttribute="bottom" constant="200" id="74S-Ik-iuK"/>
                             <constraint firstItem="02P-Fv-tbg" firstAttribute="top" secondItem="Xop-R7-HLI" secondAttribute="top" constant="20" id="DmT-Hv-jRz"/>
                             <constraint firstItem="NfO-W3-GcT" firstAttribute="top" secondItem="kyG-Hj-SzM" secondAttribute="bottom" id="GGk-B3-V70"/>
                             <constraint firstItem="DdV-xV-xpf" firstAttribute="top" secondItem="NfO-W3-GcT" secondAttribute="bottom" constant="20" id="Ge1-m3-lZ9"/>
