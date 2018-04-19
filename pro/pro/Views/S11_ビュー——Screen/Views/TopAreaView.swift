@@ -21,7 +21,10 @@ class TopAreaView: UIView {
 	func createSubViewWith(color: UIColor) {
 		let viewByCode = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 20, height: 20))
 		viewByCode.backgroundColor = color
+		viewByCode.layer.cornerRadius = 5.0
+		viewByCode.layer.borderColor = UIColor.black.cgColor
+		viewByCode.layer.borderWidth = 2.0
 		self.addSubview(viewByCode)
-	}
+	} 
 
 }

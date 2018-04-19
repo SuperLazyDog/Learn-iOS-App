@@ -139,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				4996F7E120867224001F19DE /* StartScreen */,
-				4996F7E220867384001F19DE /* S11ビューScreen */,
+				4996F7E220867384001F19DE /* S11 ビューScreen */,
 				499605B02087E2B100377630 /* Template */,
 			);
 			path = Views;
@@ -180,13 +180,13 @@
 			path = StartScreen;
 			sourceTree = "<group>";
 		};
-		4996F7E220867384001F19DE /* S11ビューScreen */ = {
+		4996F7E220867384001F19DE /* S11 ビューScreen */ = {
 			isa = PBXGroup;
 			children = (
 				4996F7EE2086744E001F19DE /* Section11BasicViewController.swift */,
 				4996F7E4208673A2001F19DE /* Views */,
 			);
-			name = "S11ビューScreen";
+			name = "S11 ビューScreen";
 			path = "S11_ビュー——Screen";
 			sourceTree = "<group>";
 		};

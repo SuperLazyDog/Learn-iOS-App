@@ -21,7 +21,24 @@ class StartScreenDrawing {
 	}
 	
 	private func drawTopAreaView(topAreaView: TopAreaView) -> Void {
-		topAreaView.backgroundColor = UIColor.red
-		topAreaView.printSize()
+		let drawing = TopAreaViewDrawing.init(target: topAreaView)
+		drawing.draw()
+		
+	}
+}
+
+extension StartScreenDrawing {
+	class TopAreaViewDrawing {
+		let topAreaView: TopAreaView
+		
+		init(target: TopAreaView) {
+			self.topAreaView = target
+		}
+		
+		func draw() {
+			topAreaView.backgroundColor = UIColor.red
+			topAreaView.printSize()
+		}
+		
 	}
 }

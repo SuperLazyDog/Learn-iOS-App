@@ -18,6 +18,7 @@ class Section11BasicViewController: UIViewController {
 		styleDrawing.drawViewController()
 		// 通过程序代码创建view
 		topAreaView.createSubViewWith(color: .yellow)
+		
     }
 
     override func didReceiveMemoryWarning() {
