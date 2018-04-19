@@ -38,22 +38,25 @@ extension MiddleTableViewDataSource : UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		// 必须，返回每个session的行数
 		let rows = self.getItems()[section]?.count ?? 0
-		print("session: \(section)")
-		print("self.getItems()?: \(self.getItems())")
-		print("rows: \(rows)")
-		print("------------------")
+//		print("session: \(section)")
+//		print("self.getItems()?: \(self.getItems())")
+//		print("rows: \(rows)")
+//		print("------------------")
 		return rows
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		// 必须, 返回每行的cell
+		let items = self.getItems()
 		if let reuseIdentifier = self.reuseIdentifier {
+			print("in reuseIdentifier: \(reuseIdentifier)") // TODO: delete here
 			let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-			cell.textLabel?.text = items?[indexPath.section]?[indexPath.row] ?? "error"
+			cell.textLabel?.text = items[indexPath.section]?[indexPath.row] ?? "error"
 			return cell
 		} else { // 没有reuseIdentifier就新建cell
+			print("in else") // TODO: delete here
 			let cell = MiddleTableViewCell.init(style: .default, reuseIdentifier: nil)
-			cell.textLabel?.text = items?[indexPath.section]?[indexPath.row] ?? "error"
+			cell.textLabel?.text = items[indexPath.section]?[indexPath.row] ?? "error"
 			return cell
 		}
 	}

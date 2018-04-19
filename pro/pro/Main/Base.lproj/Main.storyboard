@@ -114,6 +114,27 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DdV-xV-xpf" customClass="MiddleTableView" customModule="pro" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="351" width="375" height="116"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MiddleTableViewCell" id="1c4-w9-ESg" customClass="MiddleTableViewCell" customModule="pro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1c4-w9-ESg" id="K0N-1I-E0Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartScreenTopAreaSampleImage" translatesAutoresizingMaskIntoConstraints="NO" id="67c-hK-GrM">
+                                                    <rect key="frame" x="225" y="0.0" width="150" height="43.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="67c-hK-GrM" secondAttribute="trailing" id="4TY-Zr-ksz"/>
+                                                <constraint firstItem="67c-hK-GrM" firstAttribute="width" secondItem="K0N-1I-E0Y" secondAttribute="width" multiplier="0.4" id="S4t-Zd-qtm"/>
+                                                <constraint firstItem="67c-hK-GrM" firstAttribute="top" secondItem="K0N-1I-E0Y" secondAttribute="top" id="tm8-rw-BkT"/>
+                                                <constraint firstAttribute="bottom" secondItem="67c-hK-GrM" secondAttribute="bottom" id="x9A-Ji-lDr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -141,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7v-xD-NUA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4496.8000000000002" y="115.59220389805098"/>
+            <point key="canvasLocation" x="9598" y="0.0"/>
         </scene>
         <!--Template View Controller-->
         <scene sceneID="VcL-fa-Wh9">
@@ -173,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4d-Ue-GqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4497" y="-2382"/>
+            <point key="canvasLocation" x="9598" y="-2243"/>
         </scene>
     </scenes>
     <resources>
