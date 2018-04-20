@@ -13,9 +13,12 @@ class Section11BasicViewController: UIViewController {
 	@IBOutlet weak var topAreaView: TopAreaView!
 	@IBOutlet weak var middleScrollView: UIScrollView!
 	@IBOutlet weak var middleTableView: MiddleTableView!
+	@IBOutlet weak var bottomCollectionView: BottomCollectionView!
 	
 	let middleTableViewDataSource = MiddleTableViewDataSource.init(items: [0: ["a", "b", "c"]])
 	let middleTableViewDelegate: MiddleTableViewDelegate? = nil
+	let bottomCollectionViewHelper = BottomCollectionViewDataSourceAndDelegate.init()
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
 		let styleDrawing = StartScreenDrawing.init(target: self)
@@ -41,6 +44,13 @@ class Section11BasicViewController: UIViewController {
 		middleTableViewDataSource.setReuseIdentifier(name: "MiddleTableViewCell")
 		middleTableView.setDataSourceAndDelegate(dataSource: middleTableViewDataSource, delegate: middleTableViewDelegate)
 //		middleTableViewDataSource.setTitles(titles: ["one", "two"]) // 采用这行, 则显示cell的header, footer
+		//----------------------------------------------------------
+		//                   创建collectionView
+		//----------------------------------------------------------
+		let reuseIdentifier = "BottomCollectionViewCell"
+//		bottomCollectionView.register(BottomCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+		bottomCollectionViewHelper.setReuseIdentifier(name: reuseIdentifier)
+		bottomCollectionView.setDataSourceAndDelegate(dataSource: bottomCollectionViewHelper, delegate: bottomCollectionViewHelper)
     }
 
     override func didReceiveMemoryWarning() {
