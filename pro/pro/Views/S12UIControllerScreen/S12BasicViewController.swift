@@ -9,10 +9,9 @@
 import UIKit
 
 class Section12BasicViewController: UIViewController {
-
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -20,8 +19,17 @@ class Section12BasicViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+	
+	//-------------------------------------------------------------
+	// 						 UIButton
+	//-------------------------------------------------------------
+	// touch up inside
+	@IBAction func button1(_ sender: Any) {
+		print(sender)
+	}
+	
+	
+	
     /*
     // MARK: - Navigation
 
@@ -31,5 +39,6 @@ class Section12BasicViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+	
+	
 }
