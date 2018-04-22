@@ -414,7 +414,39 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvq-cs-MUw">
                                 <rect key="frame" x="207" y="70" width="207" height="103"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="text field" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="QtB-7B-Wnc">
+                                        <rect key="frame" x="8" y="8" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="93d-fk-B9p"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="didEndOnExit:" destination="F2Z-qg-rrU" eventType="editingDidEndOnExit" id="gyT-q4-FDh"/>
+                                            <action selector="editDidEnd:" destination="F2Z-qg-rrU" eventType="editingDidEnd" id="3IX-Fz-zbW"/>
+                                            <action selector="editDisBegin:" destination="F2Z-qg-rrU" eventType="editingDidBegin" id="5yO-zm-3jM"/>
+                                            <action selector="editingChanged:" destination="F2Z-qg-rrU" eventType="editingChanged" id="P0z-97-cbX"/>
+                                            <action selector="touchUpOutside:" destination="F2Z-qg-rrU" eventType="touchUpOutside" id="B0H-X1-V80"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="waitting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shm-sz-Jeo">
+                                        <rect key="frame" x="8" y="46" width="97" height="21"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="QtB-7B-Wnc" firstAttribute="top" secondItem="dvq-cs-MUw" secondAttribute="topMargin" id="C7z-AC-7c5"/>
+                                    <constraint firstItem="QtB-7B-Wnc" firstAttribute="leading" secondItem="dvq-cs-MUw" secondAttribute="leadingMargin" id="Ctf-V8-Nxo"/>
+                                    <constraint firstItem="shm-sz-Jeo" firstAttribute="trailing" secondItem="QtB-7B-Wnc" secondAttribute="trailing" id="H94-we-rAL"/>
+                                    <constraint firstItem="shm-sz-Jeo" firstAttribute="top" secondItem="QtB-7B-Wnc" secondAttribute="bottom" constant="8" symbolic="YES" id="Nc8-Ya-5cL"/>
+                                    <constraint firstItem="shm-sz-Jeo" firstAttribute="leading" secondItem="QtB-7B-Wnc" secondAttribute="leading" id="olR-Nq-np0"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egN-kS-cfW">
                                 <rect key="frame" x="0.0" y="178" width="207" height="103"/>
@@ -511,6 +543,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lAW-8I-xqk"/>
                     </view>
+                    <connections>
+                        <outlet property="textFieldMirror" destination="shm-sz-Jeo" id="UAf-f1-iGS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GU1-1t-5eG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

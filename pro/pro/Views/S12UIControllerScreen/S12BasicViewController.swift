@@ -9,8 +9,10 @@
 import UIKit
 
 class Section12BasicViewController: UIViewController {
+	// UITextFiled Area 右1
+	@IBOutlet weak var textFieldMirror: UILabel!
 	
-    override func viewDidLoad() {
+	override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -28,6 +30,28 @@ class Section12BasicViewController: UIViewController {
 		print(sender)
 	}
 	
+	//-------------------------------------------------------------
+	// 						 UITextField
+	//-------------------------------------------------------------
+	@IBAction func editDisBegin(_ sender: UITextField) {
+		textFieldMirror.text = "begined"
+	}
+	@IBAction func editingChanged(_ sender: UITextField) {
+		textFieldMirror.text = sender.text
+	}
+	@IBAction func editDidEnd(_ sender: UITextField) {
+		// 取消聚焦时呼出
+		textFieldMirror.text = "Ended"
+		print("eidtDidEnd")
+	}
+	@IBAction func touchUpOutside(_ sender: UITextField) {
+		sender.resignFirstResponder() // 取消聚焦, 会呼出editDidEnd
+		print("touchUpOutside")
+	}
+	@IBAction func didEndOnExit(_ sender: UITextField) {
+		// 按return会呼出
+		print("didEndOnExit")
+	}
 	
 	
     /*
