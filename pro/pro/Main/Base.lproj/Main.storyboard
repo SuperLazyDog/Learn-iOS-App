@@ -431,20 +431,47 @@
                                             <action selector="touchUpOutside:" destination="F2Z-qg-rrU" eventType="touchUpOutside" id="B0H-X1-V80"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="waitting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shm-sz-Jeo">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="waitting" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shm-sz-Jeo">
                                         <rect key="frame" x="8" y="46" width="97" height="21"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bxB-ts-X2g">
+                                        <rect key="frame" x="119" y="8" width="80" height="57"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Text View
+line 2
+line 3</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="F2Z-qg-rrU" id="HY2-jq-3n2"/>
+                                        </connections>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="010-1234-1234" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DrF-A0-ew1">
+                                        <rect key="frame" x="119" y="73" width="80" height="21"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bxB-ts-X2g" secondAttribute="bottom" constant="38" id="0ly-6e-cGv"/>
+                                    <constraint firstItem="bxB-ts-X2g" firstAttribute="leading" secondItem="QtB-7B-Wnc" secondAttribute="trailing" constant="14" id="AlF-H4-8XY"/>
                                     <constraint firstItem="QtB-7B-Wnc" firstAttribute="top" secondItem="dvq-cs-MUw" secondAttribute="topMargin" id="C7z-AC-7c5"/>
                                     <constraint firstItem="QtB-7B-Wnc" firstAttribute="leading" secondItem="dvq-cs-MUw" secondAttribute="leadingMargin" id="Ctf-V8-Nxo"/>
+                                    <constraint firstItem="DrF-A0-ew1" firstAttribute="trailing" secondItem="bxB-ts-X2g" secondAttribute="trailing" id="FbL-bp-SYO"/>
                                     <constraint firstItem="shm-sz-Jeo" firstAttribute="trailing" secondItem="QtB-7B-Wnc" secondAttribute="trailing" id="H94-we-rAL"/>
+                                    <constraint firstAttribute="bottom" secondItem="DrF-A0-ew1" secondAttribute="bottom" constant="9" id="KeO-Cw-iNp"/>
                                     <constraint firstItem="shm-sz-Jeo" firstAttribute="top" secondItem="QtB-7B-Wnc" secondAttribute="bottom" constant="8" symbolic="YES" id="Nc8-Ya-5cL"/>
+                                    <constraint firstItem="bxB-ts-X2g" firstAttribute="top" secondItem="QtB-7B-Wnc" secondAttribute="top" id="Pfh-cC-pyi"/>
+                                    <constraint firstItem="DrF-A0-ew1" firstAttribute="top" secondItem="bxB-ts-X2g" secondAttribute="bottom" constant="8" symbolic="YES" id="STZ-8r-8Fv"/>
+                                    <constraint firstItem="bxB-ts-X2g" firstAttribute="trailing" secondItem="dvq-cs-MUw" secondAttribute="trailingMargin" id="aZG-uq-WQU"/>
+                                    <constraint firstItem="DrF-A0-ew1" firstAttribute="width" secondItem="bxB-ts-X2g" secondAttribute="width" id="ohA-eI-NkA"/>
                                     <constraint firstItem="shm-sz-Jeo" firstAttribute="leading" secondItem="QtB-7B-Wnc" secondAttribute="leading" id="olR-Nq-np0"/>
                                 </constraints>
                             </view>

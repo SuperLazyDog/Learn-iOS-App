@@ -42,7 +42,7 @@ class Section12BasicViewController: UIViewController {
 	@IBAction func editDidEnd(_ sender: UITextField) {
 		// 取消聚焦时呼出
 		textFieldMirror.text = "Ended"
-		print("eidtDidEnd")
+		print("editDidEnd")
 	}
 	@IBAction func touchUpOutside(_ sender: UITextField) {
 		sender.resignFirstResponder() // 取消聚焦, 会呼出editDidEnd
@@ -53,6 +53,9 @@ class Section12BasicViewController: UIViewController {
 		print("didEndOnExit")
 	}
 	
+	//-------------------------------------------------------------
+	// 						 UITextView
+	//-------------------------------------------------------------
 	
     /*
     // MARK: - Navigation

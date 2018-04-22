@@ -25,6 +25,7 @@
 		49CF818A2089326A000A2902 /* BottomCollectionViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF81892089326A000A2902 /* BottomCollectionViewDataSourceAndDelegate.swift */; };
 		49CF818C208936E4000A2902 /* BottomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF818B208936E4000A2902 /* BottomCollectionViewCell.swift */; };
 		49CF8190208A8841000A2902 /* S12BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF818F208A8841000A2902 /* S12BasicViewController.swift */; };
+		49CF8193208D2980000A2902 /* TexiViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF8192208D2980000A2902 /* TexiViewDelegate.swift */; };
 		EDFD32D276EB5533E061E355 /* Pods_pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		49CF81892089326A000A2902 /* BottomCollectionViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCollectionViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
 		49CF818B208936E4000A2902 /* BottomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCollectionViewCell.swift; sourceTree = "<group>"; };
 		49CF818F208A8841000A2902 /* S12BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S12BasicViewController.swift; sourceTree = "<group>"; };
+		49CF8192208D2980000A2902 /* TexiViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexiViewDelegate.swift; sourceTree = "<group>"; };
 		A019C0DEA9AB23B0DBF83BE8 /* Pods-pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.debug.xcconfig"; sourceTree = "<group>"; };
 		B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -290,8 +292,17 @@
 		49CF818E208A882D000A2902 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49CF8191208D2960000A2902 /* TextView */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		49CF8191208D2960000A2902 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				49CF8192208D2980000A2902 /* TexiViewDelegate.swift */,
+			);
+			path = TextView;
 			sourceTree = "<group>";
 		};
 		87F4968EEE786B85C612C971 /* Pods */ = {
@@ -439,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				499AB7FB2073AD7D008694D8 /* StartViewController.swift in Sources */,
+				49CF8193208D2980000A2902 /* TexiViewDelegate.swift in Sources */,
 				49CF818C208936E4000A2902 /* BottomCollectionViewCell.swift in Sources */,
 				49CF818720893093000A2902 /* BottomCollectionView.swift in Sources */,
 				49CF8190208A8841000A2902 /* S12BasicViewController.swift in Sources */,
