@@ -12,6 +12,9 @@ class Section12BasicViewController: UIViewController {
 	// UITextFiled Area 右1
 	@IBOutlet weak var textFieldMirror: UILabel!
 	
+	// UISegmentField Area 左2
+	@IBOutlet weak var segmentResponder: UILabel!
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -54,8 +57,12 @@ class Section12BasicViewController: UIViewController {
 	}
 	
 	//-------------------------------------------------------------
-	// 						 UITextView
+	// 						 UISegmentedControll
 	//-------------------------------------------------------------
+	@IBAction func valueChanged(_ sender: UISegmentedControl) {
+		let title = sender.titleForSegment(at: sender.selectedSegmentIndex)
+		self.segmentResponder.text = title
+	}
 	
     /*
     // MARK: - Navigation

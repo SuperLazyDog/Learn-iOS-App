@@ -327,7 +327,7 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTF-tY-x8Q" userLabel="ButtonAreaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTF-tY-x8Q" userLabel="ButtonArea">
                                 <rect key="frame" x="0.0" y="70" width="207" height="103"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwW-Gz-ngB">
@@ -412,7 +412,7 @@
                                     <constraint firstItem="VwW-Gz-ngB" firstAttribute="top" secondItem="LTF-tY-x8Q" secondAttribute="topMargin" id="iIE-gq-bzF"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvq-cs-MUw">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvq-cs-MUw" userLabel="TextArea">
                                 <rect key="frame" x="207" y="70" width="207" height="103"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="text field" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="QtB-7B-Wnc">
@@ -475,9 +475,38 @@ line 3</string>
                                     <constraint firstItem="shm-sz-Jeo" firstAttribute="leading" secondItem="QtB-7B-Wnc" secondAttribute="leading" id="olR-Nq-np0"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egN-kS-cfW">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egN-kS-cfW" userLabel="SegmentedArea">
                                 <rect key="frame" x="0.0" y="178" width="207" height="103"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="tkc-aC-sjM">
+                                        <rect key="frame" x="48" y="8" width="121" height="29"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                            <segment title="Third"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="valueChanged:" destination="F2Z-qg-rrU" eventType="valueChanged" id="qxM-TQ-vgV"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRA-3H-TIO">
+                                        <rect key="frame" x="28" y="51" width="150" height="21"/>
+                                        <color key="backgroundColor" red="1" green="0.82186162939999996" blue="0.24733102479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="iRA-3H-TIO" firstAttribute="leading" secondItem="egN-kS-cfW" secondAttribute="leading" constant="28" id="BHU-sO-e4S"/>
+                                    <constraint firstItem="iRA-3H-TIO" firstAttribute="centerX" secondItem="egN-kS-cfW" secondAttribute="centerX" id="PBs-0G-1Ob"/>
+                                    <constraint firstItem="iRA-3H-TIO" firstAttribute="top" secondItem="tkc-aC-sjM" secondAttribute="bottom" constant="15" id="PHT-5F-1Le"/>
+                                    <constraint firstItem="tkc-aC-sjM" firstAttribute="top" secondItem="egN-kS-cfW" secondAttribute="topMargin" id="RRX-Hb-UEc"/>
+                                    <constraint firstItem="tkc-aC-sjM" firstAttribute="leading" secondItem="egN-kS-cfW" secondAttribute="leading" constant="48" id="lHB-t3-Z0c"/>
+                                    <constraint firstAttribute="trailing" secondItem="tkc-aC-sjM" secondAttribute="trailing" constant="38" id="nhM-IY-ocU"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNL-rT-rdG">
                                 <rect key="frame" x="207" y="178" width="207" height="103"/>
@@ -571,6 +600,7 @@ line 3</string>
                         <viewLayoutGuide key="safeArea" id="lAW-8I-xqk"/>
                     </view>
                     <connections>
+                        <outlet property="segmentResponder" destination="iRA-3H-TIO" id="6pz-nC-XA4"/>
                         <outlet property="textFieldMirror" destination="shm-sz-Jeo" id="UAf-f1-iGS"/>
                     </connections>
                 </viewController>
