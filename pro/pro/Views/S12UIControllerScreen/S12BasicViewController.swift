@@ -89,6 +89,12 @@ class Section12BasicViewController: UIViewController {
 	@IBAction func switchValueChanged(_ sender: UISwitch) {
 		right2AreaMirror.text = String(sender.isOn)
 	}
+	//------------------------------
+	//          UISlide
+	//------------------------------
+	@IBAction func slideValueChanged(_ sender: UISlider) {
+		right2AreaMirror.text = String(Int(sender.value))
+	}
 	
     /*
     // MARK: - Navigation
