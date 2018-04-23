@@ -487,30 +487,62 @@ line 3</string>
                                             <segment title="Third"/>
                                         </segments>
                                         <connections>
-                                            <action selector="valueChanged:" destination="F2Z-qg-rrU" eventType="valueChanged" id="qxM-TQ-vgV"/>
+                                            <action selector="UISegmentedControllValueChanged:" destination="F2Z-qg-rrU" eventType="valueChanged" id="B4V-4o-vTO"/>
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRA-3H-TIO">
-                                        <rect key="frame" x="28" y="51" width="150" height="21"/>
+                                        <rect key="frame" x="28" y="41" width="150" height="21"/>
                                         <color key="backgroundColor" red="1" green="0.82186162939999996" blue="0.24733102479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" wraps="YES" value="50" maximumValue="100" stepValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="VJo-Ai-7Nf">
+                                        <rect key="frame" x="56" y="66" width="94" height="29"/>
+                                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="stepperValueChanged:" destination="F2Z-qg-rrU" eventType="valueChanged" id="MKb-c2-GW1"/>
+                                        </connections>
+                                    </stepper>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="iRA-3H-TIO" firstAttribute="leading" secondItem="egN-kS-cfW" secondAttribute="leading" constant="28" id="BHU-sO-e4S"/>
-                                    <constraint firstItem="iRA-3H-TIO" firstAttribute="centerX" secondItem="egN-kS-cfW" secondAttribute="centerX" id="PBs-0G-1Ob"/>
-                                    <constraint firstItem="iRA-3H-TIO" firstAttribute="top" secondItem="tkc-aC-sjM" secondAttribute="bottom" constant="15" id="PHT-5F-1Le"/>
-                                    <constraint firstItem="tkc-aC-sjM" firstAttribute="top" secondItem="egN-kS-cfW" secondAttribute="topMargin" id="RRX-Hb-UEc"/>
-                                    <constraint firstItem="tkc-aC-sjM" firstAttribute="leading" secondItem="egN-kS-cfW" secondAttribute="leading" constant="48" id="lHB-t3-Z0c"/>
-                                    <constraint firstAttribute="trailing" secondItem="tkc-aC-sjM" secondAttribute="trailing" constant="38" id="nhM-IY-ocU"/>
+                                    <constraint firstItem="tkc-aC-sjM" firstAttribute="leading" secondItem="egN-kS-cfW" secondAttribute="leading" constant="48" id="6TT-BG-uhl"/>
+                                    <constraint firstItem="iRA-3H-TIO" firstAttribute="centerX" secondItem="egN-kS-cfW" secondAttribute="centerX" id="9kH-wm-lXn"/>
+                                    <constraint firstItem="iRA-3H-TIO" firstAttribute="centerX" secondItem="VJo-Ai-7Nf" secondAttribute="centerX" id="FPd-UJ-xGM"/>
+                                    <constraint firstItem="iRA-3H-TIO" firstAttribute="centerY" secondItem="egN-kS-cfW" secondAttribute="centerY" id="HaE-0D-Bhj"/>
+                                    <constraint firstItem="iRA-3H-TIO" firstAttribute="leading" secondItem="egN-kS-cfW" secondAttribute="leading" constant="28" id="PoS-rs-QEj"/>
+                                    <constraint firstItem="VJo-Ai-7Nf" firstAttribute="bottom" secondItem="egN-kS-cfW" secondAttribute="bottomMargin" id="f9W-rk-6zA"/>
+                                    <constraint firstItem="tkc-aC-sjM" firstAttribute="top" secondItem="egN-kS-cfW" secondAttribute="topMargin" id="haT-ud-v4w"/>
+                                    <constraint firstAttribute="trailing" secondItem="tkc-aC-sjM" secondAttribute="trailing" constant="38" id="hw5-ZD-rHm"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNL-rT-rdG">
                                 <rect key="frame" x="207" y="178" width="207" height="103"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dX6-N5-3iY">
+                                        <rect key="frame" x="81" y="8" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="switchValueChanged:" destination="F2Z-qg-rrU" eventType="valueChanged" id="y8K-xE-Q3p"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTV-hN-KIR">
+                                        <rect key="frame" x="8" y="8" width="49" height="31"/>
+                                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="UTV-hN-KIR" firstAttribute="top" secondItem="wNL-rT-rdG" secondAttribute="topMargin" id="2Du-KZ-PQb"/>
+                                    <constraint firstItem="UTV-hN-KIR" firstAttribute="top" secondItem="dX6-N5-3iY" secondAttribute="top" id="4AL-97-jMD"/>
+                                    <constraint firstItem="dX6-N5-3iY" firstAttribute="leading" secondItem="UTV-hN-KIR" secondAttribute="trailing" constant="24" id="8RK-La-gVj"/>
+                                    <constraint firstItem="UTV-hN-KIR" firstAttribute="height" secondItem="dX6-N5-3iY" secondAttribute="height" id="SNV-G2-iC4"/>
+                                    <constraint firstItem="UTV-hN-KIR" firstAttribute="leading" secondItem="wNL-rT-rdG" secondAttribute="leadingMargin" id="Xpd-Cy-hXa"/>
+                                    <constraint firstItem="UTV-hN-KIR" firstAttribute="width" secondItem="dX6-N5-3iY" secondAttribute="width" id="c8q-Ha-kwH"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26e-80-Uvg">
                                 <rect key="frame" x="0.0" y="286" width="207" height="103"/>
@@ -600,7 +632,8 @@ line 3</string>
                         <viewLayoutGuide key="safeArea" id="lAW-8I-xqk"/>
                     </view>
                     <connections>
-                        <outlet property="segmentResponder" destination="iRA-3H-TIO" id="6pz-nC-XA4"/>
+                        <outlet property="left2AreaMirror" destination="iRA-3H-TIO" id="4z1-8x-Dvo"/>
+                        <outlet property="right2AreaMirror" destination="UTV-hN-KIR" id="MJM-ON-0z7"/>
                         <outlet property="textFieldMirror" destination="shm-sz-Jeo" id="UAf-f1-iGS"/>
                     </connections>
                 </viewController>

@@ -13,7 +13,10 @@ class Section12BasicViewController: UIViewController {
 	@IBOutlet weak var textFieldMirror: UILabel!
 	
 	// UISegmentField Area 左2
-	@IBOutlet weak var segmentResponder: UILabel!
+	@IBOutlet weak var left2AreaMirror: UILabel!
+	
+	// 右2
+	@IBOutlet weak var right2AreaMirror: UILabel!
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +37,11 @@ class Section12BasicViewController: UIViewController {
 	}
 	
 	//-------------------------------------------------------------
-	// 						 UITextField
+	// 						 左 1
 	//-------------------------------------------------------------
+	//------------------------------
+	//       UITextField
+	//------------------------------
 	@IBAction func editDisBegin(_ sender: UITextField) {
 		textFieldMirror.text = "begined"
 	}
@@ -57,11 +63,31 @@ class Section12BasicViewController: UIViewController {
 	}
 	
 	//-------------------------------------------------------------
-	// 						 UISegmentedControll
+	// 						 左 2
 	//-------------------------------------------------------------
-	@IBAction func valueChanged(_ sender: UISegmentedControl) {
+	//------------------------------
+	//      UISegmentedControll
+	//------------------------------
+	@IBAction func UISegmentedControllValueChanged(_ sender: UISegmentedControl) {
 		let title = sender.titleForSegment(at: sender.selectedSegmentIndex)
-		self.segmentResponder.text = title
+		self.left2AreaMirror.text = title
+	}
+	//------------------------------
+	//         UIStepper
+	//------------------------------
+	@IBAction func stepperValueChanged(_ sender: UIStepper) {
+		self.left2AreaMirror.text = "value: \(Int(sender.value))"
+		print("stepperValueChanged")
+	}
+	
+	//-------------------------------------------------------------
+	// 						 右 2
+	//-------------------------------------------------------------
+	//------------------------------
+	//          UISwitch
+	//------------------------------
+	@IBAction func switchValueChanged(_ sender: UISwitch) {
+		right2AreaMirror.text = String(sender.isOn)
 	}
 	
     /*
