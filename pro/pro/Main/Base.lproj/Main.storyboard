@@ -577,6 +577,32 @@ line 3</string>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryq-xE-Q2l">
                                 <rect key="frame" x="0.0" y="394" width="207" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tud-wT-adN">
+                                        <rect key="frame" x="0.0" y="3" width="199" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.82186162939999996" blue="0.24733102479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="546209492.03774905">
+                                            <!--2018-04-23 20:51:32 +0000-->
+                                        </date>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                            <!--1970-01-01 11:00:00 +0000-->
+                                        </date>
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                            <!--2037-12-31 11:00:00 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="datePickerValueChanged:" destination="F2Z-qg-rrU" eventType="valueChanged" id="tek-eo-yic"/>
+                                        </connections>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-vM-kR0">
+                                        <rect key="frame" x="20" y="74" width="149" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XNx-pZ-86Q">
@@ -643,6 +669,7 @@ line 3</string>
                     <connections>
                         <outlet property="activityIndicatorView" destination="Ujs-9t-uo4" id="Wef-6r-OG3"/>
                         <outlet property="left2AreaMirror" destination="iRA-3H-TIO" id="4z1-8x-Dvo"/>
+                        <outlet property="left4AreaMirror" destination="Dug-vM-kR0" id="vBr-K5-vex"/>
                         <outlet property="progressView" destination="cjG-g6-E2p" id="6Gv-el-M7u"/>
                         <outlet property="right2AreaMirror" destination="UTV-hN-KIR" id="MJM-ON-0z7"/>
                         <outlet property="textFieldMirror" destination="shm-sz-Jeo" id="UAf-f1-iGS"/>

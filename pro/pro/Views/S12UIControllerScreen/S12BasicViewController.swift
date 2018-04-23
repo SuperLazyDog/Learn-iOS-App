@@ -25,6 +25,8 @@ class Section12BasicViewController: UIViewController {
 	// 右3
 	@IBOutlet var right3AreaMirrors: [UILabel]!
 	
+	// 左4
+	@IBOutlet weak var left4AreaMirror: UILabel!
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +47,7 @@ class Section12BasicViewController: UIViewController {
 	}
 	
 	//-------------------------------------------------------------
-	// 						 左 1
+	// 						 右 1
 	//-------------------------------------------------------------
 	//------------------------------
 	//       UITextField
@@ -103,6 +105,10 @@ class Section12BasicViewController: UIViewController {
 	@IBAction func slideValueChanged(_ sender: UISlider) {
 		right2AreaMirror.text = String(Int(sender.value))
 	}
+	
+	//-------------------------------------------------------------
+	// 						 左 3
+	//-------------------------------------------------------------
 	//------------------------------
 	//  控制UIActivityIndicatorView
 	//------------------------------
@@ -122,9 +128,20 @@ class Section12BasicViewController: UIViewController {
 		self.progressView.progress += 5/100
 		print("+ progress: \(self.progressView.progress)")
 	}
+	
 	@IBAction func minusProgress(_ sender: UIButton) {
 		self.progressView.progress -= 5/100
 		print("- progress: \(self.progressView.progress)")
+	}
+	
+	//-------------------------------------------------------------
+	// 						 左 4
+	//-------------------------------------------------------------
+	@IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
+		let dateFormatter = DateFormatter.init()
+		dateFormatter.dateStyle = .long
+		dateFormatter.timeStyle = .long
+		self.left4AreaMirror.text = dateFormatter.string(from: sender.date)
 	}
 	
 	
