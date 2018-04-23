@@ -557,7 +557,30 @@ line 3</string>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26e-80-Uvg">
                                 <rect key="frame" x="0.0" y="286" width="207" height="103"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Ujs-9t-uo4">
+                                        <rect key="frame" x="8" y="8" width="20" height="20"/>
+                                        <color key="backgroundColor" red="1" green="0.6203900202" blue="0.41559852320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="color" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmf-2z-Zet">
+                                        <rect key="frame" x="49" y="8" width="66" height="30"/>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="启动/关闭">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startOrStopActivityIndicator:" destination="F2Z-qg-rrU" eventType="touchUpInside" id="jqt-bb-lpH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ujs-9t-uo4" firstAttribute="leading" secondItem="26e-80-Uvg" secondAttribute="leadingMargin" id="HS5-Gf-9MA"/>
+                                    <constraint firstItem="Ujs-9t-uo4" firstAttribute="top" secondItem="26e-80-Uvg" secondAttribute="topMargin" id="JwD-nb-LFH"/>
+                                    <constraint firstItem="Ujs-9t-uo4" firstAttribute="top" secondItem="kmf-2z-Zet" secondAttribute="top" id="d3m-N3-fiv"/>
+                                    <constraint firstItem="kmf-2z-Zet" firstAttribute="leading" secondItem="Ujs-9t-uo4" secondAttribute="trailing" constant="21" id="plh-sY-EN0"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryq-xE-Q2l">
                                 <rect key="frame" x="0.0" y="394" width="207" height="103"/>
@@ -643,6 +666,7 @@ line 3</string>
                         <viewLayoutGuide key="safeArea" id="lAW-8I-xqk"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="Ujs-9t-uo4" id="Wef-6r-OG3"/>
                         <outlet property="left2AreaMirror" destination="iRA-3H-TIO" id="4z1-8x-Dvo"/>
                         <outlet property="right2AreaMirror" destination="UTV-hN-KIR" id="MJM-ON-0z7"/>
                         <outlet property="textFieldMirror" destination="shm-sz-Jeo" id="UAf-f1-iGS"/>

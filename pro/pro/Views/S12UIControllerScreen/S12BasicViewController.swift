@@ -18,6 +18,9 @@ class Section12BasicViewController: UIViewController {
 	// 右2
 	@IBOutlet weak var right2AreaMirror: UILabel!
 	
+	// 左三
+	@IBOutlet weak var activityIndicatorView: UIActivityIndicatorView! // activityIndicatorView
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -94,6 +97,18 @@ class Section12BasicViewController: UIViewController {
 	//------------------------------
 	@IBAction func slideValueChanged(_ sender: UISlider) {
 		right2AreaMirror.text = String(Int(sender.value))
+	}
+	//------------------------------
+	//  控制UIActivityIndicatorView
+	//------------------------------
+	@IBAction func startOrStopActivityIndicator(_ sender: UIButton) {
+		if activityIndicatorView.isAnimating {
+			activityIndicatorView.stopAnimating()
+			print("停止activityIndicatorView")
+		} else {
+			activityIndicatorView.startAnimating()
+			print("启动activityIndicatorView")
+		}
 	}
 	
     /*
