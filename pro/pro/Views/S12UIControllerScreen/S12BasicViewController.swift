@@ -18,8 +18,13 @@ class Section12BasicViewController: UIViewController {
 	// 右2
 	@IBOutlet weak var right2AreaMirror: UILabel!
 	
-	// 左三
+	// 左3
 	@IBOutlet weak var activityIndicatorView: UIActivityIndicatorView! // activityIndicatorView
+	@IBOutlet weak var progressView: UIProgressView!
+	
+	// 右3
+	@IBOutlet var right3AreaMirrors: [UILabel]!
+	
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,6 +115,18 @@ class Section12BasicViewController: UIViewController {
 			print("启动activityIndicatorView")
 		}
 	}
+	//------------------------------
+	//      控制UIProgressView
+	//------------------------------
+	@IBAction func addProgress(_ sender: UIButton) {
+		self.progressView.progress += 5/100
+		print("+ progress: \(self.progressView.progress)")
+	}
+	@IBAction func minusProgress(_ sender: UIButton) {
+		self.progressView.progress -= 5/100
+		print("- progress: \(self.progressView.progress)")
+	}
+	
 	
     /*
     // MARK: - Navigation
