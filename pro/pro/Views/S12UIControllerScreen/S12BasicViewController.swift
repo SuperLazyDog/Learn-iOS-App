@@ -8,6 +8,8 @@
 
 import UIKit
 
+// TODO: 补充12.13 UIBarButtonItem
+
 class Section12BasicViewController: UIViewController {
 	// UITextFiled Area 右1
 	@IBOutlet weak var textFieldMirror: UILabel!
@@ -27,6 +29,9 @@ class Section12BasicViewController: UIViewController {
 	
 	// 左4
 	@IBOutlet weak var left4AreaMirror: UILabel!
+	
+	// 右4
+	@IBOutlet weak var right4AreaMirror: UILabel!
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -137,11 +142,24 @@ class Section12BasicViewController: UIViewController {
 	//-------------------------------------------------------------
 	// 						 左 4
 	//-------------------------------------------------------------
+	//------------------------------
+	//     控制UIDatePicker
+	//------------------------------
 	@IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
 		let dateFormatter = DateFormatter.init()
 		dateFormatter.dateStyle = .long
 		dateFormatter.timeStyle = .long
 		self.left4AreaMirror.text = dateFormatter.string(from: sender.date)
+	}
+	
+	//-------------------------------------------------------------
+	// 						 右 4
+	//-------------------------------------------------------------
+	//------------------------------
+	//     控制UIPageControl
+	//------------------------------
+	@IBAction func pageControlValueChanged(_ sender: UIPageControl) {
+		self.right4AreaMirror.text = String.init(sender.currentPage)
 	}
 	
 	
