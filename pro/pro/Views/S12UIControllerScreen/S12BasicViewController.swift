@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 // TODO: 补充12.13 UIBarButtonItem
 
@@ -33,9 +34,19 @@ class Section12BasicViewController: UIViewController {
 	// 右4
 	@IBOutlet weak var right4AreaMirror: UILabel!
 	
+	// 左5
+	@IBOutlet weak var wkWebView: WKWebView!
+	@IBOutlet weak var uiWebView: UIWebView!
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+		// 左5
+		// wkweb
+		let url = URL.init(string: "https://github.com/SuperLazyDog")
+		let urlRequset = URLRequest.init(url: url!)
+		wkWebView.load(urlRequset)
+		uiWebView.loadRequest(urlRequset)
     }
 
     override func didReceiveMemoryWarning() {
