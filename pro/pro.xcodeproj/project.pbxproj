@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49136237208FB5740070B861 /* Section13ManageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49136236208FB5730070B861 /* Section13ManageViewViewController.swift */; };
+		4913623A20918E2F0070B861 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913623920918E2F0070B861 /* SubViewController.swift */; };
 		491CE710208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491CE70F208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift */; };
 		491CE712208E987F00D0E6F7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491CE711208E987F00D0E6F7 /* WebKit.framework */; };
 		499605A92087DD8D00377630 /* TopAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499605A82087DD8D00377630 /* TopAreaView.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		2D8D51D3D55F75AD1CA9D74A /* Pods-pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.release.xcconfig"; sourceTree = "<group>"; };
 		49136236208FB5730070B861 /* Section13ManageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section13ManageViewViewController.swift; sourceTree = "<group>"; };
+		4913623920918E2F0070B861 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		491CE70F208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
 		491CE711208E987F00D0E6F7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		499605A82087DD8D00377630 /* TopAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAreaView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				49136236208FB5730070B861 /* Section13ManageViewViewController.swift */,
+				4913623920918E2F0070B861 /* SubViewController.swift */,
 				49136238208FB5800070B861 /* Views */,
 			);
 			path = S13ManageViewScreen;
@@ -507,6 +510,7 @@
 				499605B72088103000377630 /* UIViewExtension.swift in Sources */,
 				499605A92087DD8D00377630 /* TopAreaView.swift in Sources */,
 				499605BE208849FC00377630 /* MiddleTableViewDelegate.swift in Sources */,
+				4913623A20918E2F0070B861 /* SubViewController.swift in Sources */,
 				499605AE2087DE9500377630 /* StartScreenDrawing.swift in Sources */,
 				499605BC208849EE00377630 /* MiddleTableViewDataSource.swift in Sources */,
 			);
