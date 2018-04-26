@@ -82,6 +82,7 @@
 			children = (
 				49136236208FB5730070B861 /* Section13ManageViewViewController.swift */,
 				4913623920918E2F0070B861 /* SubViewController.swift */,
+				4913623B209252BF0070B861 /* NavigationController */,
 				49136238208FB5800070B861 /* Views */,
 			);
 			path = S13ManageViewScreen;
@@ -92,6 +93,13 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4913623B209252BF0070B861 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationController;
 			sourceTree = "<group>";
 		};
 		491CE70D208E6AAC00D0E6F7 /* right1Area */ = {

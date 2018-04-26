@@ -9,20 +9,58 @@
 import UIKit
 
 class SubViewController: UIViewController {
-
+	
+	func lifeCycleDebugTest(string: String) {
+		print("now in \(string)")
+	}
+	// 生命周期测试
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		lifeCycleDebugTest(string: #function)
         // Do any additional setup after loading the view.
     }
-
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		lifeCycleDebugTest(string: #function)
+	}
+	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		lifeCycleDebugTest(string: #function)
+	}
+	
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		lifeCycleDebugTest(string: #function)
+	}
+	
+	override func viewDidDisappear(_ animated: Bool) {
+		super.viewDidDisappear(animated)
+		lifeCycleDebugTest(string: #function)
+	}
+	
+	override func viewWillLayoutSubviews() {
+		super.viewWillLayoutSubviews()
+		lifeCycleDebugTest(string: #function)
+	}
+	
+	override func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
+		lifeCycleDebugTest(string: #function)
+	}
+	
+	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+		super.viewWillTransition(to: size, with: coordinator)
+		lifeCycleDebugTest(string: #function)
+	}
+	
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 	
-//	@IBAction func unwind(segue:UIStoryboardSegue){
-//	}
     /*
     // MARK: - Navigation
 

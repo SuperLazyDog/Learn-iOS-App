@@ -25,6 +25,33 @@ class Section13ManageViewViewController: UIViewController {
 	@IBAction func backToS13Top(segue: UIStoryboardSegue) {
 		print("back to \(#function)")
 	}
+	//-------------------------------------------------------
+	//                       状态栏
+	//-------------------------------------------------------
+	// 改变样式 .default/.lightContent
+	var style = UIStatusBarStyle.default
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+		return style
+	}
+	@IBAction func changeStatusBarStyle(_ sender: UIButton) {
+		style = ((style == UIStatusBarStyle.default) ? .lightContent : .default)
+		setNeedsStatusBarAppearanceUpdate()
+	}
+	// 切换显示 prefersStatusBarHidden
+	var isHidden = false
+	override var prefersStatusBarHidden: Bool {
+		return isHidden
+	}
+	
+	@IBAction func toggleStatusBar(_ sender: UIButton) {
+		isHidden = !isHidden
+		setNeedsStatusBarAppearanceUpdate()
+	}
+	
+	// 画面方向
+//	override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+//		return [.landscapeLeft] // 只支持向左横倾
+//	}
     /*
     // MARK: - Navigation
 
