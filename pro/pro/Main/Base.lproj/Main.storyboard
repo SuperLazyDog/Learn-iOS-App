@@ -323,10 +323,16 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="导航条" id="V8Q-Jo-a8s">
                         <barButtonItem key="backBarButtonItem" title="返回" id="v6d-ro-Swe"/>
+                        <barButtonItem key="rightBarButtonItem" title=" 返回S13top" style="plain" id="Qbg-iW-GV3">
+                            <connections>
+                                <segue destination="nc8-0N-Be3" kind="unwind" unwindAction="backToS13TopWithSegue:" id="kMC-i3-BDo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ab3-jb-O8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nc8-0N-Be3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="11743" y="3558"/>
         </scene>
