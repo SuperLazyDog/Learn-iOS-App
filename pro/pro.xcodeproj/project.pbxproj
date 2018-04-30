@@ -11,6 +11,7 @@
 		4913623A20918E2F0070B861 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913623920918E2F0070B861 /* SubViewController.swift */; };
 		4913B0472096BB3300C81EE7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B0462096BB3300C81EE7 /* TableViewController.swift */; };
 		4913B0492096BBC300C81EE7 /* TableViewControllerDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B0482096BBC300C81EE7 /* TableViewControllerDataSourceAndDelegate.swift */; };
+		4913B04B2096C25700C81EE7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B04A2096C25700C81EE7 /* TableViewCell.swift */; };
 		491CE710208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491CE70F208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift */; };
 		491CE712208E987F00D0E6F7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491CE711208E987F00D0E6F7 /* WebKit.framework */; };
 		499605A92087DD8D00377630 /* TopAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499605A82087DD8D00377630 /* TopAreaView.swift */; };
@@ -41,6 +42,7 @@
 		4913623920918E2F0070B861 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		4913B0462096BB3300C81EE7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		4913B0482096BBC300C81EE7 /* TableViewControllerDataSourceAndDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerDataSourceAndDelegate.swift; sourceTree = "<group>"; };
+		4913B04A2096C25700C81EE7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		491CE70F208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
 		491CE711208E987F00D0E6F7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		499605A82087DD8D00377630 /* TopAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAreaView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				4913B0462096BB3300C81EE7 /* TableViewController.swift */,
 				4913B0482096BBC300C81EE7 /* TableViewControllerDataSourceAndDelegate.swift */,
+				4913B04A2096C25700C81EE7 /* TableViewCell.swift */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				4996F7EF2086744E001F19DE /* Section11BasicViewController.swift in Sources */,
 				499605B72088103000377630 /* UIViewExtension.swift in Sources */,
 				499605A92087DD8D00377630 /* TopAreaView.swift in Sources */,
+				4913B04B2096C25700C81EE7 /* TableViewCell.swift in Sources */,
 				499605BE208849FC00377630 /* MiddleTableViewDelegate.swift in Sources */,
 				4913623A20918E2F0070B861 /* SubViewController.swift in Sources */,
 				499605AE2087DE9500377630 /* StartScreenDrawing.swift in Sources */,
