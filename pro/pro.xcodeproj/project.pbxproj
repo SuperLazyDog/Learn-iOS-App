@@ -12,6 +12,8 @@
 		4913B0472096BB3300C81EE7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B0462096BB3300C81EE7 /* TableViewController.swift */; };
 		4913B0492096BBC300C81EE7 /* TableViewControllerDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B0482096BBC300C81EE7 /* TableViewControllerDataSourceAndDelegate.swift */; };
 		4913B04B2096C25700C81EE7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B04A2096C25700C81EE7 /* TableViewCell.swift */; };
+		4913B04E209806EE00C81EE7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B04D209806EE00C81EE7 /* CollectionViewController.swift */; };
+		4913B0502098086200C81EE7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B04F2098086200C81EE7 /* CollectionViewCell.swift */; };
 		491CE710208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491CE70F208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift */; };
 		491CE712208E987F00D0E6F7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491CE711208E987F00D0E6F7 /* WebKit.framework */; };
 		499605A92087DD8D00377630 /* TopAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499605A82087DD8D00377630 /* TopAreaView.swift */; };
@@ -43,6 +45,8 @@
 		4913B0462096BB3300C81EE7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		4913B0482096BBC300C81EE7 /* TableViewControllerDataSourceAndDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerDataSourceAndDelegate.swift; sourceTree = "<group>"; };
 		4913B04A2096C25700C81EE7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4913B04D209806EE00C81EE7 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		4913B04F2098086200C81EE7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		491CE70F208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
 		491CE711208E987F00D0E6F7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		499605A82087DD8D00377630 /* TopAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAreaView.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 				4913623920918E2F0070B861 /* SubViewController.swift */,
 				4913623B209252BF0070B861 /* NavigationController */,
 				4913B0452096BB1C00C81EE7 /* TableViewController */,
+				4913B04C209806B900C81EE7 /* CollectionViewController */,
 				49136238208FB5800070B861 /* Views */,
 			);
 			path = S13ManageViewScreen;
@@ -117,6 +122,15 @@
 				4913B04A2096C25700C81EE7 /* TableViewCell.swift */,
 			);
 			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		4913B04C209806B900C81EE7 /* CollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4913B04D209806EE00C81EE7 /* CollectionViewController.swift */,
+				4913B04F2098086200C81EE7 /* CollectionViewCell.swift */,
+			);
+			path = CollectionViewController;
 			sourceTree = "<group>";
 		};
 		491CE70D208E6AAC00D0E6F7 /* right1Area */ = {
@@ -519,7 +533,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4913B04E209806EE00C81EE7 /* CollectionViewController.swift in Sources */,
 				499AB7FB2073AD7D008694D8 /* StartViewController.swift in Sources */,
+				4913B0502098086200C81EE7 /* CollectionViewCell.swift in Sources */,
 				49CF8193208D2980000A2902 /* TexiViewDelegate.swift in Sources */,
 				49CF818C208936E4000A2902 /* BottomCollectionViewCell.swift in Sources */,
 				4913B0472096BB3300C81EE7 /* TableViewController.swift in Sources */,
