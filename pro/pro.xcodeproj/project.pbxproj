@@ -37,6 +37,7 @@
 		49CF8190208A8841000A2902 /* Section12BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF818F208A8841000A2902 /* Section12BasicViewController.swift */; };
 		49CF8193208D2980000A2902 /* TexiViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF8192208D2980000A2902 /* TexiViewDelegate.swift */; };
 		49E1C5C3209ACEEF00858C0F /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1C5C2209ACEEF00858C0F /* AlertViewController.swift */; };
+		49E1C5C8209AE28C00858C0F /* ImagePickerControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1C5C7209AE28C00858C0F /* ImagePickerControllerViewController.swift */; };
 		EDFD32D276EB5533E061E355 /* Pods_pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		49CF818F208A8841000A2902 /* Section12BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section12BasicViewController.swift; sourceTree = "<group>"; };
 		49CF8192208D2980000A2902 /* TexiViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexiViewDelegate.swift; sourceTree = "<group>"; };
 		49E1C5C2209ACEEF00858C0F /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		49E1C5C7209AE28C00858C0F /* ImagePickerControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerControllerViewController.swift; sourceTree = "<group>"; };
 		A019C0DEA9AB23B0DBF83BE8 /* Pods-pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.debug.xcconfig"; sourceTree = "<group>"; };
 		B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 				4913B04C209806B900C81EE7 /* CollectionViewControllerScreen */,
 				49278D2B209A88490025153E /* PageViewControllerScreen */,
 				49E1C5C1209ACE8300858C0F /* AlertAndActionSheetViewControllerScreen */,
+				49E1C5C6209AE16D00858C0F /* ImagePickerControllerScreen */,
 				49136238208FB5800070B861 /* Views */,
 			);
 			path = S13ManageViewScreen;
@@ -410,6 +413,14 @@
 			path = AlertAndActionSheetViewControllerScreen;
 			sourceTree = "<group>";
 		};
+		49E1C5C6209AE16D00858C0F /* ImagePickerControllerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				49E1C5C7209AE28C00858C0F /* ImagePickerControllerViewController.swift */,
+			);
+			path = ImagePickerControllerScreen;
+			sourceTree = "<group>";
+		};
 		87F4968EEE786B85C612C971 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,6 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E1C5C8209AE28C00858C0F /* ImagePickerControllerViewController.swift in Sources */,
 				4913B04E209806EE00C81EE7 /* CollectionViewController.swift in Sources */,
 				499AB7FB2073AD7D008694D8 /* StartViewController.swift in Sources */,
 				4913B0502098086200C81EE7 /* CollectionViewCell.swift in Sources */,
