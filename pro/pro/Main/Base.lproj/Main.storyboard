@@ -298,16 +298,79 @@
                                     <constraint firstAttribute="height" constant="128" id="9FW-N3-ls8"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ia-hf-eau">
+                                <rect key="frame" x="0.0" y="460" width="414" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBA-jX-bRT">
+                                        <rect key="frame" x="8" y="8" width="145" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Sel-1j-npS" kind="show" id="WNh-cJ-lFt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRB-so-GpE">
+                                        <rect key="frame" x="8" y="90" width="145" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2Q-6n-oK3">
+                                        <rect key="frame" x="261" y="49" width="145" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ6-WE-9Fa">
+                                        <rect key="frame" x="261" y="8" width="145" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emq-ui-oKq">
+                                        <rect key="frame" x="8" y="49" width="145" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8W-af-X9R">
+                                        <rect key="frame" x="261" y="90" width="145" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Zbe-MB-Kyi"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="2ia-hf-eau" firstAttribute="top" secondItem="waW-fS-U4Q" secondAttribute="bottom" id="4Ky-d3-omc"/>
                             <constraint firstItem="kRo-Po-Pkc" firstAttribute="trailing" secondItem="V2Q-T8-otx" secondAttribute="trailing" id="8ee-EL-1Mt"/>
                             <constraint firstItem="kRo-Po-Pkc" firstAttribute="trailing" secondItem="nEx-v0-wOM" secondAttribute="trailing" id="F9o-Ks-gNj"/>
                             <constraint firstItem="nEx-v0-wOM" firstAttribute="leading" secondItem="kRo-Po-Pkc" secondAttribute="leading" id="KOo-54-ZhW"/>
                             <constraint firstItem="waW-fS-U4Q" firstAttribute="leading" secondItem="kRo-Po-Pkc" secondAttribute="leading" id="LzI-aj-D7Z"/>
                             <constraint firstItem="V2Q-T8-otx" firstAttribute="top" secondItem="45D-qw-jEP" secondAttribute="bottom" constant="15" id="Qhb-4T-byk"/>
                             <constraint firstItem="V2Q-T8-otx" firstAttribute="leading" secondItem="kRo-Po-Pkc" secondAttribute="leading" id="RG8-S5-u0F"/>
+                            <constraint firstItem="kRo-Po-Pkc" firstAttribute="trailing" secondItem="2ia-hf-eau" secondAttribute="trailing" id="Tml-vh-8Bl"/>
                             <constraint firstItem="kRo-Po-Pkc" firstAttribute="trailing" secondItem="waW-fS-U4Q" secondAttribute="trailing" id="ZsA-cR-1ft"/>
+                            <constraint firstItem="2ia-hf-eau" firstAttribute="leading" secondItem="kRo-Po-Pkc" secondAttribute="leading" id="eFy-QY-gtY"/>
                             <constraint firstItem="45D-qw-jEP" firstAttribute="top" secondItem="kRo-Po-Pkc" secondAttribute="top" constant="20" id="fX5-Gp-PCp"/>
                             <constraint firstItem="waW-fS-U4Q" firstAttribute="top" secondItem="nEx-v0-wOM" secondAttribute="bottom" id="n3o-PC-mUI"/>
                             <constraint firstItem="45D-qw-jEP" firstAttribute="centerX" secondItem="Yso-PL-Gir" secondAttribute="centerX" id="y76-WK-I9f"/>
@@ -1213,7 +1276,7 @@ WebView</string>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" doubleSided="YES" id="Nsb-eE-tuZ" customClass="PageViewController" customModule="pro" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHI-bn-XIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13148" y="7578"/>
+            <point key="canvasLocation" x="13286" y="7578"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dOl-eZ-jbG">
@@ -1242,7 +1305,7 @@ WebView</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLK-lE-DHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="owh-Ph-dZi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="14287" y="7579"/>
+            <point key="canvasLocation" x="14735" y="7577"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jZj-1z-gqB">
@@ -1271,7 +1334,72 @@ WebView</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jT0-OD-pnu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hnA-Mq-vNO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="14287" y="8372"/>
+            <point key="canvasLocation" x="14735" y="8329"/>
+        </scene>
+        <!--Alert View Controller-->
+        <scene sceneID="2Oa-Kj-r10">
+            <objects>
+                <viewController id="Sel-1j-npS" customClass="AlertViewController" customModule="pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3m4-rG-goM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usH-jx-UKM">
+                                <rect key="frame" x="312" y="20" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.82186162939999996" blue="0.24733102479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="返回S13Top"/>
+                                <connections>
+                                    <segue destination="tVN-BS-Phq" kind="unwind" unwindAction="backToS13TopWithSegue:" id="bZa-ca-XSu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB4-w7-Uau">
+                                <rect key="frame" x="116" y="55" width="182" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.82081347699999996" blue="0.24548178909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fcX-5n-i1X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKR-5d-DMU">
+                                <rect key="frame" x="0.0" y="123" width="414" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqG-Es-sWv">
+                                        <rect key="frame" x="8" y="8" width="95" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="展示样品Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showSampleAlert:" destination="Sel-1j-npS" eventType="touchUpInside" id="Mzf-xk-8Xs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="3cX-oP-sK6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HKR-5d-DMU" firstAttribute="top" secondItem="gB4-w7-Uau" secondAttribute="bottom" constant="38" id="BOh-yg-pxp"/>
+                            <constraint firstItem="z3y-WC-jR4" firstAttribute="trailing" secondItem="HKR-5d-DMU" secondAttribute="trailing" id="Dhg-xr-zx3"/>
+                            <constraint firstItem="HKR-5d-DMU" firstAttribute="leading" secondItem="z3y-WC-jR4" secondAttribute="leading" id="NZ0-x2-c5X"/>
+                            <constraint firstItem="gB4-w7-Uau" firstAttribute="leading" secondItem="z3y-WC-jR4" secondAttribute="leading" constant="116" id="Tfe-OC-Mwa"/>
+                            <constraint firstItem="gB4-w7-Uau" firstAttribute="top" secondItem="z3y-WC-jR4" secondAttribute="top" constant="35" id="ldd-sF-ye6"/>
+                            <constraint firstItem="z3y-WC-jR4" firstAttribute="trailing" secondItem="gB4-w7-Uau" secondAttribute="trailing" constant="116" id="qTk-nf-zXJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z3y-WC-jR4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJY-1T-WUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tVN-BS-Phq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="13285.507246376812" y="9612.2282608695659"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1Yz-a8-1bv">
@@ -1300,7 +1428,7 @@ WebView</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jIm-X8-Chb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="RL3-cZ-es5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="14287" y="6832"/>
+            <point key="canvasLocation" x="14735" y="6851"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="yOR-0E-bPI">
