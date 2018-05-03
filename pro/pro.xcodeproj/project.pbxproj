@@ -100,7 +100,7 @@
 				4913B0452096BB1C00C81EE7 /* TableViewControllerScreen */,
 				4913B04C209806B900C81EE7 /* CollectionViewControllerScreen */,
 				49278D2B209A88490025153E /* PageViewControllerScreen */,
-				49E1C5C1209ACE8300858C0F /* AlertViewControllerScreen */,
+				49E1C5C1209ACE8300858C0F /* AlertAndActionSheetViewControllerScreen */,
 				49136238208FB5800070B861 /* Views */,
 			);
 			path = S13ManageViewScreen;
@@ -402,12 +402,12 @@
 			path = TextView;
 			sourceTree = "<group>";
 		};
-		49E1C5C1209ACE8300858C0F /* AlertViewControllerScreen */ = {
+		49E1C5C1209ACE8300858C0F /* AlertAndActionSheetViewControllerScreen */ = {
 			isa = PBXGroup;
 			children = (
 				49E1C5C2209ACEEF00858C0F /* AlertViewController.swift */,
 			);
-			path = AlertViewControllerScreen;
+			path = AlertAndActionSheetViewControllerScreen;
 			sourceTree = "<group>";
 		};
 		87F4968EEE786B85C612C971 /* Pods */ = {
