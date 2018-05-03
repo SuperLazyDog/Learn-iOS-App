@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import SafariServices
 
 class Section13ManageViewViewController: UIViewController {
-
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,14 +53,21 @@ class Section13ManageViewViewController: UIViewController {
 //	override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
 //		return [.landscapeLeft] // 只支持向左横倾
 //	}
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	//-------------------------------------------------------
+	//                       第4栏
+	//-------------------------------------------------------
+	@IBAction func shareSelf(_ sender: UIButton) { // 打开其他应用
+		let activityController = UIActivityViewController.init(
+			activityItems: ["分享"],
+			applicationActivities: nil
+		)
+		present(activityController, animated: true, completion: nil)
+	}
+	@IBAction func showWebPage(_ sender: UIButton) { // SFSafariWebViewController
+		guard let url = URL.init(string: "https://github.com/") else {
+			return
+		}
+		let safariWebViewController = SFSafariViewController.init(url: url)
+		present(safariWebViewController, animated: true, completion: nil)
+	}
 }
