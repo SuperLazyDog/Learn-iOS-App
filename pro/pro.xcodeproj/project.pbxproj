@@ -40,6 +40,8 @@
 		49E1C5CC209BF0D600858C0F /* Section14BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1C5CB209BF0D600858C0F /* Section14BasicViewController.swift */; };
 		49E1C5CF209BF1FF00858C0F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491CE711208E987F00D0E6F7 /* WebKit.framework */; };
 		49E1C5D0209BF20500858C0F /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E1C5CD209BF16200858C0F /* SafariServices.framework */; };
+		49E1C5D2209BF4E000858C0F /* S14AutoLayoutScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E1C5D1209BF4E000858C0F /* S14AutoLayoutScreen.storyboard */; };
+		49E1C5D5209BF7AF00858C0F /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1C5D4209BF7AF00858C0F /* AutoLayoutViewController.swift */; };
 		EDFD32D276EB5533E061E355 /* Pods_pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		49E1C5C7209AE28C00858C0F /* ImagePickerControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerControllerViewController.swift; sourceTree = "<group>"; };
 		49E1C5CB209BF0D600858C0F /* Section14BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section14BasicViewController.swift; sourceTree = "<group>"; };
 		49E1C5CD209BF16200858C0F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		49E1C5D1209BF4E000858C0F /* S14AutoLayoutScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S14AutoLayoutScreen.storyboard; sourceTree = "<group>"; };
+		49E1C5D4209BF7AF00858C0F /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
 		A019C0DEA9AB23B0DBF83BE8 /* Pods-pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.debug.xcconfig"; sourceTree = "<group>"; };
 		B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -431,6 +435,7 @@
 			isa = PBXGroup;
 			children = (
 				49E1C5CB209BF0D600858C0F /* Section14BasicViewController.swift */,
+				49E1C5D3209BF77D00858C0F /* Screens */,
 				49E1C5CA209BF0C200858C0F /* Views */,
 			);
 			path = S14AutoLayoutScreen;
@@ -441,6 +446,15 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		49E1C5D3209BF77D00858C0F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				49E1C5D1209BF4E000858C0F /* S14AutoLayoutScreen.storyboard */,
+				49E1C5D4209BF7AF00858C0F /* AutoLayoutViewController.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		87F4968EEE786B85C612C971 /* Pods */ = {
@@ -525,6 +539,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E1C5D2209BF4E000858C0F /* S14AutoLayoutScreen.storyboard in Resources */,
 				499AB8032073AD7D008694D8 /* LaunchScreen.storyboard in Resources */,
 				499AB8002073AD7D008694D8 /* Assets.xcassets in Resources */,
 				499AB7FE2073AD7D008694D8 /* Main.storyboard in Resources */,
@@ -606,6 +621,7 @@
 				49278D2A209A88420025153E /* PageViewController.swift in Sources */,
 				499605C02088DC1D00377630 /* MiddleTableViewCell.swift in Sources */,
 				499605B9208848D900377630 /* MiddleTableView.swift in Sources */,
+				49E1C5D5209BF7AF00858C0F /* AutoLayoutViewController.swift in Sources */,
 				491CE710208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift in Sources */,
 				4913B0492096BBC300C81EE7 /* TableViewControllerDataSourceAndDelegate.swift in Sources */,
 				499605B22087E2D100377630 /* TemplateViewController.swift in Sources */,

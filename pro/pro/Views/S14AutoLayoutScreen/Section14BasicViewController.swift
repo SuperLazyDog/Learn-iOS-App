@@ -25,5 +25,8 @@ class Section14BasicViewController: UIViewController {
 	@IBAction func backToS14Top(segue: UIStoryboardSegue) {
 		print("back to \(#function)")
 	}
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		print("segue identifier: \(segue.identifier ?? "不存在啊")")
+	}
 	
 }
