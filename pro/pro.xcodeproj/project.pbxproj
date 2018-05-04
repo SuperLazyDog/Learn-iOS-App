@@ -15,7 +15,6 @@
 		4913B04E209806EE00C81EE7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B04D209806EE00C81EE7 /* CollectionViewController.swift */; };
 		4913B0502098086200C81EE7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B04F2098086200C81EE7 /* CollectionViewCell.swift */; };
 		491CE710208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491CE70F208E6AED00D0E6F7 /* PickerViewDataSourceAndDelegate.swift */; };
-		491CE712208E987F00D0E6F7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491CE711208E987F00D0E6F7 /* WebKit.framework */; };
 		49278D2A209A88420025153E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49278D29209A88420025153E /* PageViewController.swift */; };
 		499605A92087DD8D00377630 /* TopAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499605A82087DD8D00377630 /* TopAreaView.swift */; };
 		499605AE2087DE9500377630 /* StartScreenDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499605AD2087DE9500377630 /* StartScreenDrawing.swift */; };
@@ -38,6 +37,9 @@
 		49CF8193208D2980000A2902 /* TexiViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF8192208D2980000A2902 /* TexiViewDelegate.swift */; };
 		49E1C5C3209ACEEF00858C0F /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1C5C2209ACEEF00858C0F /* AlertViewController.swift */; };
 		49E1C5C8209AE28C00858C0F /* ImagePickerControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1C5C7209AE28C00858C0F /* ImagePickerControllerViewController.swift */; };
+		49E1C5CC209BF0D600858C0F /* Section14BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1C5CB209BF0D600858C0F /* Section14BasicViewController.swift */; };
+		49E1C5CF209BF1FF00858C0F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491CE711208E987F00D0E6F7 /* WebKit.framework */; };
+		49E1C5D0209BF20500858C0F /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E1C5CD209BF16200858C0F /* SafariServices.framework */; };
 		EDFD32D276EB5533E061E355 /* Pods_pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,8 @@
 		49CF8192208D2980000A2902 /* TexiViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexiViewDelegate.swift; sourceTree = "<group>"; };
 		49E1C5C2209ACEEF00858C0F /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		49E1C5C7209AE28C00858C0F /* ImagePickerControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerControllerViewController.swift; sourceTree = "<group>"; };
+		49E1C5CB209BF0D600858C0F /* Section14BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section14BasicViewController.swift; sourceTree = "<group>"; };
+		49E1C5CD209BF16200858C0F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		A019C0DEA9AB23B0DBF83BE8 /* Pods-pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.debug.xcconfig"; sourceTree = "<group>"; };
 		B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,7 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				491CE712208E987F00D0E6F7 /* WebKit.framework in Frameworks */,
+				49E1C5D0209BF20500858C0F /* SafariServices.framework in Frameworks */,
+				49E1C5CF209BF1FF00858C0F /* WebKit.framework in Frameworks */,
 				EDFD32D276EB5533E061E355 /* Pods_pro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +272,9 @@
 			children = (
 				4996F7E120867224001F19DE /* StartScreen */,
 				4996F7E220867384001F19DE /* S11ViewScreen */,
-				49CF818D208A87F2000A2902 /* S12UIControllerScreen */,
+				49CF818D208A87F2000A2902 /* S12UIPartsScreen */,
 				49136235208FB5150070B861 /* S13ManageViewScreen */,
+				49E1C5C9209BF08500858C0F /* S14AutoLayoutScreen */,
 				499605B02087E2B100377630 /* Template */,
 			);
 			path = Views;
@@ -379,13 +385,13 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
-		49CF818D208A87F2000A2902 /* S12UIControllerScreen */ = {
+		49CF818D208A87F2000A2902 /* S12UIPartsScreen */ = {
 			isa = PBXGroup;
 			children = (
 				49CF818F208A8841000A2902 /* Section12BasicViewController.swift */,
 				49CF818E208A882D000A2902 /* Views */,
 			);
-			path = S12UIControllerScreen;
+			path = S12UIPartsScreen;
 			sourceTree = "<group>";
 		};
 		49CF818E208A882D000A2902 /* Views */ = {
@@ -421,6 +427,22 @@
 			path = ImagePickerControllerScreen;
 			sourceTree = "<group>";
 		};
+		49E1C5C9209BF08500858C0F /* S14AutoLayoutScreen */ = {
+			isa = PBXGroup;
+			children = (
+				49E1C5CB209BF0D600858C0F /* Section14BasicViewController.swift */,
+				49E1C5CA209BF0C200858C0F /* Views */,
+			);
+			path = S14AutoLayoutScreen;
+			sourceTree = "<group>";
+		};
+		49E1C5CA209BF0C200858C0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		87F4968EEE786B85C612C971 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +455,7 @@
 		9C2A32133D7E990B2DC673AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49E1C5CD209BF16200858C0F /* SafariServices.framework */,
 				491CE711208E987F00D0E6F7 /* WebKit.framework */,
 				B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */,
 			);
@@ -578,6 +601,7 @@
 				49CF8190208A8841000A2902 /* Section12BasicViewController.swift in Sources */,
 				499AB7F92073AD7D008694D8 /* AppDelegate.swift in Sources */,
 				49CF818A2089326A000A2902 /* BottomCollectionViewDataSourceAndDelegate.swift in Sources */,
+				49E1C5CC209BF0D600858C0F /* Section14BasicViewController.swift in Sources */,
 				49E1C5C3209ACEEF00858C0F /* AlertViewController.swift in Sources */,
 				49278D2A209A88420025153E /* PageViewController.swift in Sources */,
 				499605C02088DC1D00377630 /* MiddleTableViewCell.swift in Sources */,
