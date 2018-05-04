@@ -10,7 +10,16 @@ import UIKit
 
 class AutoLayoutViewController: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet weak var textView: UITextView!
+	@IBOutlet weak var saveButtonBottom: NSLayoutConstraint!
+	let saveButtonBottomBefore: CGFloat = 9
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: .UIKeyboardWillShow, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
+	}
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -20,16 +29,30 @@ class AutoLayoutViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	
+	// 保存按钮
+	@IBAction func saveAction(_ sender: UIButton) {
+		textView.resignFirstResponder()
+	}
+	
+	// 监听键盘相关的方法
+	@objc func keyboardWillShow(notification: Notification) {
+		print("started \(#function)")
+		guard let rect = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? CGRect else {
+			return
+		}
+		saveButtonBottom.constant += rect.height
+		print("finished \(#function)")
+	}
+	
+	@objc func keyboardWillHide(notification: Notification) {
+		print("started \(#function)")
+		guard let rect = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? CGRect else {
+			return
+		}
+		print("rect: \(rect)")
+		saveButtonBottom.constant = saveButtonBottomBefore
+		print("finished \(#function)")
+	}
 
 }
