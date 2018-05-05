@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gsg-8J-qNI">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zrf-Zx-rQy">
+            <objects>
+                <viewController id="gsg-8J-qNI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vaz-zj-Edg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartScreenTopAreaSampleImage" translatesAutoresizingMaskIntoConstraints="NO" id="NZZ-lR-Gtt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot8-5r-FGQ">
+                                <rect key="frame" x="283" y="20" width="111" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.82081347699999996" blue="0.24548178909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="5vc-KP-ci0" kind="unwind" unwindAction="backToStartScreenWithSegue:" id="QTk-7f-sZm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="框架模板" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jH-We-ui0">
+                                <rect key="frame" x="124.33333333333333" y="67" width="165.33333333333337" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.82081347699999996" blue="0.24548178909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4SR-Xb-RdL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ot8-5r-FGQ" firstAttribute="leading" secondItem="tHa-YR-FDB" secondAttribute="leading" constant="283" id="2Fz-NJ-DoR"/>
+                            <constraint firstItem="Ot8-5r-FGQ" firstAttribute="trailing" secondItem="vaz-zj-Edg" secondAttribute="trailingMargin" id="33f-pA-gox"/>
+                            <constraint firstAttribute="trailing" secondItem="NZZ-lR-Gtt" secondAttribute="trailing" id="JrY-q1-T4m"/>
+                            <constraint firstItem="4jH-We-ui0" firstAttribute="width" secondItem="NZZ-lR-Gtt" secondAttribute="width" multiplier="0.4" id="L5O-VC-Ocj"/>
+                            <constraint firstItem="NZZ-lR-Gtt" firstAttribute="leading" secondItem="vaz-zj-Edg" secondAttribute="leading" id="R0U-hs-nzG"/>
+                            <constraint firstItem="NZZ-lR-Gtt" firstAttribute="bottom" secondItem="tHa-YR-FDB" secondAttribute="bottom" id="Whh-hh-TW4"/>
+                            <constraint firstItem="4jH-We-ui0" firstAttribute="top" secondItem="Ot8-5r-FGQ" secondAttribute="bottom" constant="17" id="f7k-jf-O7u"/>
+                            <constraint firstItem="4jH-We-ui0" firstAttribute="centerX" secondItem="vaz-zj-Edg" secondAttribute="centerX" id="ifW-qg-Hvs"/>
+                            <constraint firstItem="NZZ-lR-Gtt" firstAttribute="top" secondItem="vaz-zj-Edg" secondAttribute="top" id="ktN-XP-nF7"/>
+                            <constraint firstItem="Ot8-5r-FGQ" firstAttribute="top" secondItem="tHa-YR-FDB" secondAttribute="top" id="mua-kI-U9y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tHa-YR-FDB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7W-S6-fPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5vc-KP-ci0" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-217.39130434782609" y="106.79347826086958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="StartScreenTopAreaSampleImage" width="233" height="233"/>
+    </resources>
+</document>

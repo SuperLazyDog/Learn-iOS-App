@@ -42,6 +42,7 @@
 		49E1C5D0209BF20500858C0F /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E1C5CD209BF16200858C0F /* SafariServices.framework */; };
 		49E1C5D2209BF4E000858C0F /* S14AutoLayoutScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E1C5D1209BF4E000858C0F /* S14AutoLayoutScreen.storyboard */; };
 		49E1C5D5209BF7AF00858C0F /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1C5D4209BF7AF00858C0F /* AutoLayoutViewController.swift */; };
+		49E1C5D9209D82EA00858C0F /* FrameworksMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E1C5D8209D82EA00858C0F /* FrameworksMenu.storyboard */; };
 		EDFD32D276EB5533E061E355 /* Pods_pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		49E1C5CD209BF16200858C0F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		49E1C5D1209BF4E000858C0F /* S14AutoLayoutScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S14AutoLayoutScreen.storyboard; sourceTree = "<group>"; };
 		49E1C5D4209BF7AF00858C0F /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
+		49E1C5D8209D82EA00858C0F /* FrameworksMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FrameworksMenu.storyboard; sourceTree = "<group>"; };
 		A019C0DEA9AB23B0DBF83BE8 /* Pods-pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.debug.xcconfig"; sourceTree = "<group>"; };
 		B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -274,6 +276,7 @@
 		4996F7CA2084F255001F19DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49E1C5D6209D82AF00858C0F /* Frameworks */,
 				4996F7E120867224001F19DE /* StartScreen */,
 				4996F7E220867384001F19DE /* S11ViewScreen */,
 				49CF818D208A87F2000A2902 /* S12UIPartsScreen */,
@@ -457,6 +460,22 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		49E1C5D6209D82AF00858C0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49E1C5D7209D82D500858C0F /* Menu */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		49E1C5D7209D82D500858C0F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				49E1C5D8209D82EA00858C0F /* FrameworksMenu.storyboard */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		87F4968EEE786B85C612C971 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,6 +559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49E1C5D2209BF4E000858C0F /* S14AutoLayoutScreen.storyboard in Resources */,
+				49E1C5D9209D82EA00858C0F /* FrameworksMenu.storyboard in Resources */,
 				499AB8032073AD7D008694D8 /* LaunchScreen.storyboard in Resources */,
 				499AB8002073AD7D008694D8 /* Assets.xcassets in Resources */,
 				499AB7FE2073AD7D008694D8 /* Main.storyboard in Resources */,
