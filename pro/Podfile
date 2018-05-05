@@ -6,5 +6,6 @@ target 'pro' do
   use_frameworks!
 
   # Pods for pro
+  pod 'SideMenu'
 
 end
