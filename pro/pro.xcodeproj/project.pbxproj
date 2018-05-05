@@ -43,6 +43,8 @@
 		49E1C5D2209BF4E000858C0F /* S14AutoLayoutScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E1C5D1209BF4E000858C0F /* S14AutoLayoutScreen.storyboard */; };
 		49E1C5D5209BF7AF00858C0F /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1C5D4209BF7AF00858C0F /* AutoLayoutViewController.swift */; };
 		49E1C5D9209D82EA00858C0F /* FrameworksMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E1C5D8209D82EA00858C0F /* FrameworksMenu.storyboard */; };
+		49E1C5DA209D85A700858C0F /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E1C5DB209D85A700858C0F /* SideMenu.framework */; };
+		49E1C5DD209D917900858C0F /* FrameworksTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1C5DC209D917900858C0F /* FrameworksTopViewController.swift */; };
 		EDFD32D276EB5533E061E355 /* Pods_pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,8 @@
 		49E1C5D1209BF4E000858C0F /* S14AutoLayoutScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S14AutoLayoutScreen.storyboard; sourceTree = "<group>"; };
 		49E1C5D4209BF7AF00858C0F /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
 		49E1C5D8209D82EA00858C0F /* FrameworksMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FrameworksMenu.storyboard; sourceTree = "<group>"; };
+		49E1C5DB209D85A700858C0F /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E1C5DC209D917900858C0F /* FrameworksTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksTopViewController.swift; sourceTree = "<group>"; };
 		A019C0DEA9AB23B0DBF83BE8 /* Pods-pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.debug.xcconfig"; sourceTree = "<group>"; };
 		B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E1C5DA209D85A700858C0F /* SideMenu.framework in Frameworks */,
 				49E1C5D0209BF20500858C0F /* SafariServices.framework in Frameworks */,
 				49E1C5CF209BF1FF00858C0F /* WebKit.framework in Frameworks */,
 				EDFD32D276EB5533E061E355 /* Pods_pro.framework in Frameworks */,
@@ -472,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				49E1C5D8209D82EA00858C0F /* FrameworksMenu.storyboard */,
+				49E1C5DC209D917900858C0F /* FrameworksTopViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -488,6 +494,7 @@
 		9C2A32133D7E990B2DC673AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49E1C5DB209D85A700858C0F /* SideMenu.framework */,
 				49E1C5CD209BF16200858C0F /* SafariServices.framework */,
 				491CE711208E987F00D0E6F7 /* WebKit.framework */,
 				B756DBA5A84F0A4BF8464FCB /* Pods_pro.framework */,
@@ -652,6 +659,7 @@
 				499605B72088103000377630 /* UIViewExtension.swift in Sources */,
 				499605A92087DD8D00377630 /* TopAreaView.swift in Sources */,
 				4913B04B2096C25700C81EE7 /* TableViewCell.swift in Sources */,
+				49E1C5DD209D917900858C0F /* FrameworksTopViewController.swift in Sources */,
 				499605BE208849FC00377630 /* MiddleTableViewDelegate.swift in Sources */,
 				4913623A20918E2F0070B861 /* SubViewController.swift in Sources */,
 				499605AE2087DE9500377630 /* StartScreenDrawing.swift in Sources */,
