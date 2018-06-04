@@ -41,6 +41,7 @@ extension Section20BasicViewController {
 //------------------------------------------------------------------------------------
 extension Section20BasicViewController {
 	func startSampleRequest() {
+//		guard let url = URL.init(string: "http://localhost:3001") else { return }
 		guard let url = URL.init(string: "https://www.baidu.com/") else { return }
 		let session = URLSession.shared
 		let task = session.dataTask(with: url) { (data, response, error) in
@@ -55,7 +56,6 @@ extension Section20BasicViewController {
 				self.toggleActivityIndicator(target: self.activityIndicator)
 				self.sampleTextView.text = text
 			}
-			
 		}
 		task.resume()
 	}
