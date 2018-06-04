@@ -10,10 +10,13 @@ import UIKit
 
 class Section20BasicViewController: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet weak var sampleTextView: UITextView!
+	
+	@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		startSampleRequest()
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,12 +40,36 @@ extension Section20BasicViewController {
 // 									action setting
 //------------------------------------------------------------------------------------
 extension Section20BasicViewController {
-
+	func startSampleRequest() {
+		guard let url = URL.init(string: "https://www.baidu.com/") else { return }
+		let session = URLSession.shared
+		let task = session.dataTask(with: url) { (data, response, error) in
+			if error != nil {
+				print("error: \(String(describing: error))")
+				return
+			}
+			guard let data = data else { return }
+			DispatchQueue.main.async {
+				sleep(2) // 为了测试效果, 暂停2秒
+				let text = String.init(data: data, encoding: String.Encoding.utf8)
+				self.toggleActivityIndicator(target: self.activityIndicator)
+				self.sampleTextView.text = text
+			}
+			
+		}
+		task.resume()
+	}
 }
 
 //------------------------------------------------------------------------------------
 // 									style setting
 //------------------------------------------------------------------------------------
 extension Section20BasicViewController {
-	
+	private func toggleActivityIndicator(target: UIActivityIndicatorView) {
+		if target.isAnimating {
+			target.stopAnimating()
+		} else {
+			target.startAnimating()
+		}
+	}
 }
