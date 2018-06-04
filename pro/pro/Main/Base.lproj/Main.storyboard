@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -76,13 +76,21 @@
             </objects>
             <point key="canvasLocation" x="-3457" y="-2"/>
         </scene>
+        <!--S20NetworkCommunicationScreen-->
+        <scene sceneID="FLq-bD-O4T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="S20NetworkCommunicationScreen" id="GVO-2Y-Sx7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRh-0T-gmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3192" y="-644"/>
+        </scene>
         <!--FrameworksMenu-->
         <scene sceneID="mbI-8O-2tn">
             <objects>
                 <viewControllerPlaceholder storyboardName="FrameworksMenu" id="vNK-I9-B4V" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9x-VH-0x6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3539" y="-622"/>
+            <point key="canvasLocation" x="3174" y="-709"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -118,7 +126,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="J5x-UI-ifp" kind="showDetail" animates="NO" action="showViewController:sender:" id="VT9-rV-gxs"/>
+                                    <segue destination="J5x-UI-ifp" kind="showDetail" animates="NO" id="VT9-rV-gxs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRC-BH-88k">
@@ -144,7 +152,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nbd-LS-c33" kind="showDetail" action="showViewController:sender:" id="NIm-j2-PQG"/>
+                                    <segue destination="nbd-LS-c33" kind="showDetail" id="NIm-j2-PQG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDc-Bi-SX2">
@@ -170,6 +178,19 @@
                                     <segue destination="vNK-I9-B4V" kind="show" id="7vM-Pf-VG2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jf-7R-fdQ">
+                                <rect key="frame" x="107" y="270" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WBe-OW-rnI"/>
+                                </constraints>
+                                <state key="normal" title="S20 Webから情報を取得する">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GVO-2Y-Sx7" kind="show" id="vZf-JO-IRu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -179,6 +200,7 @@
                             <constraint firstItem="xDc-Bi-SX2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7il-bj-Xj9"/>
                             <constraint firstItem="Qkq-mx-cKw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8Ol-Gd-Eo5"/>
                             <constraint firstItem="Qkq-mx-cKw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F8r-du-mww"/>
+                            <constraint firstItem="2jf-7R-fdQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J3a-Kw-hmU"/>
                             <constraint firstItem="gmn-R9-2y7" firstAttribute="baseline" secondItem="MJy-Xm-C8W" secondAttribute="baseline" id="LW7-iF-eex"/>
                             <constraint firstItem="fE5-IQ-dkz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QFU-s3-pYq"/>
                             <constraint firstItem="fE5-IQ-dkz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RQB-MV-bU5"/>
@@ -190,6 +212,7 @@
                             <constraint firstItem="cjU-yF-kkR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hTV-ox-XRL"/>
                             <constraint firstItem="xRC-BH-88k" firstAttribute="top" secondItem="MJy-Xm-C8W" secondAttribute="bottom" constant="24" id="hmL-JI-afG"/>
                             <constraint firstItem="Qkq-mx-cKw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="283" id="iDR-ZH-NhO"/>
+                            <constraint firstItem="2jf-7R-fdQ" firstAttribute="top" secondItem="xDc-Bi-SX2" secondAttribute="bottom" constant="30" id="oFw-vv-3N5"/>
                             <constraint firstItem="gmn-R9-2y7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ua2-xo-zVJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -248,14 +271,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S13 ビューの管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45D-qw-jEP">
-                                <rect key="frame" x="139.33333333333337" y="40" width="136.66666666666663" height="0.0"/>
+                                <rect key="frame" x="139.33333333333337" y="40" width="136.66666666666663" height="14"/>
                                 <color key="backgroundColor" red="1" green="0.82081347699999996" blue="0.24548178909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2Q-T8-otx">
-                                <rect key="frame" x="0.0" y="55" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="69" width="414" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="迁移测试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWQ-PK-bRO">
                                         <rect key="frame" x="172.33333333333334" y="5" width="69.333333333333343" height="20.333333333333332"/>
@@ -270,7 +293,7 @@
                                         <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="迁移测试"/>
                                         <connections>
-                                            <segue destination="Itl-X2-A56" kind="show" action="showDetailViewController:sender:" id="F5b-6m-YeT"/>
+                                            <segue destination="Itl-X2-A56" kind="show" id="F5b-6m-YeT"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -294,7 +317,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nEx-v0-wOM">
-                                <rect key="frame" x="0.0" y="183" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="197" width="414" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3f-Ee-eu2">
                                         <rect key="frame" x="169" y="24" width="77" height="30"/>
@@ -323,7 +346,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waW-fS-U4Q">
-                                <rect key="frame" x="0.0" y="311" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="325" width="414" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpT-as-Gqc">
                                         <rect key="frame" x="8" y="8" width="145" height="30"/>
@@ -344,7 +367,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="U2j-JI-SQZ" kind="show" action="showDetailViewController:sender:" id="mkt-he-Lkd"/>
+                                            <segue destination="U2j-JI-SQZ" kind="show" id="mkt-he-Lkd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBC-OO-UHF">
@@ -399,7 +422,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ia-hf-eau">
-                                <rect key="frame" x="0.0" y="439" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="453" width="414" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBA-jX-bRT">
                                         <rect key="frame" x="8" y="8" width="145" height="30"/>
@@ -471,17 +494,17 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGc-RB-b84">
-                                <rect key="frame" x="0.0" y="567" width="414" height="169"/>
+                                <rect key="frame" x="0.0" y="581" width="414" height="155"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIStackView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vL-nh-SHb">
-                                        <rect key="frame" x="159.33333333333334" y="8" width="96.333333333333343" height="14"/>
+                                        <rect key="frame" x="159.33333333333334" y="8" width="96.333333333333343" height="0.0"/>
                                         <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jHA-qg-laZ">
-                                        <rect key="frame" x="8" y="30" width="174" height="128"/>
+                                        <rect key="frame" x="8" y="16" width="174" height="128"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2IV-0g-UF6">
                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="128"/>

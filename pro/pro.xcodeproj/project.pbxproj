@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4906C3A6209EBD8D008404B4 /* SideMenuTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906C3A5209EBD8D008404B4 /* SideMenuTopViewController.swift */; };
+		4908393220C5C00600338C5F /* Section20BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908393120C5C00600338C5F /* Section20BasicViewController.swift */; };
+		4908393520C5C04D00338C5F /* S20NetworkCommunicationScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4908393420C5C04D00338C5F /* S20NetworkCommunicationScreen.storyboard */; };
 		49136237208FB5740070B861 /* Section13ManageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49136236208FB5730070B861 /* Section13ManageViewViewController.swift */; };
 		4913623A20918E2F0070B861 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913623920918E2F0070B861 /* SubViewController.swift */; };
 		4913B0472096BB3300C81EE7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913B0462096BB3300C81EE7 /* TableViewController.swift */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		2D8D51D3D55F75AD1CA9D74A /* Pods-pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.release.xcconfig"; sourceTree = "<group>"; };
 		4906C3A5209EBD8D008404B4 /* SideMenuTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTopViewController.swift; sourceTree = "<group>"; };
+		4908393120C5C00600338C5F /* Section20BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section20BasicViewController.swift; sourceTree = "<group>"; };
+		4908393420C5C04D00338C5F /* S20NetworkCommunicationScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S20NetworkCommunicationScreen.storyboard; sourceTree = "<group>"; };
 		49136236208FB5730070B861 /* Section13ManageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section13ManageViewViewController.swift; sourceTree = "<group>"; };
 		4913623920918E2F0070B861 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		4913B0462096BB3300C81EE7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,31 @@
 				4906C3A5209EBD8D008404B4 /* SideMenuTopViewController.swift */,
 			);
 			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		4908392F20C5BF9C00338C5F /* S20NetworkCommunicationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4908393120C5C00600338C5F /* Section20BasicViewController.swift */,
+				4908393320C5C01500338C5F /* Screens */,
+				4908393020C5BFD900338C5F /* Views */,
+			);
+			path = S20NetworkCommunicationScreen;
+			sourceTree = "<group>";
+		};
+		4908393020C5BFD900338C5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4908393320C5C01500338C5F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4908393420C5C04D00338C5F /* S20NetworkCommunicationScreen.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		49136235208FB5150070B861 /* S13ManageViewScreen */ = {
@@ -297,6 +326,7 @@
 				49CF818D208A87F2000A2902 /* S12UIPartsScreen */,
 				49136235208FB5150070B861 /* S13ManageViewScreen */,
 				49E1C5C9209BF08500858C0F /* S14AutoLayoutScreen */,
+				4908392F20C5BF9C00338C5F /* S20NetworkCommunicationScreen */,
 				499605B02087E2B100377630 /* Template */,
 			);
 			path = Views;
@@ -578,6 +608,7 @@
 			files = (
 				49E1C5D2209BF4E000858C0F /* S14AutoLayoutScreen.storyboard in Resources */,
 				49E1C5D9209D82EA00858C0F /* FrameworksMenu.storyboard in Resources */,
+				4908393520C5C04D00338C5F /* S20NetworkCommunicationScreen.storyboard in Resources */,
 				499AB8032073AD7D008694D8 /* LaunchScreen.storyboard in Resources */,
 				499AB8002073AD7D008694D8 /* Assets.xcassets in Resources */,
 				499AB7FE2073AD7D008694D8 /* Main.storyboard in Resources */,
@@ -654,6 +685,7 @@
 				4913B0472096BB3300C81EE7 /* TableViewController.swift in Sources */,
 				49CF818720893093000A2902 /* BottomCollectionView.swift in Sources */,
 				49136237208FB5740070B861 /* Section13ManageViewViewController.swift in Sources */,
+				4908393220C5C00600338C5F /* Section20BasicViewController.swift in Sources */,
 				49CF8190208A8841000A2902 /* Section12BasicViewController.swift in Sources */,
 				499AB7F92073AD7D008694D8 /* AppDelegate.swift in Sources */,
 				4906C3A6209EBD8D008404B4 /* SideMenuTopViewController.swift in Sources */,
