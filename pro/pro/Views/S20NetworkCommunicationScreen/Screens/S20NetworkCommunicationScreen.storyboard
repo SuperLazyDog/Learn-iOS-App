@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,23 +40,27 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="loading..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cma-Fs-TuN">
-                                <rect key="frame" x="16" y="85" width="349" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="loading..." translatesAutoresizingMaskIntoConstraints="NO" id="cma-Fs-TuN">
+                                <rect key="frame" x="37.5" y="85" width="300" height="532"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="X3W-eI-rPR">
-                                <rect key="frame" x="177" y="323.5" width="20" height="20"/>
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <color key="color" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="cma-Fs-TuN" firstAttribute="top" secondItem="JR6-OK-qF9" secondAttribute="bottom" constant="15" id="2ko-3l-dBT"/>
                             <constraint firstItem="267-5B-Tw7" firstAttribute="top" secondItem="hGT-Pq-pDR" secondAttribute="top" id="AVd-vT-hfq"/>
+                            <constraint firstItem="cma-Fs-TuN" firstAttribute="centerX" secondItem="Lfr-XP-NpN" secondAttribute="centerX" id="KZZ-EM-PSC"/>
                             <constraint firstItem="JR6-OK-qF9" firstAttribute="centerX" secondItem="Lfr-XP-NpN" secondAttribute="centerX" id="RGi-9R-cN1"/>
                             <constraint firstItem="X3W-eI-rPR" firstAttribute="centerY" secondItem="Lfr-XP-NpN" secondAttribute="centerY" id="T83-Il-Ie7"/>
                             <constraint firstItem="JR6-OK-qF9" firstAttribute="top" secondItem="hGT-Pq-pDR" secondAttribute="top" constant="20" id="VsR-hJ-HE0"/>
+                            <constraint firstItem="hGT-Pq-pDR" firstAttribute="bottom" secondItem="cma-Fs-TuN" secondAttribute="bottom" constant="50" id="aYC-Mz-BIU"/>
+                            <constraint firstItem="cma-Fs-TuN" firstAttribute="width" secondItem="Lfr-XP-NpN" secondAttribute="width" multiplier="0.8" id="hVP-JJ-atE"/>
                             <constraint firstItem="hGT-Pq-pDR" firstAttribute="trailing" secondItem="267-5B-Tw7" secondAttribute="trailing" constant="10" id="tMQ-Bg-eRQ"/>
                             <constraint firstItem="X3W-eI-rPR" firstAttribute="centerX" secondItem="Lfr-XP-NpN" secondAttribute="centerX" id="u7q-eX-rcY"/>
                         </constraints>
